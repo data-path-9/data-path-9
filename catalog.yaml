@@ -22,6 +22,7 @@
   last_push: '2024-06-18'
   stars: 73480
   verified: '2026-10-09'
+  held_fork_push: '2024-06-18'
 
 - name: stable-diffusion-webui
   category: text-to-image
@@ -32,6 +33,7 @@
   last_push: '2026-03-02'
   stars: 165032
   verified: '2026-10-09'
+  held_fork_push: '2026-03-02'
 
 - name: Fooocus
   category: text-to-image
@@ -66,6 +68,7 @@
   last_push: '2026-03-25'
   stars: 34432
   verified: '2026-10-09'
+  held_fork_push: '2026-03-25'
 
 - name: llama.cpp
   category: local-inference
@@ -79,7 +82,7 @@
   stars: 130659
   verified: '2026-10-09'
   held_fork: data-path-9/llama.cpp
-  held_fork_push: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: whisper.cpp
   category: local-inference
@@ -450,6 +453,7 @@
   stars: 66909
   held_fork: data-path-9/mem0
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: cognee
   category: fork-wing
@@ -461,6 +465,7 @@
   stars: 31912
   held_fork: data-path-9/cognee
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: memvid
   category: fork-wing
@@ -472,6 +477,7 @@
   stars: 16584
   held_fork: data-path-9/memvid
   verified: '2026-10-09'
+  held_fork_push: '2026-07-14'
 
 - name: memorius
   category: fork-wing
@@ -483,6 +489,7 @@
   stars: 1
   held_fork: data-path-9/memorius
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: caveman
   category: fork-wing
@@ -494,6 +501,7 @@
   stars: 110784
   held_fork: data-path-9/caveman
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: ponytail
   category: fork-wing
@@ -505,6 +513,7 @@
   stars: 159688
   held_fork: data-path-9/ponytail
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: obsidian-skills
   category: fork-wing
@@ -516,6 +525,7 @@
   stars: 49335
   held_fork: data-path-9/obsidian-skills
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: SOUL.md
   category: fork-wing
@@ -527,6 +537,7 @@
   stars: 422
   held_fork: data-path-9/SOUL.md
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: awesome-agent-souls
   category: fork-wing
@@ -538,6 +549,7 @@
   stars: 9
   held_fork: data-path-9/awesome-agent-souls
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: hermes-superpowers
   category: fork-wing
@@ -549,6 +561,7 @@
   stars: 2
   held_fork: data-path-9/hermes-superpowers
   verified: '2026-10-09'
+  held_fork_push: '2026-07-18'
 
 - name: hermes-ecosystem
   category: fork-wing
@@ -560,6 +573,7 @@
   stars: 1308
   held_fork: data-path-9/hermes-ecosystem
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: time-gap
   category: fork-wing
@@ -571,6 +585,7 @@
   stars: 21
   held_fork: data-path-9/time-gap
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: crewAI
   category: fork-wing
@@ -582,6 +597,7 @@
   stars: 59510
   held_fork: data-path-9/crewAI
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: dify
   category: fork-wing
@@ -593,6 +609,7 @@
   stars: 158026
   held_fork: data-path-9/dify
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: firecrawl
   category: fork-wing
@@ -604,6 +621,7 @@
   stars: 189954
   held_fork: data-path-9/firecrawl
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: deer-flow
   category: fork-wing
@@ -615,6 +633,7 @@
   stars: 83587
   held_fork: data-path-9/deer-flow
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: UI-TARS-desktop
   category: fork-wing
@@ -626,6 +645,7 @@
   stars: 39228
   held_fork: data-path-9/UI-TARS-desktop
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: remotion
   category: fork-wing
@@ -637,6 +657,7 @@
   stars: 62827
   held_fork: data-path-9/remotion
   verified: '2026-10-09'
+  held_fork_push: '2026-10-09'
 
 - name: openclaw
   category: fork-wing
@@ -648,6 +669,7 @@
   stars: 391538
   held_fork: data-path-9/openclaw
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: VoxCPM
   category: fork-wing
@@ -659,6 +681,7 @@
   stars: 38465
   held_fork: data-path-9/VoxCPM
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: ACE-Step-1.5
   category: fork-wing
@@ -670,6 +693,7 @@
   stars: 13326
   held_fork: data-path-9/ACE-Step-1.5
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: kandinsky-5
   category: fork-wing
@@ -681,6 +705,7 @@
   stars: 835
   held_fork: data-path-9/kandinsky-5
   verified: '2026-10-09'
+  held_fork_push: '2026-07-05'
 
 - name: claude-for-legal
   category: fork-wing
@@ -692,6 +717,7 @@
   stars: 9633
   held_fork: data-path-9/claude-for-legal
   verified: '2026-10-09'
+  held_fork_push: '2026-08-21'
 
 - name: medusa
   category: fork-wing
@@ -703,6 +729,7 @@
   stars: 1001
   held_fork: data-path-9/medusa
   verified: '2026-10-09'
+  held_fork_push: '2026-06-24'
 
 - name: open-us-law
   category: fork-wing
@@ -714,6 +741,7 @@
   stars: 72
   held_fork: data-path-9/open-us-law
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: docsify
   category: fork-wing
@@ -725,6 +753,7 @@
   stars: 31541
   held_fork: data-path-9/docsify
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: rea
   category: fork-wing
@@ -737,6 +766,7 @@
   held_fork: data-path-9/rea
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: filmcraft
   category: fork-wing
@@ -749,6 +779,7 @@
   held_fork: data-path-9/filmcraft
   copy_shelf: text-to-image
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: vectorcraft
   category: fork-wing
@@ -761,6 +792,7 @@
   held_fork: data-path-9/vectorcraft
   copy_shelf: text-to-image
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: photocraft
   category: fork-wing
@@ -773,6 +805,7 @@
   held_fork: data-path-9/photocraft
   copy_shelf: text-to-image
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: effectcraft
   category: fork-wing
@@ -785,6 +818,7 @@
   held_fork: data-path-9/effectcraft
   copy_shelf: text-to-image
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: pdfcraft
   category: fork-wing
@@ -796,6 +830,7 @@
   stars: 6508
   held_fork: data-path-9/pdfcraft
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: lightcraft
   category: fork-wing
@@ -807,6 +842,7 @@
   stars: 7811
   held_fork: data-path-9/lightcraft
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: wordcraft
   category: fork-wing
@@ -818,6 +854,7 @@
   stars: 1937
   held_fork: data-path-9/wordcraft
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: cadcraft
   category: fork-wing
@@ -830,6 +867,7 @@
   stars: 1395
   held_fork: data-path-9/cadcraft
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: deckcraft
   category: fork-wing
@@ -842,6 +880,7 @@
   stars: 986
   held_fork: data-path-9/deckcraft
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: gridcraft
   category: fork-wing
@@ -854,6 +893,7 @@
   stars: 1222
   held_fork: data-path-9/gridcraft
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: soundcraft
   category: fork-wing
@@ -866,6 +906,7 @@
   held_fork: data-path-9/soundcraft
   copy_shelf: speech
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: designcraft
   category: fork-wing
@@ -878,6 +919,7 @@
   held_fork: data-path-9/designcraft
   copy_shelf: text-to-image
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: agent-lightning
   category: fork-wing
@@ -890,6 +932,7 @@
   held_fork: data-path-9/agent-lightning
   copy_shelf: fine-tuning
   verified: '2026-10-09'
+  held_fork_push: '2026-10-09'
 
 - name: artcraft
   category: fork-wing
@@ -902,6 +945,7 @@
   held_fork: data-path-9/artcraft
   copy_shelf: text-to-image
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: claude-skill-registry
   category: fork-wing
@@ -915,6 +959,7 @@
   held_fork: data-path-9/claude-skill-registry
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: claude-skill-registry-core
   category: fork-wing
@@ -928,6 +973,7 @@
   held_fork: data-path-9/claude-skill-registry-core
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: claude-skill-registry-data
   category: fork-wing
@@ -941,6 +987,7 @@
   held_fork: data-path-9/claude-skill-registry-data
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: openshorts
   category: fork-wing
@@ -955,6 +1002,7 @@
   held_fork: data-path-9/openshorts
   copy_shelf: text-to-image
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: ruflo
   category: fork-wing
@@ -969,6 +1017,7 @@
   held_fork: data-path-9/ruflo
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-01'
 
 - name: ai-shifu
   category: fork-wing
@@ -981,6 +1030,7 @@
   held_fork: data-path-9/ai-shifu
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: ai-coach
   category: fork-wing
@@ -993,6 +1043,7 @@
   held_fork: data-path-9/ai-coach
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: agent-beacon
   category: fork-wing
@@ -1005,6 +1056,7 @@
   held_fork: data-path-9/agent-beacon
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: ZCode
   category: fork-wing
@@ -1017,6 +1069,7 @@
   held_fork: data-path-9/ZCode
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: ai-file-sorter
   category: fork-wing
@@ -1029,6 +1082,7 @@
   stars: 1807
   held_fork: data-path-9/ai-file-sorter
   verified: '2026-10-09'
+  held_fork_push: '2026-09-18'
 
 - name: headcount
   category: fork-wing
@@ -1043,6 +1097,7 @@
   held_fork: data-path-9/headcount
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-09-17'
 
 - name: omarchy
   category: fork-wing
@@ -1054,6 +1109,7 @@
   stars: 44406
   held_fork: data-path-9/omarchy
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: social-media-skills
   category: fork-wing
@@ -1066,6 +1122,7 @@
   held_fork: data-path-9/social-media-skills
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-09-15'
 
 - name: colibri
   category: fork-wing
@@ -1079,6 +1136,7 @@
   held_fork: data-path-9/colibri
   copy_shelf: local-inference
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: Scrapling
   category: fork-wing
@@ -1093,6 +1151,7 @@
   held_fork: data-path-9/Scrapling
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: md-reader
   category: fork-wing
@@ -1104,6 +1163,7 @@
   stars: 481
   held_fork: data-path-9/md-reader
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: book-to-skill
   category: fork-wing
@@ -1117,6 +1177,7 @@
   held_fork: data-path-9/book-to-skill
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: wigolo
   category: fork-wing
@@ -1130,6 +1191,7 @@
   held_fork: data-path-9/wigolo
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: no-ai-slop
   category: fork-wing
@@ -1142,6 +1204,7 @@
   held_fork: data-path-9/no-ai-slop
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-09-02'
 
 - name: codegraph
   category: fork-wing
@@ -1156,6 +1219,7 @@
   held_fork: data-path-9/codegraph
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: warp
   category: fork-wing
@@ -1170,6 +1234,7 @@
   held_fork: data-path-9/warp
   copy_shelf: local-inference
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: mempalace
   category: fork-wing
@@ -1182,6 +1247,7 @@
   held_fork: data-path-9/mempalace
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: hermes-the-firm
   category: fork-wing
@@ -1194,6 +1260,7 @@
   held_fork: data-path-9/hermes-the-firm
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-08-27'
 
 - name: automaton
   category: fork-wing
@@ -1206,6 +1273,7 @@
   stars: 7133
   held_fork: data-path-9/automaton
   verified: '2026-10-09'
+  held_fork_push: '2026-08-26'
 
 - name: learn-harness-engineering
   category: fork-wing
@@ -1218,6 +1286,7 @@
   held_fork: data-path-9/learn-harness-engineering
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: reddit-mcp-buddy
   category: fork-wing
@@ -1231,6 +1300,7 @@
   held_fork: data-path-9/reddit-mcp-buddy
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-08-17'
 
 - name: souls-directory
   category: fork-wing
@@ -1243,6 +1313,7 @@
   held_fork: data-path-9/souls-directory
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-08-11'
 
 - name: mission-control
   category: fork-wing
@@ -1256,6 +1327,7 @@
   held_fork: data-path-9/mission-control
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: ggufy
   category: fork-wing
@@ -1268,6 +1340,7 @@
   held_fork: data-path-9/ggufy
   copy_shelf: local-inference
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: studio-recipes
   category: fork-wing
@@ -1280,6 +1353,7 @@
   held_fork: data-path-9/studio-recipes
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: MoneyPrinterTurbo
   category: fork-wing
@@ -1293,6 +1367,7 @@
   held_fork: data-path-9/MoneyPrinterTurbo
   copy_shelf: text-to-image
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: agora
   category: fork-wing
@@ -1306,6 +1381,7 @@
   held_fork: data-path-9/agora
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-07-30'
 
 - name: CppStudio
   category: fork-wing
@@ -1318,6 +1394,7 @@
   held_fork: data-path-9/CppStudio
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-07-29'
 
 - name: buzz
   category: fork-wing
@@ -1330,6 +1407,7 @@
   held_fork: data-path-9/buzz
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: AudioNotes
   category: fork-wing
@@ -1342,6 +1420,7 @@
   held_fork: data-path-9/AudioNotes
   copy_shelf: speech
   verified: '2026-10-09'
+  held_fork_push: '2026-07-29'
 
 - name: Hermes-Control-Deck
   category: fork-wing
@@ -1357,6 +1436,7 @@
   held_fork: data-path-9/Hermes-Control-Deck
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-07-29'
 
 - name: MD-This-Page
   category: fork-wing
@@ -1369,6 +1449,7 @@
   held_fork: data-path-9/MD-This-Page
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: 500-AI-Agents-Projects
   category: fork-wing
@@ -1384,6 +1465,7 @@
   held_fork: data-path-9/500-AI-Agents-Projects
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-07-27'
 
 - name: NIMStats
   category: fork-wing
@@ -1397,6 +1479,7 @@
   held_fork: data-path-9/NIMStats
   copy_shelf: local-inference
   verified: '2026-10-09'
+  held_fork_push: '2026-07-26'
 
 - name: ai-engineering-from-scratch
   category: fork-wing
@@ -1408,6 +1491,7 @@
   stars: 66230
   held_fork: data-path-9/ai-engineering-from-scratch
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: mnemo-cortex
   category: fork-wing
@@ -1422,6 +1506,7 @@
   held_fork: data-path-9/mnemo-cortex
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-07-25'
 
 - name: BrowserOS
   category: fork-wing
@@ -1435,6 +1520,7 @@
   held_fork: data-path-9/BrowserOS
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: marm-memory
   category: fork-wing
@@ -1449,6 +1535,7 @@
   held_fork: data-path-9/marm-memory
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: MindBank
   category: fork-wing
@@ -1464,6 +1551,7 @@
   held_fork: data-path-9/MindBank
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: awesome-hermes-agent
   category: fork-wing
@@ -1477,6 +1565,7 @@
   held_fork: data-path-9/awesome-hermes-agent
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: engraphis
   category: fork-wing
@@ -1490,6 +1579,7 @@
   held_fork: data-path-9/engraphis
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-07-20'
 
 - name: claude-code-router
   category: fork-wing
@@ -1503,6 +1593,7 @@
   held_fork: data-path-9/claude-code-router
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: free-coding-models
   category: fork-wing
@@ -1516,6 +1607,7 @@
   held_fork: data-path-9/free-coding-models
   copy_shelf: local-inference
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: open-notebook
   category: fork-wing
@@ -1528,6 +1620,7 @@
   held_fork: data-path-9/open-notebook
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: onyx
   category: fork-wing
@@ -1540,6 +1633,7 @@
   held_fork: data-path-9/onyx
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: awesome-gpt-image-2
   category: fork-wing
@@ -1554,6 +1648,7 @@
   held_fork: data-path-9/awesome-gpt-image-2
   copy_shelf: text-to-image
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: web-to-app
   category: fork-wing
@@ -1566,6 +1661,7 @@
   stars: 6756
   held_fork: data-path-9/web-to-app
   verified: '2026-10-09'
+  held_fork_push: '2026-07-19'
 
 - name: Cybersecurity-Projects
   category: fork-wing
@@ -1578,6 +1674,7 @@
   stars: 8098
   held_fork: data-path-9/Cybersecurity-Projects
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: estudiohc-agentic-os
   category: fork-wing
@@ -1592,6 +1689,7 @@
   held_fork: data-path-9/estudiohc-agentic-os
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-07-19'
 
 - name: API-mega-list
   category: fork-wing
@@ -1605,6 +1703,7 @@
   stars: 7715
   held_fork: data-path-9/API-mega-list
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: FCCVS
   category: fork-wing
@@ -1618,6 +1717,7 @@
   held_fork: data-path-9/FCCVS
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-07-19'
 
 - name: lollms_skills_zoo
   category: fork-wing
@@ -1630,6 +1730,7 @@
   held_fork: data-path-9/lollms_skills_zoo
   copy_shelf: local-inference
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: lollms_apps_zoo
   category: fork-wing
@@ -1642,6 +1743,7 @@
   held_fork: data-path-9/lollms_apps_zoo
   copy_shelf: local-inference
   verified: '2026-10-09'
+  held_fork_push: '2026-07-19'
 
 - name: CL4R1T4S
   category: fork-wing
@@ -1655,6 +1757,7 @@
   held_fork: data-path-9/CL4R1T4S
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: TencentDB-Agent-Memory
   category: fork-wing
@@ -1669,6 +1772,7 @@
   held_fork: data-path-9/TencentDB-Agent-Memory
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: cv-santiago
   category: fork-wing
@@ -1681,6 +1785,7 @@
   stars: 851
   held_fork: data-path-9/cv-santiago
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: free-llm-api-resources
   category: fork-wing
@@ -1693,6 +1798,7 @@
   held_fork: data-path-9/free-llm-api-resources
   copy_shelf: local-inference
   verified: '2026-10-09'
+  held_fork_push: '2026-07-19'
 
 - name: taste-skill
   category: fork-wing
@@ -1706,6 +1812,7 @@
   held_fork: data-path-9/taste-skill
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: ReconForge
   category: fork-wing
@@ -1717,6 +1824,7 @@
   stars: 36
   held_fork: data-path-9/ReconForge
   verified: '2026-10-09'
+  held_fork_push: '2026-07-19'
 
 - name: TradingAgents
   category: fork-wing
@@ -1729,6 +1837,7 @@
   held_fork: data-path-9/TradingAgents
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: lollms
   category: fork-wing
@@ -1741,6 +1850,7 @@
   held_fork: data-path-9/lollms
   copy_shelf: local-inference
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: Flowise
   category: fork-wing
@@ -1753,6 +1863,7 @@
   held_fork: data-path-9/Flowise
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: 9router
   category: fork-wing
@@ -1766,6 +1877,7 @@
   held_fork: data-path-9/9router
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: cc-wf-studio
   category: fork-wing
@@ -1778,6 +1890,7 @@
   held_fork: data-path-9/cc-wf-studio
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: system_prompts_leaks
   category: fork-wing
@@ -1792,6 +1905,7 @@
   held_fork: data-path-9/system_prompts_leaks
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: FCC
   category: fork-wing
@@ -1806,6 +1920,7 @@
   held_fork: data-path-9/FCC
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: LibreChat
   category: fork-wing
@@ -1821,6 +1936,7 @@
   held_fork: data-path-9/LibreChat
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: lollms-vs-coder
   category: fork-wing
@@ -1835,6 +1951,7 @@
   held_fork: data-path-9/lollms-vs-coder
   copy_shelf: local-inference
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: voice-ai
   category: fork-wing
@@ -1849,6 +1966,7 @@
   held_fork: data-path-9/voice-ai
   copy_shelf: speech
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: lollms_client
   category: fork-wing
@@ -1861,6 +1979,7 @@
   held_fork: data-path-9/lollms_client
   copy_shelf: local-inference
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: lobehub
   category: fork-wing
@@ -1873,6 +1992,7 @@
   stars: 83089
   held_fork: data-path-9/lobehub
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: ui-ux-pro-max-skill
   category: fork-wing
@@ -1886,6 +2006,7 @@
   held_fork: data-path-9/ui-ux-pro-max-skill
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: SenseVoice
   category: fork-wing
@@ -1899,6 +2020,7 @@
   held_fork: data-path-9/SenseVoice
   copy_shelf: speech
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: winboat
   category: fork-wing
@@ -1910,6 +2032,7 @@
   stars: 23174
   held_fork: data-path-9/winboat
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: OpenMontage
   category: fork-wing
@@ -1924,6 +2047,7 @@
   held_fork: data-path-9/OpenMontage
   copy_shelf: text-to-image
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: claude-code-ultimate-guide
   category: fork-wing
@@ -1937,6 +2061,7 @@
   held_fork: data-path-9/claude-code-ultimate-guide
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: agency-agents
   category: fork-wing
@@ -1951,6 +2076,7 @@
   held_fork: data-path-9/agency-agents
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: CloakBrowser
   category: fork-wing
@@ -1964,6 +2090,7 @@
   held_fork: data-path-9/CloakBrowser
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: dev-browser
   category: fork-wing
@@ -1976,6 +2103,7 @@
   held_fork: data-path-9/dev-browser
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: openhuman
   category: fork-wing
@@ -1989,6 +2117,7 @@
   held_fork: data-path-9/openhuman
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: langflow
   category: fork-wing
@@ -2001,6 +2130,7 @@
   held_fork: data-path-9/langflow
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: rustwire
   category: fork-wing
@@ -2012,6 +2142,7 @@
   stars: 0
   held_fork: data-path-9/rustwire
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: Prometheus
   category: fork-wing
@@ -2023,6 +2154,7 @@
   stars: 172
   held_fork: data-path-9/Prometheus
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: engram
   category: fork-wing
@@ -2035,6 +2167,7 @@
   stars: 1445
   held_fork: data-path-9/engram
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: Vibe-Trading
   category: fork-wing
@@ -2047,6 +2180,7 @@
   held_fork: data-path-9/Vibe-Trading
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-07-19'
 
 - name: ai-job-search
   category: fork-wing
@@ -2060,6 +2194,7 @@
   held_fork: data-path-9/ai-job-search
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: gstack
   category: fork-wing
@@ -2073,6 +2208,7 @@
   held_fork: data-path-9/gstack
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: knip
   category: fork-wing
@@ -2085,6 +2221,7 @@
   stars: 12429
   held_fork: data-path-9/knip
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: career-ops
   category: fork-wing
@@ -2100,6 +2237,7 @@
   held_fork: data-path-9/career-ops
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: OpenJarvis
   category: fork-wing
@@ -2112,6 +2250,7 @@
   held_fork: data-path-9/OpenJarvis
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: loop-engineering
   category: fork-wing
@@ -2126,6 +2265,7 @@
   held_fork: data-path-9/loop-engineering
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: OpenCut
   category: fork-wing
@@ -2138,6 +2278,7 @@
   held_fork: data-path-9/OpenCut
   copy_shelf: text-to-image
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: Electra_AI_Center
   category: fork-wing
@@ -2150,6 +2291,7 @@
   held_fork: data-path-9/Electra_AI_Center
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: awesome-llm-apps
   category: fork-wing
@@ -2162,6 +2304,7 @@
   held_fork: data-path-9/awesome-llm-apps
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: last30days-skill
   category: fork-wing
@@ -2175,6 +2318,7 @@
   held_fork: data-path-9/last30days-skill
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: ArcReel
   category: fork-wing
@@ -2188,6 +2332,7 @@
   held_fork: data-path-9/ArcReel
   copy_shelf: text-to-image
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: OpenWA
   category: fork-wing
@@ -2200,6 +2345,7 @@
   held_fork: data-path-9/OpenWA
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: lovable-for-beginners
   category: fork-wing
@@ -2212,6 +2358,7 @@
   stars: 606
   held_fork: data-path-9/lovable-for-beginners
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: ECC
   category: fork-wing
@@ -2225,6 +2372,7 @@
   held_fork: data-path-9/ECC
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: yoinks
   category: fork-wing
@@ -2236,6 +2384,7 @@
   stars: 5643
   held_fork: data-path-9/yoinks
   verified: '2026-10-09'
+  held_fork_push: '2026-07-17'
 
 - name: STATE-Bench
   category: fork-wing
@@ -2248,6 +2397,7 @@
   held_fork: data-path-9/STATE-Bench
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: hermes-chat-vscode
   category: fork-wing
@@ -2260,6 +2410,7 @@
   held_fork: data-path-9/hermes-chat-vscode
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-07-16'
 
 - name: SX
   category: fork-wing
@@ -2271,6 +2422,7 @@
   stars: 22658
   held_fork: data-path-9/SX
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: Hermes-SME-UI
   category: fork-wing
@@ -2283,6 +2435,7 @@
   held_fork: data-path-9/Hermes-SME-UI
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-07-12'
 
 - name: project-nomad
   category: fork-wing
@@ -2296,6 +2449,7 @@
   held_fork: data-path-9/project-nomad
   copy_shelf: datasets
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: NetNexus
   category: fork-wing
@@ -2308,6 +2462,7 @@
   stars: 0
   held_fork: data-path-9/NetNexus
   verified: '2026-10-09'
+  held_fork_push: '2026-07-10'
 
 - name: ora-warden
   category: fork-wing
@@ -2319,6 +2474,7 @@
   stars: 3
   held_fork: data-path-9/ora-warden
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: AbletonPlus
   category: fork-wing
@@ -2330,6 +2486,7 @@
   stars: 0
   held_fork: data-path-9/AbletonPlus
   verified: '2026-10-09'
+  held_fork_push: '2026-07-09'
 
 - name: firecrawl-mcp-server
   category: fork-wing
@@ -2343,6 +2500,7 @@
   held_fork: data-path-9/firecrawl-mcp-server
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: claude-code-message-timestamps
   category: fork-wing
@@ -2356,6 +2514,7 @@
   held_fork: data-path-9/claude-code-message-timestamps
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-07-08'
 
 - name: projectmem
   category: fork-wing
@@ -2370,6 +2529,7 @@
   held_fork: data-path-9/projectmem
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: claude-seo
   category: fork-wing
@@ -2385,6 +2545,7 @@
   held_fork: data-path-9/claude-seo
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: voicebox
   category: fork-wing
@@ -2397,6 +2558,7 @@
   held_fork: data-path-9/voicebox
   copy_shelf: speech
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: citypulse
   category: fork-wing
@@ -2408,6 +2570,7 @@
   stars: 0
   held_fork: data-path-9/citypulse
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: ai-website-cloner-template
   category: fork-wing
@@ -2420,6 +2583,7 @@
   held_fork: data-path-9/ai-website-cloner-template
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: openviking-browser-extension
   category: fork-wing
@@ -2432,6 +2596,7 @@
   held_fork: data-path-9/openviking-browser-extension
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-07-03'
 
 - name: TOOL_Ext_Cursor_Hermes-Public
   category: fork-wing
@@ -2444,6 +2609,7 @@
   held_fork: data-path-9/TOOL_Ext_Cursor_Hermes-Public
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-06-30'
 
 - name: Acontext
   category: fork-wing
@@ -2456,6 +2622,7 @@
   held_fork: data-path-9/Acontext
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-06-30'
 
 - name: awesome-certificates
   category: fork-wing
@@ -2468,6 +2635,7 @@
   stars: 5823
   held_fork: data-path-9/awesome-certificates
   verified: '2026-10-09'
+  held_fork_push: '2026-06-30'
 
 - name: ace-step-ui
   category: fork-wing
@@ -2481,6 +2649,7 @@
   held_fork: data-path-9/ace-step-ui
   copy_shelf: speech
   verified: '2026-10-09'
+  held_fork_push: '2026-06-29'
 
 - name: hermes-control-interface
   category: fork-wing
@@ -2495,6 +2664,7 @@
   held_fork: data-path-9/hermes-control-interface
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-06-28'
 
 - name: Anthropic-Cybersecurity-Skills
   category: fork-wing
@@ -2510,6 +2680,7 @@
   held_fork: data-path-9/Anthropic-Cybersecurity-Skills
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: collab-public
   category: fork-wing
@@ -2522,6 +2693,7 @@
   held_fork: data-path-9/collab-public
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-06-25'
 
 - name: stock-market-signal-automation
   category: fork-wing
@@ -2535,6 +2707,7 @@
   held_fork: data-path-9/stock-market-signal-automation
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: vibecode-pro-max-kit
   category: fork-wing
@@ -2550,6 +2723,7 @@
   held_fork: data-path-9/vibecode-pro-max-kit
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-06-21'
 
 - name: awesome-nvidia-nim
   category: fork-wing
@@ -2563,6 +2737,7 @@
   held_fork: data-path-9/awesome-nvidia-nim
   copy_shelf: local-inference
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: lollms-webui
   category: fork-wing
@@ -2575,6 +2750,7 @@
   held_fork: data-path-9/lollms-webui
   copy_shelf: local-inference
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: OBLITERATUS
   category: fork-wing
@@ -2587,6 +2763,7 @@
   held_fork: data-path-9/OBLITERATUS
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: AI-Research-SKILLs
   category: fork-wing
@@ -2601,6 +2778,7 @@
   held_fork: data-path-9/AI-Research-SKILLs
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-06-16'
 
 - name: token-saver
   category: fork-wing
@@ -2614,6 +2792,7 @@
   held_fork: data-path-9/token-saver
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-06-10'
 
 - name: sessionat
   category: fork-wing
@@ -2628,6 +2807,7 @@
   held_fork: data-path-9/sessionat
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-06-05'
 
 - name: system-design-notes
   category: fork-wing
@@ -2639,6 +2819,7 @@
   stars: 25519
   held_fork: data-path-9/system-design-notes
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: Viper
   category: fork-wing
@@ -2650,6 +2831,7 @@
   stars: 5322
   held_fork: data-path-9/Viper
   verified: '2026-10-09'
+  held_fork_push: '2026-05-31'
 
 - name: claude-obsidian
   category: fork-wing
@@ -2665,6 +2847,7 @@
   held_fork: data-path-9/claude-obsidian
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: LongCat-Video
   category: fork-wing
@@ -2677,6 +2860,7 @@
   held_fork: data-path-9/LongCat-Video
   copy_shelf: text-to-image
   verified: '2026-10-09'
+  held_fork_push: '2026-05-27'
 
 - name: hermes-time_perception-extension
   category: fork-wing
@@ -2690,6 +2874,7 @@
   held_fork: data-path-9/hermes-time_perception-extension
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-05-27'
 
 - name: lollms_personalities_zoo
   category: fork-wing
@@ -2702,6 +2887,7 @@
   held_fork: data-path-9/lollms_personalities_zoo
   copy_shelf: local-inference
   verified: '2026-10-09'
+  held_fork_push: '2026-05-26'
 
 - name: linux-sysadmin-skills
   category: fork-wing
@@ -2714,6 +2900,7 @@
   stars: 6
   held_fork: data-path-9/linux-sysadmin-skills
   verified: '2026-10-09'
+  held_fork_push: '2026-05-25'
 
 - name: Claude-Code-Game-Studios
   category: fork-wing
@@ -2726,6 +2913,7 @@
   stars: 26009
   held_fork: data-path-9/Claude-Code-Game-Studios
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: claude-skills
   category: fork-wing
@@ -2739,6 +2927,7 @@
   held_fork: data-path-9/claude-skills
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: hermes-agent-control-room
   category: fork-wing
@@ -2752,6 +2941,7 @@
   held_fork: data-path-9/hermes-agent-control-room
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-05-16'
 
 - name: image-blaster
   category: fork-wing
@@ -2764,6 +2954,7 @@
   held_fork: data-path-9/image-blaster
   copy_shelf: text-to-image
   verified: '2026-10-09'
+  held_fork_push: '2026-05-15'
 
 - name: Deep-Research-skills
   category: fork-wing
@@ -2777,6 +2968,7 @@
   held_fork: data-path-9/Deep-Research-skills
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: VisionClaw
   category: fork-wing
@@ -2790,6 +2982,7 @@
   held_fork: data-path-9/VisionClaw
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: devmemory-ai
   category: fork-wing
@@ -2802,6 +2995,7 @@
   held_fork: data-path-9/devmemory-ai
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-05-04'
 
 - name: AI-ML-Roadmap-from-scratch
   category: fork-wing
@@ -2815,6 +3009,7 @@
   stars: 4229
   held_fork: data-path-9/AI-ML-Roadmap-from-scratch
   verified: '2026-10-09'
+  held_fork_push: '2026-10-10'
 
 - name: lollms_hub
   category: fork-wing
@@ -2827,6 +3022,7 @@
   held_fork: data-path-9/lollms_hub
   copy_shelf: local-inference
   verified: '2026-10-09'
+  held_fork_push: '2026-04-23'
 
 - name: Kronos
   category: fork-wing
@@ -2839,6 +3035,7 @@
   held_fork: data-path-9/Kronos
   copy_shelf: fine-tuning
   verified: '2026-10-09'
+  held_fork_push: '2026-04-13'
 
 - name: CLIP
   category: fork-wing
@@ -2866,6 +3063,7 @@
   held_fork: data-path-9/hermes-facebook-skill
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-03-23'
 
 - name: stop-slop
   category: fork-wing
@@ -2878,6 +3076,7 @@
   held_fork: data-path-9/stop-slop
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-03-17'
 
 - name: context-engineering-intro
   category: fork-wing
@@ -2892,6 +3091,7 @@
   held_fork: data-path-9/context-engineering-intro
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-03-16'
 
 - name: Star-Office-UI
   category: fork-wing
@@ -2906,6 +3106,7 @@
   held_fork: data-path-9/Star-Office-UI
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-03-11'
 
 - name: stable-diffusion-webui
   category: fork-wing
@@ -2930,6 +3131,7 @@
   held_fork: data-path-9/prompt-eng-interactive-tutorial
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-03-01'
 
 - name: secure-askpass
   category: fork-wing
@@ -2941,6 +3143,7 @@
   stars: 28
   held_fork: data-path-9/secure-askpass
   verified: '2026-10-09'
+  held_fork_push: '2026-02-01'
 
 - name: ai-data-science-team
   category: fork-wing
@@ -2954,6 +3157,7 @@
   held_fork: data-path-9/ai-data-science-team
   copy_shelf: chat-agents
   verified: '2026-10-09'
+  held_fork_push: '2026-01-28'
 
 - name: sora-json-prompt-crafter
   category: fork-wing
@@ -2966,6 +3170,7 @@
   held_fork: data-path-9/sora-json-prompt-crafter
   copy_shelf: text-to-image
   verified: '2026-10-09'
+  held_fork_push: '2026-01-22'
 
 - name: LollmsEnv
   category: fork-wing
@@ -2978,6 +3183,7 @@
   held_fork: data-path-9/LollmsEnv
   copy_shelf: local-inference
   verified: '2026-10-09'
+  held_fork_push: '2026-01-13'
 
 - name: models_zoo
   category: fork-wing
@@ -2991,6 +3197,7 @@
   held_fork: data-path-9/models_zoo
   copy_shelf: local-inference
   verified: '2026-10-09'
+  held_fork_push: '2025-10-30'
 
 - name: lollms_bindings_zoo
   category: fork-wing
@@ -3003,6 +3210,7 @@
   held_fork: data-path-9/lollms_bindings_zoo
   copy_shelf: local-inference
   verified: '2026-10-09'
+  held_fork_push: '2025-10-30'
 
 - name: lollms_mcps_zoo
   category: fork-wing
@@ -3015,6 +3223,7 @@
   held_fork: data-path-9/lollms_mcps_zoo
   copy_shelf: local-inference
   verified: '2026-10-09'
+  held_fork_push: '2025-10-26'
 
 - name: Arch-Store
   category: fork-wing
@@ -3027,6 +3236,7 @@
   stars: 79
   held_fork: data-path-9/Arch-Store
   verified: '2026-10-09'
+  held_fork_push: '2025-10-16'
 
 - name: us-legal-tools
   category: fork-wing
@@ -3038,6 +3248,7 @@
   stars: 16
   held_fork: data-path-9/us-legal-tools
   verified: '2026-10-09'
+  held_fork_push: '2025-08-06'
 
 - name: A-Curated-List-of-ML-System-Design-Case-Studies
   category: fork-wing
@@ -3051,6 +3262,7 @@
   stars: 11013
   held_fork: data-path-9/A-Curated-List-of-ML-System-Design-Case-Studies
   verified: '2026-10-09'
+  held_fork_push: '2025-08-05'
 
 - name: matrix
   category: fork-wing
@@ -3062,6 +3274,7 @@
   stars: 3855
   held_fork: data-path-9/matrix
   verified: '2026-10-09'
+  held_fork_push: '2025-06-23'
 
 - name: lollms_services_zoo
   category: fork-wing
@@ -3074,6 +3287,7 @@
   held_fork: data-path-9/lollms_services_zoo
   copy_shelf: local-inference
   verified: '2026-10-09'
+  held_fork_push: '2025-06-06'
 
 - name: lollms_functions_zoo
   category: fork-wing
@@ -3086,6 +3300,7 @@
   held_fork: data-path-9/lollms_functions_zoo
   copy_shelf: local-inference
   verified: '2026-10-09'
+  held_fork_push: '2025-06-02'
 
 - name: ROCm-For-RX580
   category: fork-wing
@@ -3099,6 +3314,7 @@
   held_fork: data-path-9/ROCm-For-RX580
   copy_shelf: local-inference
   verified: '2026-10-09'
+  held_fork_push: '2025-05-20'
 
 - name: LoLLMsVectorDB
   category: fork-wing
@@ -3113,6 +3329,7 @@
   held_fork: data-path-9/LoLLMsVectorDB
   copy_shelf: local-inference
   verified: '2026-10-09'
+  held_fork_push: '2025-04-25'
 
 - name: OpenVoice
   category: fork-wing
@@ -3125,6 +3342,7 @@
   held_fork: data-path-9/OpenVoice
   copy_shelf: speech
   verified: '2026-10-09'
+  held_fork_push: '2025-04-19'
 
 - name: lollms_nodes_suite
   category: fork-wing
@@ -3137,6 +3355,7 @@
   held_fork: data-path-9/lollms_nodes_suite
   copy_shelf: local-inference
   verified: '2026-10-09'
+  held_fork_push: '2025-03-12'
 
 - name: LollmsROSGateway
   category: fork-wing
@@ -3150,6 +3369,7 @@
   held_fork: data-path-9/LollmsROSGateway
   copy_shelf: local-inference
   verified: '2026-10-09'
+  held_fork_push: '2024-08-07'
 
 - name: lollms_extensions_zoo
   category: fork-wing
@@ -3162,6 +3382,7 @@
   held_fork: data-path-9/lollms_extensions_zoo
   copy_shelf: local-inference
   verified: '2026-10-09'
+  held_fork_push: '2024-07-17'
 
 - name: stable-diffusion
   category: fork-wing
@@ -3186,6 +3407,7 @@
   held_fork: data-path-9/lollms_proxy_server
   copy_shelf: local-inference
   verified: '2026-10-09'
+  held_fork_push: '2024-03-12'
 
 - name: lollms-for-vscode
   category: fork-wing
@@ -3198,6 +3420,7 @@
   held_fork: data-path-9/lollms-for-vscode
   copy_shelf: local-inference
   verified: '2026-10-09'
+  held_fork_push: '2024-02-09'
 
 - name: lollms_server_proxy
   category: fork-wing
@@ -3210,6 +3433,7 @@
   held_fork: data-path-9/lollms_server_proxy
   copy_shelf: local-inference
   verified: '2026-10-09'
+  held_fork_push: '2024-02-06'
 
 - name: lollms_image_gen_zoo
   category: fork-wing
@@ -3222,6 +3446,7 @@
   held_fork: data-path-9/lollms_image_gen_zoo
   copy_shelf: local-inference
   verified: '2026-10-09'
+  held_fork_push: '2023-11-12'
 
 - name: chromium-latest-linux
   category: fork-wing
@@ -3234,6 +3459,7 @@
   stars: 832
   held_fork: data-path-9/chromium-latest-linux
   verified: '2026-10-09'
+  held_fork_push: '2023-08-22'
 
 - name: amdvbflash
   category: fork-wing
@@ -3245,6 +3471,7 @@
   stars: 105
   held_fork: data-path-9/amdvbflash
   verified: '2026-10-09'
+  held_fork_push: '2020-12-29'
 
 - name: books3
   category: saved-from-the-fire
