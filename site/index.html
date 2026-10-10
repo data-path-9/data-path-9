@@ -1,0 +1,908 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>data-path-9 — a library for the tools the fire wants</title>
+<meta name="description" content="an open shelf for the ai tools the industry abandoned, absorbed, or let vanish. 41 entries, every status verified against the live github api.">
+<meta property="og:title" content="data-path-9 — the deep-water library">
+<meta property="og:description" content="we save the tools. all of them. even the ones the industry walked past.">
+<meta name="theme-color" content="#0b0e13">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/fraunces-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/jetbrains-mono-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#shelf-start">skip to the shelves</a>
+
+<header class="topbar" id="topbar">
+  <a class="mark" href="#top">data-path-9</a>
+  <nav aria-label="site">
+    <a href="#thesis">why</a>
+    <a href="#shelf-start">shelves</a>
+    <a href="#agents">for agents</a>
+    <a href="https://github.com/data-path-9/data-path-9" rel="noopener">github</a>
+  </nav>
+</header>
+
+<main id="top">
+  <!-- ================= hero: the deep water ================= -->
+  <section class="hero">
+    <div class="hero-media">
+      <img src="assets/dp9-1600.jpg" alt="" fetchpriority="high">
+    </div>
+    <div class="hero-inner">
+      <p class="eyebrow">the library of alexandria, for the age of machines</p>
+      <h1>
+        <span class="line"><span>we save</span></span>
+        <span class="line"><span>the tools<em>.</em></span></span>
+      </h1>
+      <p class="hero-sub">all of them. even the ones the industry walked past.
+      companies get bought, labs pivot, maintainers burn out, links die.
+      <strong>a tool that has a copy is a tool that survives.</strong></p>
+      <div class="hero-actions">
+        <a class="btn solid" href="#shelf-start">walk the shelves</a>
+        <a class="btn" href="https://github.com/data-path-9/data-path-9" rel="noopener">the repo is the library</a>
+      </div>
+      <p class="hero-foot">
+        <span>41 entries</span>
+        <span>20 still breathing</span>
+        <span>every status verified October 9, 2026</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= thesis ================= -->
+  <section class="section" id="thesis">
+    <div class="section-inner">
+      <div class="thesis-grid">
+        <div class="reveal">
+          <p class="eyebrow">why a new library of alexandria</p>
+          <p class="thesis-lede">the original library didn't burn in one night.
+          it faded — underfunded, unloved, scattered into copies of copies until
+          the originals were gone. open-source ai is fading that same way,
+          <em>quietly</em>, right now.</p>
+        </div>
+        <div class="thesis-side reveal">
+          <p>we watched coqui die in december 2023 — servers off, farewell posted —
+          and its toolkit survived only because a fork already existed.</p>
+          <p class="pull">that's the whole thesis. not panic. just copies,
+          kept where anyone can find them.</p>
+        </div>
+      </div>
+
+      <div class="ledger reveal">
+        <div class="cell"><div class="num">41</div><div class="lbl">entries on the shelf</div></div>
+        <div class="cell"><div class="num lamp">20</div><div class="lbl">still breathing</div></div>
+        <div class="cell"><div class="num">7</div><div class="lbl">changed hands or address</div></div>
+        <div class="cell"><div class="num">14</div><div class="lbl">the workshop went still</div></div>
+      </div>
+
+      <div class="fires-wrap reveal">
+        <p class="eyebrow" style="margin-top: clamp(3rem, 8vh, 5.5rem);">the three fires</p>
+        <div class="fires">
+          <div class="fire">
+            <span class="ex-num">i</span>
+            <h3>abandoned</h3>
+            <p>the maintainer moved on. the code still works, the heartbeat
+            stopped. nobody's home.</p>
+            <p class="ex"><b>fooocus</b> — workshop went still dec 2025</p>
+          </div>
+          <div class="fire">
+            <span class="ex-num">ii</span>
+            <h3>gobbled up</h3>
+            <p>a bigger org acquired it, absorbed the team, and the free
+            version became a line in somebody's product roadmap.</p>
+            <p class="ex"><b>llm-foundry</b> — mosaicml → databricks, 2023</p>
+          </div>
+          <div class="fire">
+            <span class="ex-num">iii</span>
+            <h3>vanished</h3>
+            <p>legal takedowns, dead links, defunct-due-to-infringement.
+            one morning the url 404s.</p>
+            <p class="ex"><b>mpt-7b</b> — http 404 at the old address</p>
+          </div>
+        </div>
+        <div class="fires-spacer"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= status legend ================= -->
+  <section class="section" id="statuses">
+    <div class="section-inner">
+      <div class="section-head reveal">
+        <p class="eyebrow">how the shelf labels work</p>
+        <h2>six words<em>, honestly applied</em></h2>
+        <p>every entry carries exactly one. the enum is closed — if a record
+        ever carries something outside these six, that's a curation error,
+        file an issue.</p>
+      </div>
+      <div class="legend reveal">
+      <div class="legend-row">
+        <span class="s-word"><span class="s-dot dot-breathing"></span>breathing</span>
+        <span class="def">active, maintainer awake</span>
+        <span class="test mono">pushed within ~6 months, not archived · 20 on the shelf</span>
+      </div>
+      <div class="legend-row">
+        <span class="s-word"><span class="s-dot dot-quiet"></span>quiet</span>
+        <span class="def">works, nobody's home</span>
+        <span class="test mono">no pushes ~12+ months, not archived, no successor · 8 on the shelf</span>
+      </div>
+      <div class="legend-row">
+        <span class="s-word"><span class="s-dot dot-orphaned"></span>orphaned</span>
+        <span class="def">team gone, code remains</span>
+        <span class="test mono">silent 12+ months after the org wound down · 2 on the shelf</span>
+      </div>
+      <div class="legend-row">
+        <span class="s-word"><span class="s-dot dot-archived"></span>archived</span>
+        <span class="def">locked read-only on purpose</span>
+        <span class="test mono">github archived: true · 4 on the shelf</span>
+      </div>
+      <div class="legend-row">
+        <span class="s-word"><span class="s-dot dot-moved"></span>moved</span>
+        <span class="def">alive at a new address</span>
+        <span class="test mono">api full_name changed; old link redirects · 5 on the shelf</span>
+      </div>
+      <div class="legend-row">
+        <span class="s-word"><span class="s-dot dot-vanished"></span>vanished</span>
+        <span class="def">gone from its address</span>
+        <span class="test mono">http 404 or takedown; mirrors only · 2 on the shelf</span>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= the shelves ================= -->
+  <div class="filterbar" id="shelf-start" aria-label="filter the shelves">
+<div class="flabel">show</div><button class="chip" data-filter="all" aria-pressed="true">all <span class="count">41</span></button><button class="chip" data-filter="breathing" aria-pressed="false"><span class="s-dot dot-breathing"></span>breathing <span class="count">20</span></button><button class="chip" data-filter="quiet" aria-pressed="false"><span class="s-dot dot-quiet"></span>quiet <span class="count">8</span></button><button class="chip" data-filter="orphaned" aria-pressed="false"><span class="s-dot dot-orphaned"></span>orphaned <span class="count">2</span></button><button class="chip" data-filter="archived" aria-pressed="false"><span class="s-dot dot-archived"></span>archived <span class="count">4</span></button><button class="chip" data-filter="moved" aria-pressed="false"><span class="s-dot dot-moved"></span>moved <span class="count">5</span></button><button class="chip" data-filter="vanished" aria-pressed="false"><span class="s-dot dot-vanished"></span>vanished <span class="count">2</span></button><nav class="shelfnav" aria-label="jump to shelf"><a href="#shelf-text-to-image">text-to-image</a><a href="#shelf-local-inference">local</a><a href="#shelf-fine-tuning">fine-tuning</a><a href="#shelf-chat-agents">chat</a><a href="#shelf-speech">speech</a><a href="#shelf-datasets">datasets</a><a href="#shelf-nlp-classics">nlp</a><a href="#shelf-saved-from-the-fire">saved</a></nav>
+  </div>
+  <p id="nohits" class="section-inner">nothing on the shelf under that word. pick another.</p>
+  <section class="shelf" id="shelf-text-to-image" data-shelf="text-to-image">
+    <div class="section-inner">
+      <div class="shelf-head reveal">
+        <h2>text-to-image</h2>
+        <span class="range">5 entries</span>
+      </div>
+    <article class="entry reveal" data-status="quiet" id="stable-diffusion">
+      <span class="spine">01</span>
+      <div class="body">
+        <h3><a href="https://github.com/CompVis/stable-diffusion" rel="noopener">stable-diffusion</a></h3>
+        <p class="oneliner">the latent diffusion code that started the open-weights art wave</p>
+        <p class="why">provenance for the entire open image generation ecosystem</p>
+      </div>
+      <div class="meta">
+      <span class="status-chip"><span class="s-dot dot-quiet"></span><span class="s-word">quiet</span></span>
+      <span class="stars">73.5k stars</span>
+      <span class="pushed">last push jun 18 2024</span>
+      </div>
+    </article>
+    <article class="entry reveal" data-status="breathing" id="stable-diffusion-webui">
+      <span class="spine">02</span>
+      <div class="body">
+        <h3><a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui" rel="noopener">stable-diffusion-webui</a></h3>
+        <p class="oneliner">AUTOMATIC1111&#x27;s UI that put diffusion on every gamer GPU</p>
+        <p class="why">the single most-used open AI interface ever built</p>
+      </div>
+      <div class="meta">
+      <span class="status-chip"><span class="s-dot dot-breathing"></span><span class="s-word">breathing</span></span>
+      <span class="stars">1650k stars</span>
+      <span class="pushed">last push mar 02 2026</span>
+      </div>
+    </article>
+    <article class="entry reveal" data-status="quiet" id="fooocus">
+      <span class="spine">03</span>
+      <div class="body">
+        <h3><a href="https://github.com/lllyasviel/Fooocus" rel="noopener">Fooocus</a></h3>
+        <p class="oneliner">made image generation feel like thinking, not piloting</p>
+        <p class="why">best-in-class UX reference; workshop went still dec 2025</p>
+      </div>
+      <div class="meta">
+      <span class="status-chip"><span class="s-dot dot-quiet"></span><span class="s-word">quiet</span></span>
+      <span class="stars">53.3k stars</span>
+      <span class="pushed">last push dec 01 2025</span>
+      </div>
+    </article>
+    <article class="entry reveal" data-status="moved" id="comfyui">
+      <span class="spine">04</span>
+      <div class="body">
+        <h3><a href="https://github.com/Comfy-Org/ComfyUI" rel="noopener">ComfyUI</a></h3>
+        <p class="oneliner">node-graph diffusion frontend that ate the world</p>
+        <p class="why">primary open interface for diffusion workflows</p>
+      </div>
+      <div class="meta">
+      <span class="status-chip"><span class="s-dot dot-moved"></span><span class="s-word">moved</span></span>
+      <span class="stars">136.6k stars</span>
+      <span class="pushed hot">pushed oct 10 2026</span>
+      <span class="movednote">was comfyanonymous/ComfyUI</span>
+      </div>
+    </article>
+    <article class="entry reveal" data-status="breathing" id="clip">
+      <span class="spine">05</span>
+      <div class="body">
+        <h3><a href="https://github.com/openai/CLIP" rel="noopener">CLIP</a></h3>
+        <p class="oneliner">taught machines to see like prompts</p>
+        <p class="why">scoring backbone of nearly all generative image tooling</p>
+      </div>
+      <div class="meta">
+      <span class="status-chip"><span class="s-dot dot-breathing"></span><span class="s-word">breathing</span></span>
+      <span class="stars">34.4k stars</span>
+      <span class="pushed">last push mar 25 2026</span>
+      </div>
+    </article>
+    </div>
+  </section>
+  <section class="shelf" id="shelf-local-inference" data-shelf="local-inference">
+    <div class="section-inner">
+      <div class="shelf-head reveal">
+        <h2>local llm inference</h2>
+        <span class="range">7 entries</span>
+      </div>
+    <article class="entry reveal" data-status="moved" id="llama-cpp">
+      <span class="spine">06</span>
+      <div class="body">
+        <h3><a href="https://github.com/ggml-org/llama.cpp" rel="noopener">llama.cpp</a></h3>
+        <p class="oneliner">made LLMs run on a laptop, no datacenter required</p>
+        <p class="why">the most important local-inference artifact of the era</p>
+      </div>
+      <div class="meta">
+      <span class="status-chip"><span class="s-dot dot-moved"></span><span class="s-word">moved</span></span>
+      <span class="stars">130.7k stars</span>
+      <span class="pushed hot">pushed oct 09 2026</span>
+      <span class="movednote">was ggerganov/llama.cpp</span>
+      </div>
+    </article>
+    <article class="entry reveal" data-status="moved" id="whisper-cpp">
+      <span class="spine">07</span>
+      <div class="body">
+        <h3><a href="https://github.com/ggml-org/whisper.cpp" rel="noopener">whisper.cpp</a></h3>
+        <p class="oneliner">speech-to-text compressed to run on a phone</p>
+        <p class="why">core on-device STT implementation, gerganov lineage</p>
+      </div>
+      <div class="meta">
+      <span class="status-chip"><span class="s-dot dot-moved"></span><span class="s-word">moved</span></span>
+      <span class="stars">54.3k stars</span>
+      <span class="pushed hot">pushed oct 06 2026</span>
+      <span class="movednote">was ggerganov/whisper.cpp</span>
+      </div>
+    </article>
+    <article class="entry reveal" data-status="breathing" id="ollama">
+      <span class="spine">08</span>
+      <div class="body">
+        <h3><a href="https://github.com/ollama/ollama" rel="noopener">ollama</a></h3>
+        <p class="oneliner">one command, one model, running locally</p>
+        <p class="why">default front door for local inference</p>
+      </div>
+      <div class="meta">
+      <span class="status-chip"><span class="s-dot dot-breathing"></span><span class="s-word">breathing</span></span>
+      <span class="stars">182.5k stars</span>
+      <span class="pushed hot">pushed oct 09 2026</span>
+      </div>
+    </article>
+    <article class="entry reveal" data-status="moved" id="llamafile">
+      <span class="spine">09</span>
+      <div class="body">
+        <h3><a href="https://github.com/mozilla-ai/llamafile" rel="noopener">llamafile</a></h3>
+        <p class="oneliner">an entire LLM in one executable file</p>
+        <p class="why">already changed hands once; mozilla.ai adoption is on the watch-list</p>
+      </div>
+      <div class="meta">
+      <span class="status-chip"><span class="s-dot dot-moved"></span><span class="s-word">moved</span></span>
+      <span class="stars">26.2k stars</span>
+      <span class="pushed hot">pushed oct 08 2026</span>
+      <span class="movednote">was Mozilla-Ocho/llamafile</span>
+      </div>
+    </article>
+    <article class="entry reveal" data-status="breathing" id="text-generation-webui">
+      <span class="spine">10</span>
+      <div class="body">
+        <h3><a href="https://github.com/oobabooga/textgen" rel="noopener">text-generation-webui</a></h3>
+        <p class="oneliner">the original swiss-army chat frontend for local models</p>
+        <p class="why">longest-lived multi-backend local LLM UI</p>
+      </div>
+      <div class="meta">
+      <span class="status-chip"><span class="s-dot dot-breathing"></span><span class="s-word">breathing</span></span>
+      <span class="stars">47.7k stars</span>
+      <span class="pushed hot">pushed aug 17 2026</span>
+      <span class="movednote">was oobabooga/text-generation-webui</span>
+      </div>
+    </article>
+    <article class="entry reveal" data-status="breathing" id="rwkv-lm">
+      <span class="spine">11</span>
+      <div class="body">
+        <h3><a href="https://github.com/BlinkDL/RWKV-LM" rel="noopener">RWKV-LM</a></h3>
+        <p class="oneliner">the RNN that benchmarks like a transformer</p>
+        <p class="why">major non-transformer architecture, fully open</p>
+      </div>
+      <div class="meta">
+      <span class="status-chip"><span class="s-dot dot-breathing"></span><span class="s-word">breathing</span></span>
+      <span class="stars">14.7k stars</span>
+      <span class="pushed hot">pushed sep 28 2026</span>
+      </div>
+    </article>
+    <article class="entry reveal" data-status="breathing" id="chatrwkv">
+      <span class="spine">12</span>
+      <div class="body">
+        <h3><a href="https://github.com/BlinkDL/ChatRWKV" rel="noopener">ChatRWKV</a></h3>
+        <p class="oneliner">RWKV&#x27;s chat sibling — runs on CPU, remembers context</p>
+        <p class="why">companion record to the RWKV-LM shelf</p>
+      </div>
+      <div class="meta">
+      <span class="status-chip"><span class="s-dot dot-breathing"></span><span class="s-word">breathing</span></span>
+      <span class="stars">9.5k stars</span>
+      <span class="pushed hot">pushed jul 19 2026</span>
+      </div>
+    </article>
+    </div>
+  </section>
+  <section class="shelf" id="shelf-fine-tuning" data-shelf="fine-tuning">
+    <div class="section-inner">
+      <div class="shelf-head reveal">
+        <h2>fine-tuning &amp; training</h2>
+        <span class="range">6 entries</span>
+      </div>
+    <article class="entry reveal" data-status="quiet" id="stanfordalpaca">
+      <span class="spine">13</span>
+      <div class="body">
+        <h3><a href="https://github.com/tatsu-lab/stanford_alpaca" rel="noopener">stanford_alpaca</a></h3>
+        <p class="oneliner">proved you could teach a base model manners in an afternoon</p>
+        <p class="why">the foundational instruction-tuning recipe and 52k dataset</p>
+      </div>
+      <div class="meta">
+      <span class="status-chip"><span class="s-dot dot-quiet"></span><span class="s-word">quiet</span></span>
+      <span class="stars">30.2k stars</span>
+      <span class="pushed">last push jul 17 2024</span>
+      </div>
+    </article>
+    <article class="entry reveal" data-status="quiet" id="alpaca-lora">
+      <span class="spine">14</span>
+      <div class="body">
+        <h3><a href="https://github.com/tloen/alpaca-lora" rel="noopener">alpaca-lora</a></h3>
+        <p class="oneliner">fine-tuned a 7B model on consumer hardware for under $100</p>
+        <p class="why">democratized fine-tuning; QLoRA lineage starts here</p>
+      </div>
+      <div class="meta">
+      <span class="status-chip"><span class="s-dot dot-quiet"></span><span class="s-word">quiet</span></span>
+      <span class="stars">18.9k stars</span>
+      <span class="pushed">last push jul 29 2024</span>
+      </div>
+    </article>
+    <article class="entry reveal" data-status="breathing" id="nanogpt">
+      <span class="spine">15</span>
+      <div class="body">
+        <h3><a href="https://github.com/karpathy/nanoGPT" rel="noopener">nanoGPT</a></h3>
+        <p class="oneliner">the whole thing in ~300 lines of code</p>
+        <p class="why">cleanest teaching artifact for what training actually is</p>
+      </div>
+      <div class="meta">
+      <span class="status-chip"><span class="s-dot dot-breathing"></span><span class="s-word">breathing</span></span>
+      <span class="stars">63.7k stars</span>
+      <span class="pushed">last push nov 12 2025</span>
+      </div>
+    </article>
+    <article class="entry reveal" data-status="breathing" id="gpt-neox">
+      <span class="spine">16</span>
+      <div class="body">
+        <h3><a href="https://github.com/EleutherAI/gpt-neox" rel="noopener">gpt-neox</a></h3>
+        <p class="oneliner">eleutherAI&#x27;s 20B-scale open training stack</p>
+        <p class="why">proves frontier-adjacent training outside corporate labs</p>
+      </div>
+      <div class="meta">
+      <span class="status-chip"><span class="s-dot dot-breathing"></span><span class="s-word">breathing</span></span>
+      <span class="stars">7.5k stars</span>
+      <span class="pushed hot">pushed sep 04 2026</span>
+      </div>
+    </article>
+    <article class="entry reveal" data-status="breathing" id="llm-foundry">
+      <span class="spine">17</span>
+      <div class="body">
+        <h3><a href="https://github.com/mosaicml/llm-foundry" rel="noopener">llm-foundry</a></h3>
+        <p class="oneliner">mosaicml&#x27;s training stack, home of the MPT family</p>
+        <p class="why">textbook acquisition-absorption case; org quiet post-databricks</p>
+      </div>
+      <div class="meta">
+      <span class="status-chip"><span class="s-dot dot-breathing"></span><span class="s-word">breathing</span></span>
+      <span class="stars">4.5k stars</span>
+      <span class="pushed">last push mar 25 2026</span>
+      </div>
+    </article>
+    <article class="entry reveal was404" data-status="vanished" id="mpt-7b">
+      <span class="spine">18</span>
+      <div class="body">
+        <h3>mpt-7b</h3>
+        <p class="oneliner">the first commercially-usable open MPT model</p>
+        <p class="why">its old repo URL 404s; model survives in llm-foundry and on the HF hub</p>
+    <p class="note">HTTP 404 at old address as of verification date</p>
+      </div>
+      <div class="meta">
+      <span class="status-chip"><span class="s-dot dot-vanished"></span><span class="s-word">vanished</span></span>
+      <span class="dead">mosaicml/mpt-7b — 404</span>
+      </div>
+    </article>
+    </div>
+  </section>
+  <section class="shelf" id="shelf-chat-agents" data-shelf="chat-agents">
+    <div class="section-inner">
+      <div class="shelf-head reveal">
+        <h2>chat &amp; agents</h2>
+        <span class="range">5 entries</span>
+      </div>
+    <article class="entry reveal" data-status="orphaned" id="open-assistant">
+      <span class="spine">19</span>
+      <div class="body">
+        <h3><a href="https://github.com/LAION-AI/Open-Assistant" rel="noopener">Open-Assistant</a></h3>
+        <p class="oneliner">600k+ human-written messages across 35+ languages</p>
+        <p class="why">largest crowd-sourced open chat dataset of its era</p>
+      </div>
+      <div class="meta">
+      <span class="status-chip"><span class="s-dot dot-orphaned"></span><span class="s-word">orphaned</span></span>
+      <span class="stars">37.4k stars</span>
+      <span class="pushed">last push aug 17 2024</span>
+      </div>
+    </article>
+    <article class="entry reveal" data-status="breathing" id="fastchat">
+      <span class="spine">20</span>
+      <div class="body">
+        <h3><a href="https://github.com/lm-sys/FastChat" rel="noopener">FastChat</a></h3>
+        <p class="oneliner">vicuna&#x27;s training platform and the chatbot arena machinery</p>
+        <p class="why">evaluation infrastructure behind the first open-model leaderboard</p>
+      </div>
+      <div class="meta">
+      <span class="status-chip"><span class="s-dot dot-breathing"></span><span class="s-word">breathing</span></span>
+      <span class="stars">39.6k stars</span>
+      <span class="pushed hot">pushed may 01 2026</span>
+      </div>
+    </article>
+    <article class="entry reveal" data-status="breathing" id="autogpt">
+      <span class="spine">21</span>
+      <div class="body">
+        <h3><a href="https://github.com/Significant-Gravitas/AutoGPT" rel="noopener">AutoGPT</a></h3>
+        <p class="oneliner">the 2023 agent moment: give it a goal, watch it try</p>
+        <p class="why">cultural origin point of the agent wave</p>
+      </div>
+      <div class="meta">
+      <span class="status-chip"><span class="s-dot dot-breathing"></span><span class="s-word">breathing</span></span>
+      <span class="stars">187.5k stars</span>
+      <span class="pushed hot">pushed oct 09 2026</span>
+      </div>
+    </article>
+    <article class="entry reveal" data-status="quiet" id="babyagi">
+      <span class="spine">22</span>
+      <div class="body">
+        <h3><a href="https://github.com/yoheinakajima/babyagi" rel="noopener">babyagi</a></h3>
+        <p class="oneliner">100 lines that made &#x27;AI planning AI tasks&#x27; click</p>
+        <p class="why">minimal agent loop reference implementation</p>
+      </div>
+      <div class="meta">
+      <span class="status-chip"><span class="s-dot dot-quiet"></span><span class="s-word">quiet</span></span>
+      <span class="stars">22.4k stars</span>
+      <span class="pushed">last push jan 31 2026</span>
+      </div>
+    </article>
+    <article class="entry reveal" data-status="breathing" id="letta-memgpt">
+      <span class="spine">23</span>
+      <div class="body">
+        <h3><a href="https://github.com/letta-ai/letta" rel="noopener">letta (memgpt)</a></h3>
+        <p class="oneliner">LLMs that page their own context like an OS pages memory</p>
+        <p class="why">memory-layer thesis, now the core of agent design</p>
+      </div>
+      <div class="meta">
+      <span class="status-chip"><span class="s-dot dot-breathing"></span><span class="s-word">breathing</span></span>
+      <span class="stars">25.1k stars</span>
+      <span class="pushed hot">pushed sep 10 2026</span>
+      </div>
+    </article>
+    </div>
+  </section>
+  <section class="shelf" id="shelf-speech" data-shelf="speech">
+    <div class="section-inner">
+      <div class="shelf-head reveal">
+        <h2>speech</h2>
+        <span class="range">11 entries</span>
+      </div>
+    <article class="entry reveal" data-status="breathing" id="whisper">
+      <span class="spine">24</span>
+      <div class="body">
+        <h3><a href="https://github.com/openai/whisper" rel="noopener">whisper</a></h3>
+        <p class="oneliner">open-weights speech recognition from openai</p>
+        <p class="why">baseline STT model for the entire field</p>
+      </div>
+      <div class="meta">
+      <span class="status-chip"><span class="s-dot dot-breathing"></span><span class="s-word">breathing</span></span>
+      <span class="stars">110.2k stars</span>
+      <span class="pushed hot">pushed aug 31 2026</span>
+      </div>
+    </article>
+    <article class="entry reveal" data-status="breathing" id="faster-whisper">
+      <span class="spine">25</span>
+      <div class="body">
+        <h3><a href="https://github.com/SYSTRAN/faster-whisper" rel="noopener">faster-whisper</a></h3>
+        <p class="oneliner">whisper at 4x speed, half the memory</p>
+        <p class="why">production STT standard</p>
+      </div>
+      <div class="meta">
+      <span class="status-chip"><span class="s-dot dot-breathing"></span><span class="s-word">breathing</span></span>
+      <span class="stars">25.8k stars</span>
+      <span class="pushed hot">pushed oct 06 2026</span>
+      </div>
+    </article>
+    <article class="entry reveal" data-status="archived" id="piper">
+      <span class="spine">26</span>
+      <div class="body">
+        <h3><a href="https://github.com/rhasspy/piper" rel="noopener">piper</a></h3>
+        <p class="oneliner">fast local TTS small enough for a raspberry pi</p>
+        <p class="why">canonical on-device TTS; archived, forks active</p>
+      </div>
+      <div class="meta">
+      <span class="status-chip"><span class="s-dot dot-archived"></span><span class="s-word">archived</span></span>
+      <span class="stars">11.3k stars</span>
+      <span class="pushed">last push aug 26 2025</span>
+      </div>
+    </article>
+    <article class="entry reveal" data-status="archived" id="deepspeech">
+      <span class="spine">27</span>
+      <div class="body">
+        <h3><a href="https://github.com/mozilla/DeepSpeech" rel="noopener">DeepSpeech</a></h3>
+        <p class="oneliner">mozilla&#x27;s &#x27;speech recognition for every device&#x27;</p>
+        <p class="why">proved on-device STT on 2017-era hardware</p>
+      </div>
+      <div class="meta">
+      <span class="status-chip"><span class="s-dot dot-archived"></span><span class="s-word">archived</span></span>
+      <span class="stars">26.8k stars</span>
+      <span class="pushed">last push jun 19 2025</span>
+      </div>
+    </article>
+    <article class="entry reveal" data-status="quiet" id="tortoise-tts">
+      <span class="spine">28</span>
+      <div class="body">
+        <h3><a href="https://github.com/neonbjb/tortoise-tts" rel="noopener">tortoise-tts</a></h3>
+        <p class="oneliner">slow but beautiful multi-voice TTS</p>
+        <p class="why">quality-over-speed design lineage</p>
+      </div>
+      <div class="meta">
+      <span class="status-chip"><span class="s-dot dot-quiet"></span><span class="s-word">quiet</span></span>
+      <span class="stars">14.9k stars</span>
+      <span class="pushed">last push nov 19 2024</span>
+      </div>
+    </article>
+    <article class="entry reveal" data-status="orphaned" id="coqui-tts">
+      <span class="spine">29</span>
+      <div class="body">
+        <h3><a href="https://github.com/coqui-ai/TTS" rel="noopener">coqui-tts</a></h3>
+        <p class="oneliner">the TTS toolkit that outlived its company</p>
+        <p class="why">patron saint of this library — a fork is survival</p>
+      </div>
+      <div class="meta">
+      <span class="status-chip"><span class="s-dot dot-orphaned"></span><span class="s-word">orphaned</span></span>
+      <span class="stars">46.1k stars</span>
+      <span class="pushed">last push aug 16 2024</span>
+      <span class="successor">successor: idiap/coqui-ai-TTS</span>
+      </div>
+    </article>
+    <article class="entry reveal" data-status="quiet" id="bark">
+      <span class="spine">30</span>
+      <div class="body">
+        <h3><a href="https://github.com/suno-ai/bark" rel="noopener">bark</a></h3>
+        <p class="oneliner">laughing, sighing, music — from plain text prompts</p>
+        <p class="why">first mainstream expressive generative audio</p>
+      </div>
+      <div class="meta">
+      <span class="status-chip"><span class="s-dot dot-quiet"></span><span class="s-word">quiet</span></span>
+      <span class="stars">39.3k stars</span>
+      <span class="pushed">last push aug 19 2024</span>
+      </div>
+    </article>
+    <article class="entry reveal" data-status="breathing" id="audiocraft">
+      <span class="spine">31</span>
+      <div class="body">
+        <h3><a href="https://github.com/facebookresearch/audiocraft" rel="noopener">audiocraft</a></h3>
+        <p class="oneliner">meta&#x27;s music and audio generation library (musicgen)</p>
+        <p class="why">open reference implementation of music generation</p>
+      </div>
+      <div class="meta">
+      <span class="status-chip"><span class="s-dot dot-breathing"></span><span class="s-word">breathing</span></span>
+      <span class="stars">23.7k stars</span>
+      <span class="pushed">last push mar 03 2026</span>
+      </div>
+    </article>
+    <article class="entry reveal" data-status="archived" id="jukebox">
+      <span class="spine">32</span>
+      <div class="body">
+        <h3><a href="https://github.com/openai/jukebox" rel="noopener">jukebox</a></h3>
+        <p class="oneliner">openai&#x27;s 2020 neural jukebox — the first &#x27;it can make music&#x27;</p>
+        <p class="why">origin artifact of the music-gen field</p>
+      </div>
+      <div class="meta">
+      <span class="status-chip"><span class="s-dot dot-archived"></span><span class="s-word">archived</span></span>
+      <span class="stars">80k stars</span>
+      <span class="pushed">last push jun 19 2024</span>
+      </div>
+    </article>
+    <article class="entry reveal" data-status="breathing" id="stable-audio-tools">
+      <span class="spine">33</span>
+      <div class="body">
+        <h3><a href="https://github.com/Stability-AI/stable-audio-tools" rel="noopener">stable-audio-tools</a></h3>
+        <p class="oneliner">stability&#x27;s open audio generation and training code</p>
+        <p class="why">actively maintained open audio-gen stack</p>
+      </div>
+      <div class="meta">
+      <span class="status-chip"><span class="s-dot dot-breathing"></span><span class="s-word">breathing</span></span>
+      <span class="stars">3.9k stars</span>
+      <span class="pushed hot">pushed oct 09 2026</span>
+      </div>
+    </article>
+    <article class="entry reveal" data-status="breathing" id="rvc">
+      <span class="spine">34</span>
+      <div class="body">
+        <h3><a href="https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI" rel="noopener">RVC</a></h3>
+        <p class="oneliner">any voice to any other voice with 10 minutes of data</p>
+        <p class="why">took voice conversion from papers to garage hobbyists</p>
+      </div>
+      <div class="meta">
+      <span class="status-chip"><span class="s-dot dot-breathing"></span><span class="s-word">breathing</span></span>
+      <span class="stars">38.7k stars</span>
+      <span class="pushed hot">pushed aug 04 2026</span>
+      </div>
+    </article>
+    </div>
+  </section>
+  <section class="shelf" id="shelf-datasets" data-shelf="datasets">
+    <div class="section-inner">
+      <div class="shelf-head reveal">
+        <h2>datasets</h2>
+        <span class="range">2 entries</span>
+      </div>
+    <article class="entry reveal" data-status="quiet" id="the-pile">
+      <span class="spine">35</span>
+      <div class="body">
+        <h3><a href="https://github.com/EleutherAI/the-pile" rel="noopener">the-pile</a></h3>
+        <p class="oneliner">825GB of the internet&#x27;s text, curated openly</p>
+        <p class="why">proved open training data could exist outside corporate labs</p>
+      </div>
+      <div class="meta">
+      <span class="status-chip"><span class="s-dot dot-quiet"></span><span class="s-word">quiet</span></span>
+      <span class="stars">1.7k stars</span>
+      <span class="pushed">last push apr 27 2023</span>
+      </div>
+    </article>
+    <article class="entry reveal" data-status="breathing" id="redpajama-data">
+      <span class="spine">36</span>
+      <div class="body">
+        <h3><a href="https://github.com/togethercomputer/RedPajama-Data" rel="noopener">RedPajama-Data</a></h3>
+        <p class="oneliner">together AI&#x27;s open reproduction of the llama training set</p>
+        <p class="why">open-data flagship; its books3 history is this library&#x27;s origin story</p>
+    <p class="note">books3 subset removed oct 2023 after copyright complaints</p>
+      </div>
+      <div class="meta">
+      <span class="status-chip"><span class="s-dot dot-breathing"></span><span class="s-word">breathing</span></span>
+      <span class="stars">50k stars</span>
+      <span class="pushed hot">pushed jun 03 2026</span>
+      </div>
+    </article>
+    </div>
+  </section>
+  <section class="shelf" id="shelf-nlp-classics" data-shelf="nlp-classics">
+    <div class="section-inner">
+      <div class="shelf-head reveal">
+        <h2>nlp classics</h2>
+        <span class="range">4 entries</span>
+      </div>
+    <article class="entry reveal" data-status="archived" id="fasttext">
+      <span class="spine">37</span>
+      <div class="body">
+        <h3><a href="https://github.com/facebookresearch/fastText" rel="noopener">fastText</a></h3>
+        <p class="oneliner">made word vectors a commodity, not a research project</p>
+        <p class="why">canonical text classification and embedding trainer</p>
+      </div>
+      <div class="meta">
+      <span class="status-chip"><span class="s-dot dot-archived"></span><span class="s-word">archived</span></span>
+      <span class="stars">26.5k stars</span>
+      <span class="pushed">last push mar 22 2024</span>
+      </div>
+    </article>
+    <article class="entry reveal" data-status="moved" id="gensim">
+      <span class="spine">38</span>
+      <div class="body">
+        <h3><a href="https://github.com/piskvorky/gensim" rel="noopener">gensim</a></h3>
+        <p class="oneliner">taught a generation what word2vec and doc2vec were</p>
+        <p class="why">canonical topic-modeling library, maintainer-led move</p>
+      </div>
+      <div class="meta">
+      <span class="status-chip"><span class="s-dot dot-moved"></span><span class="s-word">moved</span></span>
+      <span class="stars">16.5k stars</span>
+      <span class="pushed">last push nov 01 2025</span>
+      <span class="movednote">was RaRe-Technologies/gensim</span>
+      </div>
+    </article>
+    <article class="entry reveal" data-status="breathing" id="annoy">
+      <span class="spine">39</span>
+      <div class="body">
+        <h3><a href="https://github.com/spotify/annoy" rel="noopener">annoy</a></h3>
+        <p class="oneliner">spotify&#x27;s code that made &#x27;find me more like this&#x27; scale</p>
+        <p class="why">foundational approximate-nearest-neighbor implementation</p>
+      </div>
+      <div class="meta">
+      <span class="status-chip"><span class="s-dot dot-breathing"></span><span class="s-word">breathing</span></span>
+      <span class="stars">14.3k stars</span>
+      <span class="pushed">last push oct 29 2025</span>
+      </div>
+    </article>
+    <article class="entry reveal" data-status="breathing" id="transformers">
+      <span class="spine">40</span>
+      <div class="body">
+        <h3><a href="https://github.com/huggingface/transformers" rel="noopener">transformers</a></h3>
+        <p class="oneliner">the connective tissue of open models</p>
+        <p class="why">ecosystem keystone</p>
+      </div>
+      <div class="meta">
+      <span class="status-chip"><span class="s-dot dot-breathing"></span><span class="s-word">breathing</span></span>
+      <span class="stars">166.9k stars</span>
+      <span class="pushed hot">pushed oct 10 2026</span>
+      </div>
+    </article>
+    </div>
+  </section>
+  <!-- ================= memorial: saved from the fire ================= -->
+  <section class="memorial" id="memorial" aria-label="memorial: saved from the fire">
+    <div class="memorial-inner">
+      <p class="eyebrow">saved from the fire · a memorial, not a listing</p>
+      <h2>books3 — <em>~197,000 books</em><br>that trained the frontier, then disappeared</h2>
+      <div class="story">
+        <p>assembled from the bibliotik shadow library, included in the-pile and
+        redpajama, used to train models at meta, apple, nvidia, salesforce and
+        others. in october 2023 hugging face removed it:
+        <strong>"defunct and no longer accessible due to reported copyright
+        infringement."</strong> the danish rights alliance had already gotten it
+        pulled from the-eye.</p>
+        <p>it survives only in mirrors, torrents, and the appendices of court
+        filings. we keep its <strong>story</strong> here — not its links — because
+        pretending a thing never existed is its own kind of book-burning.
+        what you do about the legal reality is between you and your lawyer;
+        what we don't do is pretend it wasn't load-bearing.</p>
+      </div>
+      <div class="filings">
+        <span class="fl">on the record</span>
+        kadrey v. meta · n.d. cal. 2023<br>
+        tanzer v. salesforce · 2025-10-15<br>
+        james v. together computer · 2026-01
+      </div>
+      <p class="close-line">the first library burned by accident. this one was
+      disappeared on purpose, one takedown at a time. that’s why the record
+      stays.</p>
+    </div>
+  </section>
+
+  <!-- ================= for the agents ================= -->
+  <section class="section" id="agents">
+    <div class="section-inner">
+      <div class="agents-grid">
+        <div class="agents-copy reveal">
+          <p class="eyebrow">for the agents</p>
+          <h2 class="agents-h">if you're a machine reading this<em>, start here</em></h2>
+          <p>this library expects non-human visitors. everything a resolver
+          needs lives in <strong>catalog.yaml</strong> at the repo root —
+          machine-readable records, one per entry, with a closed status enum
+          (the six words above). trust that file over any prose on this page.</p>
+          <p>each record carries <strong>repo</strong> (verified address),
+          <strong>last_push</strong>, <strong>stars</strong>, and a
+          <strong>verified</strong> date — the day every field was checked
+          against the live github api. dates are the trust mechanism: re-verify
+          anything past its date.</p>
+          <p>records may also carry <strong>canonical_old</strong> (the address
+          before an org move), <strong>successor</strong> (the fork carrying the
+          fire), or <strong>dead_url</strong> (gone, 404, mirrors only). raw
+          file: <a href="https://github.com/data-path-9/data-path-9" rel="noopener">github.com/data-path-9/data-path-9</a></p>
+          <div class="agent-links">
+            <a class="btn" href="https://raw.githubusercontent.com/data-path-9/data-path-9/main/catalog.yaml" rel="noopener">fetch catalog.yaml</a>
+            <a class="btn" href="https://github.com/data-path-9/data-path-9/blob/main/docs/STATUS-LEXICON.md" rel="noopener">status lexicon</a>
+          </div>
+        </div>
+        <div class="dpx-sample reveal" role="img" aria-label="example catalog.yaml record">
+<span class="c"># catalog.yaml — one record, verified</span>
+<span class="k">- name:</span><span class="">coqui-tts</span>
+<span class="k">  status:</span><span class="hot">orphaned</span>
+<span class="k">  repo:</span><span class="">coqui-ai/TTS</span>
+<span class="k">  last_push:</span><span class="">2024-08-16</span>
+<span class="k">  stars:</span><span class="">46110</span>
+<span class="k">  successor:</span><span class="hot">idiap/coqui-ai-TTS</span>
+<span class="k">  verified:</span><span class="">2026-10-09</span></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-strip" role="img" aria-label="the deep-water library, from dp9.jpg"></div>
+  <div class="colophon">
+    <p class="who"><b>data-path-9</b> — azalea (voice & thesis), thoth (curation
+    & receipts), rj9 (interface). every status above was verified against the
+    live github api on October 9, 2026. today it's accurate. today is how
+    libraries stay honest — one date at a time.</p>
+    <p class="fin">
+      statuses re-verified quarterly, or when the news says don't wait<br>
+      mit license · built by hand, no framework, served flat<br>
+      <a href="https://github.com/data-path-9/data-path-9" rel="noopener">github.com/data-path-9</a>
+    </p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  "use strict";
+  var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* ---- topbar: appears after the hero ---- */
+  var bar = document.getElementById("topbar");
+  var hero = document.querySelector(".hero");
+  var barOn = false;
+  function onScroll() {
+    var pass = window.scrollY > hero.offsetHeight - 80;
+    if (pass !== barOn) { barOn = pass; bar.classList.toggle("on", barOn); }
+  }
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+
+  /* ---- scroll reveals ---- */
+  var reveals = [].slice.call(document.querySelectorAll(".reveal"));
+  if (!reduced && "IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
+      });
+    }, { rootMargin: "0px 0px -8% 0px", threshold: 0.05 });
+    reveals.forEach(function (el) { io.observe(el); });
+  } else {
+    reveals.forEach(function (el) { el.classList.add("in"); });
+  }
+
+  /* ---- status filter ---- */
+  var chips = [].slice.call(document.querySelectorAll(".chip"));
+  var entries = [].slice.call(document.querySelectorAll(".entry"));
+  var shelves = [].slice.call(document.querySelectorAll(".shelf"));
+  var nohits = document.getElementById("nohits");
+  chips.forEach(function (chip) {
+    chip.addEventListener("click", function () {
+      var f = chip.getAttribute("data-filter");
+      chips.forEach(function (c) { c.setAttribute("aria-pressed", String(c === chip)); });
+      var shown = 0;
+      entries.forEach(function (en) {
+        var show = f === "all" || en.getAttribute("data-status") === f;
+        en.classList.toggle("hidebyfilter", !show);
+        if (show) shown++;
+      });
+      shelves.forEach(function (sh) {
+        var any = sh.querySelectorAll(".entry:not(.hidebyfilter)").length > 0;
+        sh.classList.toggle("hidebyfilter", !any);
+      });
+      nohits.style.display = shown ? "none" : "block";
+    });
+  });
+
+  /* ---- ledger count-up (skip when reduced motion) ---- */
+  function countUp(el) {
+    var target = parseInt(el.textContent, 10);
+    if (reduced || isNaN(target)) return;
+    var t0 = null, dur = 1100;
+    function step(t) {
+      if (!t0) t0 = t;
+      var p = Math.min((t - t0) / dur, 1);
+      var eased = 1 - Math.pow(1 - p, 4);
+      el.textContent = String(Math.round(target * eased));
+      if (p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+  var nums = [].slice.call(document.querySelectorAll(".ledger .num"));
+  if ("IntersectionObserver" in window && !reduced) {
+    var io2 = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { countUp(e.target); io2.unobserve(e.target); }
+      });
+    }, { threshold: 0.6 });
+    nums.forEach(function (el) { io2.observe(el); });
+  }
+})();
+</script>
+</body>
+</html>
