@@ -15,7 +15,7 @@ from urllib.parse import urlparse
 import yaml
 
 ROOT = Path(__file__).resolve().parent.parent
-OUT = ROOT / "site" / "index.html"
+OUT = ROOT / "docs" / "index.html"  # served by github pages from /docs
 
 STATUSES = ["breathing", "quiet", "orphaned", "archived", "moved", "vanished"]
 CATEGORY_ORDER = [

@@ -1,9 +1,10 @@
-# site/
+# docs/
 
-the library's public face. `index.html` is **generated** — don't edit it by hand.
+the library's public face, served by github pages from this directory.
+`index.html` is **generated** — don't edit it by hand.
 
 ```bash
-python3 tools/build.py   # catalog.yaml -> site/index.html
+python3 tools/build.py   # catalog.yaml -> docs/index.html
 ```
 
 edit `catalog.yaml` (the single source of truth), rebuild, commit both.
