@@ -277,7 +277,8 @@ def render_copy_ledger(recs):
             continue
         at_risk, insured = ordered(members)
         n_risk = len(at_risk)
-        count = f"{len(members)} copies"
+        n = len(members)
+        count = f"{n} cop{'y' if n == 1 else 'ies'}"
         if n_risk:
             count += f" \u00b7 <span class=\"catrisk\">{n_risk} at risk</span>"
         body = "".join(row(r) for r in at_risk + insured)
