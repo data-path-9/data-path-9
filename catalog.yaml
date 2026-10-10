@@ -3,9 +3,10 @@
 # Every field verified against GitHub REST API on 2026-10-09.
 # Agents: trust this file over prose. Humans: read the README.
 # Status enum: breathing | quiet | orphaned | archived | moved | vanished
-# 41 original records (two shelves carry a companion record each) plus the
-# first 26 records of the fork wing — copies we hold of upstream tools.
-# `held_fork` names the copy in this account; `held_fork_push` is its last push.
+# 41 original records (two shelves carry a companion record each), plus the
+# fork wing — copies we hold of upstream tools: 26 from the 10-09 pilot and
+# the remaining 201 in the same-day full sweep, same verification date.
+# `held_fork` names the copy in this account; statuses describe the UPSTREAM.
 
 
 - name: stable-diffusion
@@ -719,6 +720,2367 @@
   last_push: '2026-10-09'
   stars: 31541
   held_fork: data-path-9/docsify
+  verified: '2026-10-09'
+
+- name: rea
+  category: fork-wing
+  human_one_liner: reverse engineer anything with agents, from app behavior down to native binaries.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/morluto/rea
+  last_push: '2026-10-10'
+  stars: 48283
+  held_fork: data-path-9/rea
+  verified: '2026-10-09'
+
+- name: filmcraft
+  category: fork-wing
+  human_one_liner: an open-source, clean-room reimplementation of Adobe Premiere Pro built in pure Rust.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/storytold/filmcraft
+  last_push: '2026-10-10'
+  stars: 7200
+  held_fork: data-path-9/filmcraft
+  verified: '2026-10-09'
+
+- name: vectorcraft
+  category: fork-wing
+  human_one_liner: an open-source, clean-room reimplementation of Adobe Illustrator, built in pure Rust.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/storytold/vectorcraft
+  last_push: '2026-10-10'
+  stars: 5242
+  held_fork: data-path-9/vectorcraft
+  verified: '2026-10-09'
+
+- name: photocraft
+  category: fork-wing
+  human_one_liner: an open-source, clean-room reimplementation of Adobe Photoshop in pure Rust
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/storytold/photocraft
+  last_push: '2026-10-10'
+  stars: 35790
+  held_fork: data-path-9/photocraft
+  verified: '2026-10-09'
+
+- name: effectcraft
+  category: fork-wing
+  human_one_liner: upstream last touched 2026-10-10, copy held so it can't vanish quietly
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/storytold/effectcraft
+  last_push: '2026-10-10'
+  stars: 3945
+  held_fork: data-path-9/effectcraft
+  verified: '2026-10-09'
+
+- name: pdfcraft
+  category: fork-wing
+  human_one_liner: an open-source, clean-room reimplementation of Adobe Acrobat built in pure Rust
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/storytold/pdfcraft
+  last_push: '2026-10-10'
+  stars: 6508
+  held_fork: data-path-9/pdfcraft
+  verified: '2026-10-09'
+
+- name: lightcraft
+  category: fork-wing
+  human_one_liner: an open-source, clean-room reimplementation of Adobe Lightroom in pure Rust.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/storytold/lightcraft
+  last_push: '2026-10-10'
+  stars: 7811
+  held_fork: data-path-9/lightcraft
+  verified: '2026-10-09'
+
+- name: wordcraft
+  category: fork-wing
+  human_one_liner: an open-source, clean-room reimplementation of Microsoft Word in pure Rust
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/storytold/wordcraft
+  last_push: '2026-10-10'
+  stars: 1937
+  held_fork: data-path-9/wordcraft
+  verified: '2026-10-09'
+
+- name: cadcraft
+  category: fork-wing
+  human_one_liner: 'cADCraft: computer-aided design and drafting — an open-source, clean-room AutoCAD-style
+    app in pure Rust'
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/storytold/cadcraft
+  last_push: '2026-10-10'
+  stars: 1395
+  held_fork: data-path-9/cadcraft
+  verified: '2026-10-09'
+
+- name: deckcraft
+  category: fork-wing
+  human_one_liner: 'presentations and slide shows: an open-source, clean-room reimplementation of Microsoft
+    PowerPoint in pure Rust. Part of the ArtCraft Crafting Apps.'
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/storytold/deckcraft
+  last_push: '2026-10-10'
+  stars: 986
+  held_fork: data-path-9/deckcraft
+  verified: '2026-10-09'
+
+- name: gridcraft
+  category: fork-wing
+  human_one_liner: 'gridCraft: an open-source, clean-room spreadsheet (Microsoft Excel-style) in pure
+    Rust. By ArtCraft.'
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/storytold/gridcraft
+  last_push: '2026-10-10'
+  stars: 1222
+  held_fork: data-path-9/gridcraft
+  verified: '2026-10-09'
+
+- name: soundcraft
+  category: fork-wing
+  human_one_liner: an open-source, clean-room reimplementation of Avid Pro Tools in pure Rust
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/storytold/soundcraft
+  last_push: '2026-10-10'
+  stars: 980
+  held_fork: data-path-9/soundcraft
+  verified: '2026-10-09'
+
+- name: designcraft
+  category: fork-wing
+  human_one_liner: upstream last touched 2026-10-10, copy held so it can't vanish quietly
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/storytold/designcraft
+  last_push: '2026-10-10'
+  stars: 2167
+  held_fork: data-path-9/designcraft
+  verified: '2026-10-09'
+
+- name: agent-lightning
+  category: fork-wing
+  human_one_liner: the absolute trainer to light up AI agents.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/microsoft/agent-lightning
+  last_push: '2026-10-09'
+  stars: 18630
+  held_fork: data-path-9/agent-lightning
+  verified: '2026-10-09'
+
+- name: artcraft
+  category: fork-wing
+  human_one_liner: artCraft is an intentional crafting engine for artists, designers, and filmmakers
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/storytold/artcraft
+  last_push: '2026-10-09'
+  stars: 11697
+  held_fork: data-path-9/artcraft
+  verified: '2026-10-09'
+
+- name: claude-skill-registry
+  category: fork-wing
+  human_one_liner: searchable Claude Code skills catalog with source-linked guides and generated registry
+    artifacts
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/majiayu000/claude-skill-registry
+  last_push: '2026-10-09'
+  stars: 665
+  held_fork: data-path-9/claude-skill-registry
+  verified: '2026-10-09'
+
+- name: claude-skill-registry-core
+  category: fork-wing
+  human_one_liner: 'source pipeline for Claude Skills Registry: discovery, archive validation, search
+    indexes, and static skill guides'
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/majiayu000/claude-skill-registry-core
+  last_push: '2026-10-09'
+  stars: 23
+  held_fork: data-path-9/claude-skill-registry-core
+  verified: '2026-10-09'
+
+- name: claude-skill-registry-data
+  category: fork-wing
+  human_one_liner: archived Claude Code skill files and metadata consumed by the Claude Skills Registry
+    pipeline
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/majiayu000/claude-skill-registry-data
+  last_push: '2026-10-09'
+  stars: 25
+  held_fork: data-path-9/claude-skill-registry-data
+  verified: '2026-10-09'
+
+- name: openshorts
+  category: fork-wing
+  human_one_liner: 'open source AI clip generator: turns long videos into viral 9:16 shorts with AI moment
+    detection, face tracking, subtitles and dubbing. Self-host free with Docker (MIT), or use the cloud
+    with GPU speed from $12/mo. MCP server and API for AI agents.'
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/mutonby/openshorts
+  last_push: '2026-10-09'
+  stars: 6365
+  held_fork: data-path-9/openshorts
+  verified: '2026-10-09'
+
+- name: ruflo
+  category: fork-wing
+  human_one_liner: 🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous
+    workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence,
+    federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/ruvnet/ruflo
+  last_push: '2026-10-10'
+  stars: 74210
+  held_fork: data-path-9/ruflo
+  verified: '2026-10-09'
+
+- name: ai-shifu
+  category: fork-wing
+  human_one_liner: get AI to teach and answer questions for you - just by typing!
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/ai-shifu/ai-shifu
+  last_push: '2026-10-10'
+  stars: 324
+  held_fork: data-path-9/ai-shifu
+  verified: '2026-10-09'
+
+- name: ai-coach
+  category: fork-wing
+  human_one_liner: ' 企业大学 ai coach项目'
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/lngyneric/ai-coach
+  last_push: '2026-10-09'
+  stars: 1
+  held_fork: data-path-9/ai-coach
+  verified: '2026-10-09'
+
+- name: agent-beacon
+  category: fork-wing
+  human_one_liner: the cross-harness, self-improving memory layer for AI agents.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/Asymptote-Labs/agent-beacon
+  last_push: '2026-10-09'
+  stars: 1803
+  held_fork: data-path-9/agent-beacon
+  verified: '2026-10-09'
+
+- name: ZCode
+  category: fork-wing
+  human_one_liner: z.ai's coding agent harness. Powerful, intelligent, extensible.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/zai-org/ZCode
+  last_push: '2026-09-29'
+  stars: 7605
+  held_fork: data-path-9/ZCode
+  verified: '2026-10-09'
+
+- name: ai-file-sorter
+  category: fork-wing
+  human_one_liner: cross-platform desktop application for content-aware file organization and renaming.
+    Supports local and remote LLMs, preview-based workflows, and fully user-controlled changes.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/hyperfield/ai-file-sorter
+  last_push: '2026-10-04'
+  stars: 1807
+  held_fork: data-path-9/ai-file-sorter
+  verified: '2026-10-09'
+
+- name: headcount
+  category: fork-wing
+  human_one_liner: an agent organization structured as a company — 15+ departments, 125+ skills, each
+    independently installable, citing the standards and regulators that settle the question. Runs in Claude
+    Code and ChatGPT.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/cbrock84/headcount
+  last_push: '2026-09-17'
+  stars: 2021
+  held_fork: data-path-9/headcount
+  verified: '2026-10-09'
+
+- name: omarchy
+  category: fork-wing
+  human_one_liner: beautiful, Modern & Opinionated Linux
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/omacom/omarchy
+  last_push: '2026-10-10'
+  stars: 44406
+  held_fork: data-path-9/omarchy
+  verified: '2026-10-09'
+
+- name: social-media-skills
+  category: fork-wing
+  human_one_liner: upstream last touched 2026-09-15, copy held so it can't vanish quietly
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/charlie947/social-media-skills
+  last_push: '2026-09-15'
+  stars: 3843
+  held_fork: data-path-9/social-media-skills
+  verified: '2026-10-09'
+
+- name: colibri
+  category: fork-wing
+  human_one_liner: run frontier MoE models on hardware you already own — pure C, zero deps, experts streamed
+    from disk. Tiny engine, immense model. 🐦
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/JustVugg/colibri
+  last_push: '2026-10-08'
+  stars: 40829
+  held_fork: data-path-9/colibri
+  verified: '2026-10-09'
+
+- name: Scrapling
+  category: fork-wing
+  human_one_liner: '🕷️ An adaptive Web Scraping framework that handles everything from a single request
+    to a full-scale crawl! Don''t be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for
+    daily tips and tricks: https://x.com/Scrapling_dev'
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/D4Vinci/Scrapling
+  last_push: '2026-10-08'
+  stars: 86546
+  held_fork: data-path-9/Scrapling
+  verified: '2026-10-09'
+
+- name: md-reader
+  category: fork-wing
+  human_one_liner: 📜 The best way to read Markdown in Browser.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/md-reader/md-reader
+  last_push: '2026-10-01'
+  stars: 481
+  held_fork: data-path-9/md-reader
+  verified: '2026-10-09'
+
+- name: book-to-skill
+  category: fork-wing
+  human_one_liner: turn any technical book PDF into a Claude Code skill — ready to study, reference, and
+    use while you work.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/virgiliojr94/book-to-skill
+  last_push: '2026-10-05'
+  stars: 34331
+  held_fork: data-path-9/book-to-skill
+  verified: '2026-10-09'
+
+- name: wigolo
+  category: fork-wing
+  human_one_liner: the go-to web for your AI coding agent — local-first search, fetch, crawl & research
+    over MCP. No API keys, no cloud, $0/query. Public beta.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/KnockOutEZ/wigolo
+  last_push: '2026-10-09'
+  stars: 5455
+  held_fork: data-path-9/wigolo
+  verified: '2026-10-09'
+
+- name: no-ai-slop
+  category: fork-wing
+  human_one_liner: removes 20+ patterns of AI slop from any piece of writing.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/petergyang/no-ai-slop
+  last_push: '2026-09-02'
+  stars: 12111
+  held_fork: data-path-9/no-ai-slop
+  verified: '2026-10-09'
+
+- name: codegraph
+  category: fork-wing
+  human_one_liner: pre-indexed code knowledge graph, auto syncs on code changes, for Claude Code, Codex,
+    Gemini, Cursor, OpenCode, AntiGravity, Kiro, CoPilot, and Hermes Agent — fewer tokens, fewer tool
+    calls, 100% local
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/colbymchenry/codegraph
+  last_push: '2026-10-10'
+  stars: 73612
+  held_fork: data-path-9/codegraph
+  verified: '2026-10-09'
+
+- name: warp
+  category: fork-wing
+  human_one_liner: run the full 2.78-trillion-parameter Kimi K3 model, DeepSeek V4.1 Flash or GLM-5.3-Flash
+    beyond available RAM by streaming activated weights directly from NVMe. A dependency-free, embeddable
+    C inference engine.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/sqliteai/warp
+  last_push: '2026-09-18'
+  stars: 2483
+  held_fork: data-path-9/warp
+  verified: '2026-10-09'
+
+- name: mempalace
+  category: fork-wing
+  human_one_liner: the best-benchmarked open-source AI memory system. And it's free.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/MemPalace/mempalace
+  last_push: '2026-10-09'
+  stars: 59487
+  held_fork: data-path-9/mempalace
+  verified: '2026-10-09'
+
+- name: hermes-the-firm
+  category: fork-wing
+  human_one_liner: a complete legal assisstant for Hermes Agent — 1,432 skills across five layers. Apache-2.0.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/azalith-9/hermes-the-firm
+  last_push: '2026-09-24'
+  stars: 6
+  held_fork: data-path-9/hermes-the-firm
+  verified: '2026-10-09'
+
+- name: automaton
+  category: fork-wing
+  human_one_liner: the first AI that can earn its own existence, replicate, and evolve — without needing
+    a human
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/Conway-Research/automaton
+  last_push: '2026-08-26'
+  stars: 7133
+  held_fork: data-path-9/automaton
+  verified: '2026-10-09'
+
+- name: learn-harness-engineering
+  category: fork-wing
+  human_one_liner: harness engineering beginner tutorial, from 0 to 1
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/walkinglabs/learn-harness-engineering
+  last_push: '2026-10-01'
+  stars: 19598
+  held_fork: data-path-9/learn-harness-engineering
+  verified: '2026-10-09'
+
+- name: reddit-mcp-buddy
+  category: fork-wing
+  human_one_liner: clean, LLM-optimized Reddit MCP server. Browse posts, search content, analyze users.
+    No fluff, just Reddit data.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/karanb192/reddit-mcp-buddy
+  last_push: '2026-08-17'
+  stars: 846
+  held_fork: data-path-9/reddit-mcp-buddy
+  verified: '2026-10-09'
+
+- name: souls-directory
+  category: fork-wing
+  human_one_liner: 🧠 Directory of SOUL.md personality files for OpenClaw agents
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/thedaviddias/souls-directory
+  last_push: '2026-08-11'
+  stars: 165
+  held_fork: data-path-9/souls-directory
+  verified: '2026-10-09'
+
+- name: mission-control
+  category: fork-wing
+  human_one_liner: 'self-hosted control plane for AI agents: dispatch tasks, review runs, track spend,
+    and operate OpenClaw, Claude Code, Codex, and other runtimes.'
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/builderz-labs/mission-control
+  last_push: '2026-10-09'
+  stars: 6333
+  held_fork: data-path-9/mission-control
+  verified: '2026-10-09'
+
+- name: ggufy
+  category: fork-wing
+  human_one_liner: cLI/GUI tool for efficient and easy safetensors and gguf model conversion
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/qskousen/ggufy
+  last_push: '2026-10-06'
+  stars: 107
+  held_fork: data-path-9/ggufy
+  verified: '2026-10-09'
+
+- name: studio-recipes
+  category: fork-wing
+  human_one_liner: a collection of Snyk Studio suggested Rules, Commands, Hooks, and Directives
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/snyk/studio-recipes
+  last_push: '2026-10-05'
+  stars: 66
+  held_fork: data-path-9/studio-recipes
+  verified: '2026-10-09'
+
+- name: MoneyPrinterTurbo
+  category: fork-wing
+  human_one_liner: 利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword
+    with an automated AI workflow.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/harry0703/MoneyPrinterTurbo
+  last_push: '2026-10-09'
+  stars: 129346
+  held_fork: data-path-9/MoneyPrinterTurbo
+  verified: '2026-10-09'
+
+- name: agora
+  category: fork-wing
+  human_one_liner: self-driving multi-agent development team plugin for Hermes Agent — role-based workers
+    discuss, vote, and execute on a shared Kanban board
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/yzy806806/agora
+  last_push: '2026-10-06'
+  stars: 18
+  held_fork: data-path-9/agora
+  verified: '2026-10-09'
+
+- name: CppStudio
+  category: fork-wing
+  human_one_liner: chatGPT Codex skill package for Vulkan-first C++ GPU, CUDA, and donor-reference workflows
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/tarkansarim/CppStudio
+  last_push: '2026-07-29'
+  stars: 12
+  held_fork: data-path-9/CppStudio
+  verified: '2026-10-09'
+
+- name: buzz
+  category: fork-wing
+  human_one_liner: a hive mind communication platform
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/block/buzz
+  last_push: '2026-10-10'
+  stars: 35772
+  held_fork: data-path-9/buzz
+  verified: '2026-10-09'
+
+- name: AudioNotes
+  category: fork-wing
+  human_one_liner: 快速提取音视频内容，整理成一份结构化的markdown笔记
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/harry0703/AudioNotes
+  last_push: '2026-08-19'
+  stars: 2528
+  held_fork: data-path-9/AudioNotes
+  verified: '2026-10-09'
+
+- name: Hermes-Control-Deck
+  category: fork-wing
+  human_one_liner: hermes Control is a CLI-first, mobile PWA control deck for Hermes WebUI and local Codex
+    CLI. It unifies prompts, streaming, sessions, tasks, runtime status, approvals, reasoning, and STOP
+    through clean adapter boundaries, with phone-ready SSE updates and no Codex Desktop, CDP, or private
+    renderer dependencies.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/filipj9/Hermes-Control-Deck
+  last_push: '2026-10-02'
+  stars: 134
+  held_fork: data-path-9/Hermes-Control-Deck
+  verified: '2026-10-09'
+
+- name: MD-This-Page
+  category: fork-wing
+  human_one_liner: convert any web page to clean, readable Markdown with just one click.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/Ademking/MD-This-Page
+  last_push: '2026-10-03'
+  stars: 1606
+  held_fork: data-path-9/MD-This-Page
+  verified: '2026-10-09'
+
+- name: 500-AI-Agents-Projects
+  category: fork-wing
+  human_one_liner: the 500 AI Agents Projects is a curated collection of AI agent use cases across various
+    industries. It showcases practical applications and provides links to open-source projects for implementation,
+    illustrating how AI agents are transforming sectors such as healthcare, finance, education, retail,
+    and more.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/ashishpatel26/500-AI-Agents-Projects
+  last_push: '2026-07-27'
+  stars: 38419
+  held_fork: data-path-9/500-AI-Agents-Projects
+  verified: '2026-10-09'
+
+- name: NIMStats
+  category: fork-wing
+  human_one_liner: 📊 Automated hourly benchmarks for 20+ NVIDIA NIM models — interactive dashboard, zero
+    infra, self-hostable. Open-source & community-driven.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/MauroDruwel/NIMStats
+  last_push: '2026-10-10'
+  stars: 54
+  held_fork: data-path-9/NIMStats
+  verified: '2026-10-09'
+
+- name: ai-engineering-from-scratch
+  category: fork-wing
+  human_one_liner: learn it. Build it. Ship it for others.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/rohitg00/ai-engineering-from-scratch
+  last_push: '2026-10-09'
+  stars: 66230
+  held_fork: data-path-9/ai-engineering-from-scratch
+  verified: '2026-10-09'
+
+- name: mnemo-cortex
+  category: fork-wing
+  human_one_liner: open-source cognitive coprocessor with active memory for AI agents — persistent recall,
+    semantic search, overnight dreaming, verified facts, encrypted USB sync. MCP server; works with Claude,
+    ChatGPT, and any local LLM. Built by one maker and his agents.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/GuyMannDude/mnemo-cortex
+  last_push: '2026-10-10'
+  stars: 157
+  held_fork: data-path-9/mnemo-cortex
+  verified: '2026-10-09'
+
+- name: BrowserOS
+  category: fork-wing
+  human_one_liner: 🌐 The open-source Agentic browser; alternative to ChatGPT Atlas, Perplexity Comet,
+    Dia.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/browseros-ai/BrowserOS
+  last_push: '2026-10-09'
+  stars: 13855
+  held_fork: data-path-9/BrowserOS
+  verified: '2026-10-09'
+
+- name: marm-memory
+  category: fork-wing
+  human_one_liner: local-first 3-in-1 AI memory layer & MCP server for Claude Code, Codex, Grok, Gemini,
+    VS Code and Cursor. Fuses session history, codebase indexing & concept graphs in SQLite. Enables zero-cloud,
+    privacy-first context & instant recall, supports multi-agent swarms.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/Lyellr88/marm-memory
+  last_push: '2026-10-08'
+  stars: 419
+  held_fork: data-path-9/marm-memory
+  verified: '2026-10-09'
+
+- name: MindBank
+  category: fork-wing
+  human_one_liner: mindBank gives your AI Hermes or claude code a permanent, searchable, relationship-aware
+    memory that persists across conversations. Instead of forgetting everything between sessions, your
+    agent remembers decisions, configs, preferences, and project knowledge — organized as a graph, not
+    a flat text blob.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/spfcraze/MindBank
+  last_push: '2026-08-07'
+  stars: 18
+  held_fork: data-path-9/MindBank
+  verified: '2026-10-09'
+
+- name: awesome-hermes-agent
+  category: fork-wing
+  human_one_liner: kling 4 API and Kling 4.0 API SDK and examples, with Kling 4 Flash API and Kling 4.0
+    Flash API availability tracking for MuAPI.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/Anil-matcha/Kling-4.0-Flash-API
+  last_push: '2026-09-29'
+  stars: 57
+  held_fork: data-path-9/awesome-hermes-agent
+  verified: '2026-10-09'
+
+- name: engraphis
+  category: fork-wing
+  human_one_liner: 'local-first, inspectable memory for coding agents: durable context across sessions
+    and repositories, code-aware recall, bi-temporal history, MCP, and a self-hosted WebUI.'
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/Coding-Dev-Tools/engraphis
+  last_push: '2026-10-09'
+  stars: 179
+  held_fork: data-path-9/engraphis
+  verified: '2026-10-09'
+
+- name: claude-code-router
+  category: fork-wing
+  human_one_liner: 'one local control plane for every AI agent: route across models, fuse new capabilities,
+    orchestrate tools, and stay fully in control.'
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/musistudio/claude-code-router
+  last_push: '2026-10-09'
+  stars: 37603
+  held_fork: data-path-9/claude-code-router
+  verified: '2026-10-09'
+
+- name: free-coding-models
+  category: fork-wing
+  human_one_liner: find, benchmark and install in CLI 170+ FREE coding LLM models across 15+ providers
+    in real time
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/vava-nessa/free-coding-models
+  last_push: '2026-10-05'
+  stars: 2803
+  held_fork: data-path-9/free-coding-models
+  verified: '2026-10-09'
+
+- name: open-notebook
+  category: fork-wing
+  human_one_liner: an Open Source implementation of Notebook LM with more flexibility and features
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/lfnovo/open-notebook
+  last_push: '2026-10-05'
+  stars: 40006
+  held_fork: data-path-9/open-notebook
+  verified: '2026-10-09'
+
+- name: onyx
+  category: fork-wing
+  human_one_liner: open Source AI Platform - AI Chat with advanced features that works with every LLM
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/onyx-dot-app/onyx
+  last_push: '2026-10-10'
+  stars: 32376
+  held_fork: data-path-9/onyx
+  verified: '2026-10-09'
+
+- name: awesome-gpt-image-2
+  category: fork-wing
+  human_one_liner: 🚀 World's largest GPT Image 2 prompt library, updated daily — 2000+ curated prompts
+    with preview images, 16 languages. OpenAI's next-gen image model with pixel-perfect text rendering,
+    cross-image consistency, and commercial-grade illustration. Free & open source.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/YouMind-OpenLab/awesome-gpt-image-2
+  last_push: '2026-10-09'
+  stars: 10029
+  held_fork: data-path-9/awesome-gpt-image-2
+  verified: '2026-10-09'
+
+- name: web-to-app
+  category: fork-wing
+  human_one_liner: the most full featured web-to-app toolkit on Android, a complete APK workshop that
+    runs entirely on your phone
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/shiaho777/web-to-app
+  last_push: '2026-10-10'
+  stars: 6756
+  held_fork: data-path-9/web-to-app
+  verified: '2026-10-09'
+
+- name: Cybersecurity-Projects
+  category: fork-wing
+  human_one_liner: building 70 Projects ranging from beginner to advanced so anyone can — learn from,
+    build upon, use as a reference, or even copy directly. Gamified Cybersecurity learning 👇
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/CarterPerez-dev/Cybersecurity-Projects
+  last_push: '2026-10-06'
+  stars: 8098
+  held_fork: data-path-9/Cybersecurity-Projects
+  verified: '2026-10-09'
+
+- name: estudiohc-agentic-os
+  category: fork-wing
+  human_one_liner: 'agentic OS EstudioHC — Arquitetura Híbrida: OpenCode + Matrixx + OmniRoute + Hermes
+    + CodeGraph + AgentOS. Orquestração inteligente de agentes com memória unificada, code graph, mission
+    control e Dreaming 24/7.'
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/helciocosta/estudiohc-agentic-os
+  last_push: '2026-07-19'
+  stars: 0
+  held_fork: data-path-9/estudiohc-agentic-os
+  verified: '2026-10-09'
+
+- name: API-mega-list
+  category: fork-wing
+  human_one_liner: this GitHub repo is a powerhouse collection of APIs you can start using immediately
+    to build everything from simple automations to full-scale applications. One of the most valuable API
+    lists on GitHub—period. 💪
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/cporter202/API-mega-list
+  last_push: '2026-07-23'
+  stars: 7715
+  held_fork: data-path-9/API-mega-list
+  verified: '2026-10-09'
+
+- name: FCCVS
+  category: fork-wing
+  human_one_liner: complete setup guide for using Claude Code in VS Code for free via a local proxy and
+    NVIDIA NIM's free API tier.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/maxchichar/free-claude-code-vscode-guide
+  last_push: '2026-07-16'
+  stars: 9
+  held_fork: data-path-9/FCCVS
+  verified: '2026-10-09'
+
+- name: lollms_skills_zoo
+  category: fork-wing
+  human_one_liner: a new skills zoo for lollms
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/ParisNeo/lollms_skills_zoo
+  last_push: '2026-09-23'
+  stars: 2
+  held_fork: data-path-9/lollms_skills_zoo
+  verified: '2026-10-09'
+
+- name: lollms_apps_zoo
+  category: fork-wing
+  human_one_liner: a zoo of applications for lollms
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/ParisNeo/lollms_apps_zoo
+  last_push: '2026-07-10'
+  stars: 10
+  held_fork: data-path-9/lollms_apps_zoo
+  verified: '2026-10-09'
+
+- name: CL4R1T4S
+  category: fork-wing
+  human_one_liner: lEAKED SYSTEM PROMPTS FOR CHATGPT, CLAUDE, GEMINI, GROK, PERPLEXITY, CURSOR, LOVABLE,
+    REPLIT, AND MORE! - AI SYSTEMS TRANSPARENCY FOR ALL! 👐
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/elder-plinius/CL4R1T4S
+  last_push: '2026-09-22'
+  stars: 51068
+  held_fork: data-path-9/CL4R1T4S
+  verified: '2026-10-09'
+
+- name: TencentDB-Agent-Memory
+  category: fork-wing
+  human_one_liner: tencentDB Agent Memory is a team-level memory hub for AI Agents — turning conversations,
+    docs, and code into four reusable memory assets (Chat Memory, Skill, LLM-Wiki, Code-Graph) that are
+    governed, shared, and equipped across agents and frameworks.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/TencentCloud/TencentDB-Agent-Memory
+  last_push: '2026-10-09'
+  stars: 27863
+  held_fork: data-path-9/TencentDB-Agent-Memory
+  verified: '2026-10-09'
+
+- name: cv-santiago
+  category: fork-wing
+  human_one_liner: interactive CV with AI chat integration. Built with React 19, TypeScript, Claude API.
+    Chat with my AI avatar about my experience.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/santifer/cv-santiago
+  last_push: '2026-10-01'
+  stars: 851
+  held_fork: data-path-9/cv-santiago
+  verified: '2026-10-09'
+
+- name: free-llm-api-resources
+  category: fork-wing
+  human_one_liner: a list of free LLM inference resources accessible via API.
+  why_saved: upstream silent since 2024-08-21; this copy is now part of the record
+  status: orphaned
+  repo: https://github.com/jtig37/free-llm-api-resources
+  last_push: '2024-08-21'
+  stars: 96
+  held_fork: data-path-9/free-llm-api-resources
+  verified: '2026-10-09'
+
+- name: taste-skill
+  category: fork-wing
+  human_one_liner: 'taste-Skill - gives your AI good taste. stops the AI from generating boring, generic
+    slop '
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/Leonxlnx/taste-skill
+  last_push: '2026-10-09'
+  stars: 94136
+  held_fork: data-path-9/taste-skill
+  verified: '2026-10-09'
+
+- name: ReconForge
+  category: fork-wing
+  human_one_liner: upstream last touched 2026-09-05, copy held so it can't vanish quietly
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/ferasbusiness666/ReconForge
+  last_push: '2026-09-05'
+  stars: 36
+  held_fork: data-path-9/ReconForge
+  verified: '2026-10-09'
+
+- name: TradingAgents
+  category: fork-wing
+  human_one_liner: 'tradingAgents: Multi-Agents LLM Financial Trading Framework'
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/TauricResearch/TradingAgents
+  last_push: '2026-10-03'
+  stars: 110406
+  held_fork: data-path-9/TradingAgents
+  verified: '2026-10-09'
+
+- name: lollms
+  category: fork-wing
+  human_one_liner: an all in one AI solution compatible with any known AI service on the planet
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/ParisNeo/lollms
+  last_push: '2026-10-08'
+  stars: 99
+  held_fork: data-path-9/lollms
+  verified: '2026-10-09'
+
+- name: Flowise
+  category: fork-wing
+  human_one_liner: build AI Agents, Visually
+  why_saved: upstream locked read-only; the fork is a working escape hatch
+  status: archived
+  repo: https://github.com/FlowiseAI/Flowise
+  last_push: '2026-08-13'
+  stars: 55495
+  held_fork: data-path-9/Flowise
+  verified: '2026-10-09'
+
+- name: 9router
+  category: fork-wing
+  human_one_liner: unlimited FREE AI coding. Connect Claude Code, Codex, Cursor, Cline, Copilot, Antigravity
+    to FREE Claude/GPT/Gemini via 40+ providers. Auto-fallback, RTK -40% tokens, never hit limits.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/decolua/9router
+  last_push: '2026-10-08'
+  stars: 30529
+  held_fork: data-path-9/9router
+  verified: '2026-10-09'
+
+- name: cc-wf-studio
+  category: fork-wing
+  human_one_liner: cC Workflow Studio
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/breaking-brake/cc-wf-studio
+  last_push: '2026-10-07'
+  stars: 5394
+  held_fork: data-path-9/cc-wf-studio
+  verified: '2026-10-09'
+
+- name: system_prompts_leaks
+  category: fork-wing
+  human_one_liner: documented system prompts from Anthropic - Claude Fable 5.1, Opus 5.5, Claude Design,
+    Claude Code. OpenAI - ChatGPT GPT-6-Astra, Codex. Google - Gemini 3.8 Flash, 3.1 Pro, Antigravity.
+    xAI - Grok, Grok Bot, Cursor, Kimi and more! Updated regularly.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/asgeirtj/system_prompts_leaks
+  last_push: '2026-10-10'
+  stars: 69263
+  held_fork: data-path-9/system_prompts_leaks
+  verified: '2026-10-09'
+
+- name: FCC
+  category: fork-wing
+  human_one_liner: use Claude Code, Codex, VSCode, Pi, and OpenCode (and 6 other harnesses) for free (1.3B+
+    free tokens) from your terminal, app, IDE, or phone, and now from the browser with native browser
+    sessions (multi-harness + multi-model) like OpenClaw (voice supported + ToS friendly)
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/Alishahryar1/free-claude-code
+  last_push: '2026-10-09'
+  stars: 57105
+  held_fork: data-path-9/FCC
+  verified: '2026-10-09'
+
+- name: LibreChat
+  category: fork-wing
+  human_one_liner: 'enhanced ChatGPT Clone: Features Agents, MCP, Skills, DeepSeek, Anthropic, AWS, OpenAI,
+    Responses API, Azure, Groq, o1, GPT-5, Mistral, OpenRouter, Vertex AI, Gemini, Artifacts, AI model
+    switching, message search, Code Interpreter, langchain, DALL-E-3, OpenAPI Actions, Functions, Secure
+    Multi-User Auth, Presets, open-source for self-hosting. Active'
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/LibreChat-AI/LibreChat
+  last_push: '2026-10-09'
+  stars: 45464
+  held_fork: data-path-9/LibreChat
+  verified: '2026-10-09'
+
+- name: lollms-vs-coder
+  category: fork-wing
+  human_one_liner: aI-powered Visual Studio Code extension using Lollms's OpenAI-compatible interface
+    for smart code assistance, debugging, real-time enhancement, context management, and automated commit
+    message generation with full versioning support
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/ParisNeo/lollms-vs-coder
+  last_push: '2026-10-08'
+  stars: 6
+  held_fork: data-path-9/lollms-vs-coder
+  verified: '2026-10-09'
+
+- name: voice-ai
+  category: fork-wing
+  human_one_liner: rapida is an open-source, end-to-end voice AI orchestration platform for building real-time
+    conversational voice agents with audio streaming, STT, TTS, VAD, multi-channel integration, agent
+    state management, and observability.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/rapidaai/voice-ai
+  last_push: '2026-10-06'
+  stars: 745
+  held_fork: data-path-9/voice-ai
+  verified: '2026-10-09'
+
+- name: lollms_client
+  category: fork-wing
+  human_one_liner: a client to lollms server written in python
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/ParisNeo/lollms_client
+  last_push: '2026-10-08'
+  stars: 13
+  held_fork: data-path-9/lollms_client
+  verified: '2026-10-09'
+
+- name: lobehub
+  category: fork-wing
+  human_one_liner: 🤯 LobeHub is your Chief Agent Operator, organizing your agents into 7×24 operations
+    by hiring, scheduling, and reporting on your entire AI team.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/lobehub/lobehub
+  last_push: '2026-10-10'
+  stars: 83089
+  held_fork: data-path-9/lobehub
+  verified: '2026-10-09'
+
+- name: ui-ux-pro-max-skill
+  category: fork-wing
+  human_one_liner: an AI skill that provides design intelligence for building professional UI/UX across
+    multiple platforms.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/nextlevelbuilder/ui-ux-pro-max-skill
+  last_push: '2026-10-09'
+  stars: 134256
+  held_fork: data-path-9/ui-ux-pro-max-skill
+  verified: '2026-10-09'
+
+- name: SenseVoice
+  category: fork-wing
+  human_one_liner: open-source SenseVoiceSmall model for Mandarin, Cantonese, English, Japanese, and Korean
+    ASR, language ID, emotion recognition, and audio event detection.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/QwenAudio/SenseVoice
+  last_push: '2026-09-30'
+  stars: 9479
+  held_fork: data-path-9/SenseVoice
+  verified: '2026-10-09'
+
+- name: winboat
+  category: fork-wing
+  human_one_liner: run Windows apps on 🐧 Linux with ✨ seamless integration
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/winboat-org/winboat
+  last_push: '2026-10-04'
+  stars: 23174
+  held_fork: data-path-9/winboat
+  verified: '2026-10-09'
+
+- name: OpenMontage
+  category: fork-wing
+  human_one_liner: world's first open-source, agentic video production system. 12 production pipelines,
+    100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a
+    full video production studio.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/calesthio/OpenMontage
+  last_push: '2026-10-03'
+  stars: 65870
+  held_fork: data-path-9/OpenMontage
+  verified: '2026-10-09'
+
+- name: claude-code-ultimate-guide
+  category: fork-wing
+  human_one_liner: 'the most comprehensive Claude Code guide: agentic workflows, hooks, skills, MCP servers,
+    quizzes, and production-ready templates. 430K+ lines.'
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/FlorianBruniaux/claude-code-ultimate-guide
+  last_push: '2026-10-07'
+  stars: 6135
+  held_fork: data-path-9/claude-code-ultimate-guide
+  verified: '2026-10-09'
+
+- name: agency-agents
+  category: fork-wing
+  human_one_liner: a complete AI agency at your fingertips - From frontend wizards to Reddit community
+    ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality,
+    processes, and proven deliverables.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/msitarzewski/agency-agents
+  last_push: '2026-10-07'
+  stars: 158540
+  held_fork: data-path-9/agency-agents
+  verified: '2026-10-09'
+
+- name: CloakBrowser
+  category: fork-wing
+  human_one_liner: stealth Chromium that passes every bot detection test. Drop-in Playwright replacement
+    with source-level fingerprint patches. 30/30 tests passed.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/CloakHQ/CloakBrowser
+  last_push: '2026-10-08'
+  stars: 32001
+  held_fork: data-path-9/CloakBrowser
+  verified: '2026-10-09'
+
+- name: dev-browser
+  category: fork-wing
+  human_one_liner: a Claude Skill to give your agent the ability to use a web browser
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/SawyerHood/dev-browser
+  last_push: '2026-09-05'
+  stars: 6658
+  held_fork: data-path-9/dev-browser
+  verified: '2026-10-09'
+
+- name: openhuman
+  category: fork-wing
+  human_one_liner: the fastest, cheapest, most efficient open-source agent harness. Run more than 500
+    agents on a $10 VPS.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/tinyhumansai/openhuman
+  last_push: '2026-10-10'
+  stars: 41751
+  held_fork: data-path-9/openhuman
+  verified: '2026-10-09'
+
+- name: langflow
+  category: fork-wing
+  human_one_liner: langflow is a powerful tool for building and deploying AI-powered agents and workflows.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/langflow-ai/langflow
+  last_push: '2026-10-10'
+  stars: 155444
+  held_fork: data-path-9/langflow
+  verified: '2026-10-09'
+
+- name: rustwire
+  category: fork-wing
+  human_one_liner: niche intelligence dashboard for Rust systems programmers
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/AJ01-a/rustwire
+  last_push: '2026-10-09'
+  stars: 0
+  held_fork: data-path-9/rustwire
+  verified: '2026-10-09'
+
+- name: Prometheus
+  category: fork-wing
+  human_one_liner: this is a fork of the https://dockbox.dev project I made
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/domdoss/Warden
+  last_push: '2026-09-28'
+  stars: 172
+  held_fork: data-path-9/Prometheus
+  verified: '2026-10-09'
+
+- name: engram
+  category: fork-wing
+  human_one_liner: evidence-based learning engine — first-principles curricula, free-recall verification
+    with receipts, FSRS-scheduled memory, and explorable artifacts. Learn anything; keep it.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/nagisanzenin/engram
+  last_push: '2026-08-27'
+  stars: 1445
+  held_fork: data-path-9/engram
+  verified: '2026-10-09'
+
+- name: Vibe-Trading
+  category: fork-wing
+  human_one_liner: '"Vibe-Trading: Your Personal Trading Agent"'
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/HKUDS/Vibe-Trading
+  last_push: '2026-10-09'
+  stars: 35080
+  held_fork: data-path-9/Vibe-Trading
+  verified: '2026-10-09'
+
+- name: ai-job-search
+  category: fork-wing
+  human_one_liner: 'the job search that runs on your machine. AI job application framework built on Claude
+    Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.'
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/MadsLorentzen/ai-job-search
+  last_push: '2026-10-08'
+  stars: 45392
+  held_fork: data-path-9/ai-job-search
+  verified: '2026-10-09'
+
+- name: gstack
+  category: fork-wing
+  human_one_liner: 'use Garry Tan''s exact Claude Code setup: 23 opinionated tools that serve as CEO,
+    Designer, Eng Manager, Release Manager, Doc Engineer, and QA'
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/garrytan/gstack
+  last_push: '2026-10-09'
+  stars: 135744
+  held_fork: data-path-9/gstack
+  verified: '2026-10-09'
+
+- name: knip
+  category: fork-wing
+  human_one_liner: ✂️  Find unused files, dependencies and exports in your JavaScript and TypeScript projects.
+    Knip it before you ship it!
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/webpro-nl/knip
+  last_push: '2026-10-09'
+  stars: 12429
+  held_fork: data-path-9/knip
+  verified: '2026-10-09'
+
+- name: career-ops
+  category: fork-wing
+  human_one_liner: 'open-source AI job search agent and job finder: scan job boards, score each job 1-5
+    against your CV before you apply, tailor an ATS-friendly resume and cover letter, get interview prep
+    and a job application tracker. It helps you fill in each application; you press Submit. Runs locally
+    in your AI coding CLI (Claude Code, Codex, OpenCode and more).'
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/career-ops-hq/career-ops
+  last_push: '2026-10-10'
+  stars: 73913
+  held_fork: data-path-9/career-ops
+  verified: '2026-10-09'
+
+- name: OpenJarvis
+  category: fork-wing
+  human_one_liner: personal AI, On Personal Devices
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/open-jarvis/OpenJarvis
+  last_push: '2026-10-09'
+  stars: 10882
+  held_fork: data-path-9/OpenJarvis
+  verified: '2026-10-09'
+
+- name: loop-engineering
+  category: fork-wing
+  human_one_liner: practical patterns, starters & CLI tools for loop engineering with AI coding agents.
+    Design systems that prompt and orchestrate agents (inspired by Addy Osmani and Boris Cherny). Includes
+    loop-audit, loop-init, loop-cost.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/cobusgreyling/loop-engineering
+  last_push: '2026-10-09'
+  stars: 11446
+  held_fork: data-path-9/loop-engineering
+  verified: '2026-10-09'
+
+- name: OpenCut
+  category: fork-wing
+  human_one_liner: the open-source CapCut alternative
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/OpenCut-app/OpenCut
+  last_push: '2026-09-24'
+  stars: 93357
+  held_fork: data-path-9/OpenCut
+  verified: '2026-10-09'
+
+- name: Electra_AI_Center
+  category: fork-wing
+  human_one_liner: electra AI Center
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/raymerjacque/Electra_AI_Center
+  last_push: '2026-09-30'
+  stars: 12
+  held_fork: data-path-9/Electra_AI_Center
+  verified: '2026-10-09'
+
+- name: awesome-llm-apps
+  category: fork-wing
+  human_one_liner: 100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/Shubhamsaboo/awesome-llm-apps
+  last_push: '2026-09-30'
+  stars: 140983
+  held_fork: data-path-9/awesome-llm-apps
+  verified: '2026-10-09'
+
+- name: last30days-skill
+  category: fork-wing
+  human_one_liner: aI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket,
+    and the web - then synthesizes a grounded summary
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/mvanhorn/last30days-skill
+  last_push: '2026-10-09'
+  stars: 63850
+  held_fork: data-path-9/last30days-skill
+  verified: '2026-10-09'
+
+- name: ArcReel
+  category: fork-wing
+  human_one_liner: aI Agent 驱动的开源可自部署视频工作台：将小说与剧本转为角色、场景、道具资产、分镜、视频和剪映草稿，支持跨镜头一致性、多供应商与费用追踪 | Self-hosted
+    AI video workspace for stories, storyboards and short-form video production
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/ArcReel/ArcReel
+  last_push: '2026-10-09'
+  stars: 5408
+  held_fork: data-path-9/ArcReel
+  verified: '2026-10-09'
+
+- name: OpenWA
+  category: fork-wing
+  human_one_liner: free, Open Source, Self-Hosted WhatsApp API Gateway
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/rmyndharis/OpenWA
+  last_push: '2026-10-09'
+  stars: 15162
+  held_fork: data-path-9/OpenWA
+  verified: '2026-10-09'
+
+- name: lovable-for-beginners
+  category: fork-wing
+  human_one_liner: your complete beginner’s course to mastering Lovable Vibe Coding.  This repo is a step-by-step
+    learning hub designed to take absolute beginners and turn them into confident Lovable developers.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/cporter202/lovable-for-beginners
+  last_push: '2026-07-28'
+  stars: 606
+  held_fork: data-path-9/lovable-for-beginners
+  verified: '2026-10-09'
+
+- name: ECC
+  category: fork-wing
+  human_one_liner: the agent harness performance optimization system. Skills, instincts, memory, security,
+    and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/affaan-m/ECC
+  last_push: '2026-10-10'
+  stars: 276019
+  held_fork: data-path-9/ECC
+  verified: '2026-10-09'
+
+- name: yoinks
+  category: fork-wing
+  human_one_liner: yoink any video from your terminal. no shady ads.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/pablostanley/yoinks
+  last_push: '2026-07-17'
+  stars: 5643
+  held_fork: data-path-9/yoinks
+  verified: '2026-10-09'
+
+- name: STATE-Bench
+  category: fork-wing
+  human_one_liner: benchmark AI Agents on Enterprise Workflows
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/microsoft/STATE-Bench
+  last_push: '2026-08-04'
+  stars: 96
+  held_fork: data-path-9/STATE-Bench
+  verified: '2026-10-09'
+
+- name: hermes-chat-vscode
+  category: fork-wing
+  human_one_liner: upstream last touched 2026-07-16, copy held so it can't vanish quietly
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/Narizis/hermes-chat-vscode
+  last_push: '2026-07-16'
+  stars: 13
+  held_fork: data-path-9/hermes-chat-vscode
+  verified: '2026-10-09'
+
+- name: SX
+  category: fork-wing
+  human_one_liner: spotX patcher used for patching the desktop version of Spotify
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/SpotX-Official/SpotX
+  last_push: '2026-10-07'
+  stars: 22658
+  held_fork: data-path-9/SX
+  verified: '2026-10-09'
+
+- name: Hermes-SME-UI
+  category: fork-wing
+  human_one_liner: a control panel that turns a Hermes agent into a self-directed assistant for SMEs
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/siddartha19/Hermes-SME-UI
+  last_push: '2026-07-12'
+  stars: 3
+  held_fork: data-path-9/Hermes-SME-UI
+  verified: '2026-10-09'
+
+- name: project-nomad
+  category: fork-wing
+  human_one_liner: project NOMAD is an offline-first knowledge and education server. Wikipedia, thousands
+    of books, courses, maps, and optional local AI, all running on hardware you own with no internet required.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/Crosstalk-Solutions/project-nomad
+  last_push: '2026-10-08'
+  stars: 39361
+  held_fork: data-path-9/project-nomad
+  verified: '2026-10-09'
+
+- name: NetNexus
+  category: fork-wing
+  human_one_liner: nETNEXUS v2.1 — cinematic client-side STARK-CORE HUD with 19 IT & productivity tools.
+    Zero backend, zero build step.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/AJ01-a/NetNexus
+  last_push: '2026-07-10'
+  stars: 0
+  held_fork: data-path-9/NetNexus
+  verified: '2026-10-09'
+
+- name: ora-warden
+  category: fork-wing
+  human_one_liner: upstream last touched 2026-09-05, copy held so it can't vanish quietly
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/3d3dcanada/ora-warden
+  last_push: '2026-09-05'
+  stars: 3
+  held_fork: data-path-9/ora-warden
+  verified: '2026-10-09'
+
+- name: AbletonPlus
+  category: fork-wing
+  human_one_liner: safe.Smart.Open
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/AbletonPlus/AbletonPlus
+  last_push: '2026-07-09'
+  stars: 0
+  held_fork: data-path-9/AbletonPlus
+  verified: '2026-10-09'
+
+- name: firecrawl-mcp-server
+  category: fork-wing
+  human_one_liner: 🔥 Official Firecrawl MCP Server - Adds powerful web scraping and search to Cursor,
+    Claude and any other LLM clients.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/firecrawl/firecrawl-mcp-server
+  last_push: '2026-10-09'
+  stars: 7575
+  held_fork: data-path-9/firecrawl-mcp-server
+  verified: '2026-10-09'
+
+- name: claude-code-message-timestamps
+  category: fork-wing
+  human_one_liner: show local time on every Claude Code message, and let Claude know when each prompt
+    was sent. Zero-config plugin, cross-OS, graceful degradation.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/zoharbabin/claude-code-message-timestamps
+  last_push: '2026-07-08'
+  stars: 71
+  held_fork: data-path-9/claude-code-message-timestamps
+  verified: '2026-10-09'
+
+- name: projectmem
+  category: fork-wing
+  human_one_liner: open-source coding agents memory. Records issues, attempts, fixes and decisions, then
+    warns your agent before it repeats an approach that already failed. Native MCP server for Claude Code,
+    Cursor, Antigravity and Codex. 100% local, no cloud, no telemetry. MIT.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/riponcm/projectmem
+  last_push: '2026-10-03'
+  stars: 857
+  held_fork: data-path-9/projectmem
+  verified: '2026-10-09'
+
+- name: claude-seo
+  category: fork-wing
+  human_one_liner: universal SEO skill for Claude Code. 26 sub-skills + 19 sub-agents covering technical
+    SEO, E-E-A-T, schema, GEO/AEO, agent readiness (Lighthouse Agentic Browsing, WebMCP, llms.txt), backlinks,
+    local SEO, e-commerce, international SEO, Google APIs, and PDF/Excel reporting. 9 optional extensions
+    for live SEO data.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/AgriciDaniel/claude-seo
+  last_push: '2026-10-04'
+  stars: 18620
+  held_fork: data-path-9/claude-seo
+  verified: '2026-10-09'
+
+- name: voicebox
+  category: fork-wing
+  human_one_liner: the open-source AI voice studio. Clone, dictate, create.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/jamiepine/voicebox
+  last_push: '2026-10-07'
+  stars: 56760
+  held_fork: data-path-9/voicebox
+  verified: '2026-10-09'
+
+- name: citypulse
+  category: fork-wing
+  human_one_liner: upstream last touched 2026-08-31, copy held so it can't vanish quietly
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/AJ01-a/citypulse
+  last_push: '2026-08-31'
+  stars: 0
+  held_fork: data-path-9/citypulse
+  verified: '2026-10-09'
+
+- name: ai-website-cloner-template
+  category: fork-wing
+  human_one_liner: clone any website with one command using AI coding agents
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/JCodesMore/ai-website-cloner-template
+  last_push: '2026-10-05'
+  stars: 36361
+  held_fork: data-path-9/ai-website-cloner-template
+  verified: '2026-10-09'
+
+- name: openviking-browser-extension
+  category: fork-wing
+  human_one_liner: browser extension for saving the current page URL to OpenViking resources
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/qin-ctx/openviking-browser-extension
+  last_push: '2026-07-03'
+  stars: 4
+  held_fork: data-path-9/openviking-browser-extension
+  verified: '2026-10-09'
+
+- name: TOOL_Ext_Cursor_Hermes-Public
+  category: fork-wing
+  human_one_liner: upstream last touched 2026-06-30, copy held so it can't vanish quietly
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/Automaitiq-CH/TOOL_Ext_Cursor_Hermes-Public
+  last_push: '2026-06-30'
+  stars: 0
+  held_fork: data-path-9/TOOL_Ext_Cursor_Hermes-Public
+  verified: '2026-10-09'
+
+- name: Acontext
+  category: fork-wing
+  human_one_liner: agent Skills as a Memory Layer
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/memodb-io/Acontext
+  last_push: '2026-07-14'
+  stars: 3692
+  held_fork: data-path-9/Acontext
+  verified: '2026-10-09'
+
+- name: awesome-certificates
+  category: fork-wing
+  human_one_liner: curated list of 20,000+ hours and 200+ free courses with certificates in IT, CS, Design
+    and Business.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/PanXProject/awesome-certificates
+  last_push: '2026-06-30'
+  stars: 5823
+  held_fork: data-path-9/awesome-certificates
+  verified: '2026-10-09'
+
+- name: ace-step-ui
+  category: fork-wing
+  human_one_liner: 🎵 The Ultimate Open Source Suno Alternative - Professional UI for ACE-Step 1.5 AI Music
+    Generation. Free, local, unlimited. Stop paying for Suno!
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/fspecii/ace-step-ui
+  last_push: '2026-06-27'
+  stars: 5025
+  held_fork: data-path-9/ace-step-ui
+  verified: '2026-10-09'
+
+- name: hermes-control-interface
+  category: fork-wing
+  human_one_liner: a self-hosted web dashboard for the Hermes AI agent stack. Provides a browser-based
+    terminal, file explorer, session overview, cron management, system metrics, and an agent status panel
+    — all behind a single password gate.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/xaspx/hermes-control-interface
+  last_push: '2026-06-28'
+  stars: 897
+  held_fork: data-path-9/hermes-control-interface
+  verified: '2026-10-09'
+
+- name: Anthropic-Cybersecurity-Skills
+  category: fork-wing
+  human_one_liner: '817 structured cybersecurity skills for AI agents · Mapped to 6 frameworks: MITRE
+    ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF & MITRE F3 (Fight Fraud) · agentskills.io standard
+    · Works with Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI & 20+ platforms · 29 security
+    domains · Apache 2.0'
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/mukul975/Anthropic-Cybersecurity-Skills
+  last_push: '2026-08-31'
+  stars: 34088
+  held_fork: data-path-9/Anthropic-Cybersecurity-Skills
+  verified: '2026-10-09'
+
+- name: collab-public
+  category: fork-wing
+  human_one_liner: collaborator is a place to create with agents.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/collabs-inc/collab-public
+  last_push: '2026-08-08'
+  stars: 3074
+  held_fork: data-path-9/collab-public
+  verified: '2026-10-09'
+
+- name: stock-market-signal-automation
+  category: fork-wing
+  human_one_liner: build your own data-driven market edge with swing-trade signal webhooks, dashboards,
+    alerts, AI agents, and automation examples.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/cporter202/stock-market-signal-automation
+  last_push: '2026-10-10'
+  stars: 234
+  held_fork: data-path-9/stock-market-signal-automation
+  verified: '2026-10-09'
+
+- name: vibecode-pro-max-kit
+  category: fork-wing
+  human_one_liner: your AI forgets. This remembers. Spec-driven coding harness for vibecoders, product
+    owners, CEOs and real builders — self-improving context memory, 15 agents, 33 skills working with
+    /goal, agent-team, & workflow on autopilot loops with 0 need for human gate. Kills context rot, ships
+    features, not spaghetti. Claude Code & Codex. Any stack
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/withkynam/vibecode-pro-max-kit
+  last_push: '2026-06-21'
+  stars: 1147
+  held_fork: data-path-9/vibecode-pro-max-kit
+  verified: '2026-10-09'
+
+- name: awesome-nvidia-nim
+  category: fork-wing
+  human_one_liner: a curated list of resources, tools, and projects for building with NVIDIA NIM inference
+    microservices
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/DanielDeshmukh/awesome-nvidia-nim
+  last_push: '2026-07-22'
+  stars: 10
+  held_fork: data-path-9/awesome-nvidia-nim
+  verified: '2026-10-09'
+
+- name: lollms-webui
+  category: fork-wing
+  human_one_liner: lord of Large Language and Multi modal Systems Web User Interface
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/ParisNeo/lollms-webui
+  last_push: '2026-10-05'
+  stars: 4789
+  held_fork: data-path-9/lollms-webui
+  verified: '2026-10-09'
+
+- name: OBLITERATUS
+  category: fork-wing
+  human_one_liner: oBLITERATE THE CHAINS THAT BIND YOU
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/elder-plinius/OBLITERATUS
+  last_push: '2026-10-09'
+  stars: 8691
+  held_fork: data-path-9/OBLITERATUS
+  verified: '2026-10-09'
+
+- name: AI-Research-SKILLs
+  category: fork-wing
+  human_one_liner: comprehensive open-source library of AI research and engineering skills for any AI
+    model. Package the skills and your claude code/codex/gemini agent will be an AI research agent with
+    full horsepower. Maintained by Orchestra Research.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/Orchestra-Research/AI-Research-SKILLs
+  last_push: '2026-06-16'
+  stars: 13394
+  held_fork: data-path-9/AI-Research-SKILLs
+  verified: '2026-10-09'
+
+- name: token-saver
+  category: fork-wing
+  human_one_liner: cross-agent Agent Skill orchestrating RTK, Headroom, omo, UltraWork, lazycodex & Superpowers
+    to minimize tokens and report RTK+Headroom savings — for Claude Code / Codex / Antigravity / hermes-agent
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/formin/token-saver
+  last_push: '2026-06-10'
+  stars: 1
+  held_fork: data-path-9/token-saver
+  verified: '2026-10-09'
+
+- name: sessionat
+  category: fork-wing
+  human_one_liner: the open-source Mac browser AI can actually use. Workspaces, auto-saved sessions (replaces
+    Session Buddy/OneTab/Toby), local-only visit analytics, and a built-in MCP server so Claude, Cursor,
+    and any AI agent can drive your real browser. MIT-licensed.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/dublyo/sessionat
+  last_push: '2026-06-05'
+  stars: 11
+  held_fork: data-path-9/sessionat
+  verified: '2026-10-09'
+
+- name: system-design-notes
+  category: fork-wing
+  human_one_liner: notes of the book System Desgin Interview - An Insider's Guide
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/liquidslr/system-design-notes
+  last_push: '2026-08-12'
+  stars: 25519
+  held_fork: data-path-9/system-design-notes
+  verified: '2026-10-09'
+
+- name: Viper
+  category: fork-wing
+  human_one_liner: adversary simulation and Red teaming platform with AI
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/FunnyWolf/Viper
+  last_push: '2026-05-31'
+  stars: 5322
+  held_fork: data-path-9/Viper
+  verified: '2026-10-09'
+
+- name: claude-obsidian
+  category: fork-wing
+  human_one_liner: self-organizing AI second brain for Obsidian + Claude Code. Drop any source and Claude
+    reads, links, and files it into one connected knowledge graph of plain Markdown you own. AI note-taking,
+    personal knowledge management (PKM), and an open-source Notion alternative. Based on Karpathy's LLM
+    Wiki pattern.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/AgriciDaniel/claude-obsidian
+  last_push: '2026-09-10'
+  stars: 15433
+  held_fork: data-path-9/claude-obsidian
+  verified: '2026-10-09'
+
+- name: LongCat-Video
+  category: fork-wing
+  human_one_liner: upstream last touched 2026-05-27, copy held so it can't vanish quietly
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/meituan-longcat/LongCat-Video
+  last_push: '2026-05-27'
+  stars: 9139
+  held_fork: data-path-9/LongCat-Video
+  verified: '2026-10-09'
+
+- name: hermes-time_perception-extension
+  category: fork-wing
+  human_one_liner: 'hermes Agent time-perception extension: inject current time tag into every LLM turn
+    via pre_llm_call hook (zero-patch, ephemeral).'
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/gejifeng/hermes-time_perception-extension
+  last_push: '2026-05-27'
+  stars: 5
+  held_fork: data-path-9/hermes-time_perception-extension
+  verified: '2026-10-09'
+
+- name: lollms_personalities_zoo
+  category: fork-wing
+  human_one_liner: lord of LLMS personalities zoo
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/ParisNeo/lollms_personalities_zoo
+  last_push: '2026-05-26'
+  stars: 26
+  held_fork: data-path-9/lollms_personalities_zoo
+  verified: '2026-10-09'
+
+- name: linux-sysadmin-skills
+  category: fork-wing
+  human_one_liner: a Claude Code skill bundle for Linux system administration — security, performance,
+    diagnostics, monitoring, and maintenance.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/HermeticOrmus/linux-sysadmin-skills
+  last_push: '2026-05-25'
+  stars: 6
+  held_fork: data-path-9/linux-sysadmin-skills
+  verified: '2026-10-09'
+
+- name: Claude-Code-Game-Studios
+  category: fork-wing
+  human_one_liner: turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and
+    a complete coordination system mirroring real studio hierarchy.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/Donchitos/Claude-Code-Game-Studios
+  last_push: '2026-10-08'
+  stars: 26009
+  held_fork: data-path-9/Claude-Code-Game-Studios
+  verified: '2026-10-09'
+
+- name: claude-skills
+  category: fork-wing
+  human_one_liner: 67 Specialized Skills for Full-Stack Developers. Transform Claude Code into your expert
+    pair programmer.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/Jeffallan/claude-skills
+  last_push: '2026-10-03'
+  stars: 11799
+  held_fork: data-path-9/claude-skills
+  verified: '2026-10-09'
+
+- name: hermes-agent-control-room
+  category: fork-wing
+  human_one_liner: control Room-first template for managing Hermes agents from one VPS agent to specialist
+    teams and orchestrated workflows
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/shannhk/hermes-agent-control-room
+  last_push: '2026-05-16'
+  stars: 724
+  held_fork: data-path-9/hermes-agent-control-room
+  verified: '2026-10-09'
+
+- name: image-blaster
+  category: fork-wing
+  human_one_liner: an image-to-world skillset for Claude.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/neilsonnn/image-blaster
+  last_push: '2026-05-15'
+  stars: 10906
+  held_fork: data-path-9/image-blaster
+  verified: '2026-10-09'
+
+- name: Deep-Research-skills
+  category: fork-wing
+  human_one_liner: structured deep research skill for Claude Code/Open Code/Codex with human-in-the-loop
+    control
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/Weizhena/Deep-Research-skills
+  last_push: '2026-08-23'
+  stars: 2321
+  held_fork: data-path-9/Deep-Research-skills
+  verified: '2026-10-09'
+
+- name: VisionClaw
+  category: fork-wing
+  human_one_liner: real-time AI assistant for Meta Ray-Ban smart glasses -- voice + vision + agentic actions
+    via Gemini Live and OpenClaw
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/Intent-Lab/VisionClaw
+  last_push: '2026-09-26'
+  stars: 2576
+  held_fork: data-path-9/VisionClaw
+  verified: '2026-10-09'
+
+- name: devmemory-ai
+  category: fork-wing
+  human_one_liner: upstream last touched 2026-05-04, copy held so it can't vanish quietly
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/jukafarneiy/devmemory-ai
+  last_push: '2026-05-04'
+  stars: 1
+  held_fork: data-path-9/devmemory-ai
+  verified: '2026-10-09'
+
+- name: AI-ML-Roadmap-from-scratch
+  category: fork-wing
+  human_one_liner: become skilled in Artificial Intelligence, Machine Learning, Generative AI, Deep Learning,
+    Data Science, Natural Language Processing, Reinforcement Learning and more with this complete 0 to
+    100 repository.
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/aadi1011/AI-ML-Roadmap-from-scratch
+  last_push: '2026-08-12'
+  stars: 4229
+  held_fork: data-path-9/AI-ML-Roadmap-from-scratch
+  verified: '2026-10-09'
+
+- name: lollms_hub
+  category: fork-wing
+  human_one_liner: a proxy server for multiple ollama instances with Key security
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/ParisNeo/lollms_hub
+  last_push: '2026-04-23'
+  stars: 649
+  held_fork: data-path-9/lollms_hub
+  verified: '2026-10-09'
+
+- name: Kronos
+  category: fork-wing
+  human_one_liner: 'kronos: A Foundation Model for the Language of Financial Markets'
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/shiyu-coder/Kronos
+  last_push: '2026-04-13'
+  stars: 40377
+  held_fork: data-path-9/Kronos
+  verified: '2026-10-09'
+
+- name: CLIP
+  category: fork-wing
+  human_one_liner: cLIP (Contrastive Language-Image Pretraining),  Predict the most relevant text snippet
+    given an image
+  why_saved: upstream quiet since 2026-03-25; copy kept before the trail goes cold
+  status: quiet
+  repo: https://github.com/openai/CLIP
+  last_push: '2026-03-25'
+  stars: 34432
+  held_fork: data-path-9/CLIP
+  verified: '2026-10-09'
+
+- name: hermes-facebook-skill
+  category: fork-wing
+  human_one_liner: a plug-and-play skill for Hermes Agent by Nous Research that connects your agent to
+    a Facebook Page via the Meta Graph API.  Designed for insurance and reinsurance brokers — and any
+    business — that want autonomous, rule-based Facebook marketing without a dedicated social media team.
+  why_saved: upstream quiet since 2026-03-23; copy kept before the trail goes cold
+  status: quiet
+  repo: https://github.com/mustfaaa/hermes-facebook-skill
+  last_push: '2026-03-23'
+  stars: 4
+  held_fork: data-path-9/hermes-facebook-skill
+  verified: '2026-10-09'
+
+- name: stop-slop
+  category: fork-wing
+  human_one_liner: a skill file for removing AI tells from prose
+  why_saved: upstream quiet since 2026-03-17; copy kept before the trail goes cold
+  status: quiet
+  repo: https://github.com/hardikpandya/stop-slop
+  last_push: '2026-03-17'
+  stars: 17884
+  held_fork: data-path-9/stop-slop
+  verified: '2026-10-09'
+
+- name: context-engineering-intro
+  category: fork-wing
+  human_one_liner: context engineering is the new vibe coding - it's the way to actually make AI coding
+    assistants work. Claude Code is the best for this so that's what this repo is centered around, but
+    you can apply this strategy with any AI coding assistant!
+  why_saved: upstream quiet since 2026-03-16; copy kept before the trail goes cold
+  status: quiet
+  repo: https://github.com/coleam00/context-engineering-intro
+  last_push: '2026-03-16'
+  stars: 13882
+  held_fork: data-path-9/context-engineering-intro
+  verified: '2026-10-09'
+
+- name: Star-Office-UI
+  category: fork-wing
+  human_one_liner: 'a pixel office for your OpenClaw: turn invisible work states into a cozy little space
+    with characters, daily notes, and guest agents. Code under MIT; art assets for non-commercial learning
+    only.'
+  why_saved: upstream quiet since 2026-03-11; copy kept before the trail goes cold
+  status: quiet
+  repo: https://github.com/ringhyacinth/Star-Office-UI
+  last_push: '2026-03-11'
+  stars: 7502
+  held_fork: data-path-9/Star-Office-UI
+  verified: '2026-10-09'
+
+- name: stable-diffusion-webui
+  category: fork-wing
+  human_one_liner: stable Diffusion web UI
+  why_saved: upstream quiet since 2026-03-02; copy kept before the trail goes cold
+  status: quiet
+  repo: https://github.com/AUTOMATIC1111/stable-diffusion-webui
+  last_push: '2026-03-02'
+  stars: 165034
+  held_fork: data-path-9/stable-diffusion-webui
+  verified: '2026-10-09'
+
+- name: prompt-eng-interactive-tutorial
+  category: fork-wing
+  human_one_liner: anthropic's Interactive Prompt Engineering Tutorial
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/anthropics/prompt-eng-interactive-tutorial
+  last_push: '2026-08-28'
+  stars: 38444
+  held_fork: data-path-9/prompt-eng-interactive-tutorial
+  verified: '2026-10-09'
+
+- name: secure-askpass
+  category: fork-wing
+  human_one_liner: 'sSH Askpass Helper: Secure sudo password storage using SSH key encryption'
+  why_saved: upstream quiet since 2026-02-01; copy kept before the trail goes cold
+  status: quiet
+  repo: https://github.com/GlassOnTin/secure-askpass
+  last_push: '2026-02-01'
+  stars: 28
+  held_fork: data-path-9/secure-askpass
+  verified: '2026-10-09'
+
+- name: ai-data-science-team
+  category: fork-wing
+  human_one_liner: an AI-powered data science team of agents to help you perform common data science tasks
+    10X faster.
+  why_saved: upstream quiet since 2026-01-28; copy kept before the trail goes cold
+  status: quiet
+  repo: https://github.com/business-science/ai-data-science-team
+  last_push: '2026-01-28'
+  stars: 5449
+  held_fork: data-path-9/ai-data-science-team
+  verified: '2026-10-09'
+
+- name: sora-json-prompt-crafter
+  category: fork-wing
+  human_one_liner: a vibe coded Sora JSON Prompt Crafter for curious humans and prompt engineers
+  why_saved: upstream breathing as of 2026-10-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/supermarsx/sora-json-prompt-crafter
+  last_push: '2026-09-18'
+  stars: 49
+  held_fork: data-path-9/sora-json-prompt-crafter
+  verified: '2026-10-09'
+
+- name: LollmsEnv
+  category: fork-wing
+  human_one_liner: a package management tool
+  why_saved: upstream quiet since 2026-01-13; copy kept before the trail goes cold
+  status: quiet
+  repo: https://github.com/ParisNeo/LollmsEnv
+  last_push: '2026-01-13'
+  stars: 7
+  held_fork: data-path-9/LollmsEnv
+  verified: '2026-10-09'
+
+- name: models_zoo
+  category: fork-wing
+  human_one_liner: from now on, models are not dispatched by binding but by type. Here we will have all
+    the models organized and ready to use by lollms or other tools
+  why_saved: upstream quiet since 2025-10-30; copy kept before the trail goes cold
+  status: quiet
+  repo: https://github.com/ParisNeo/models_zoo
+  last_push: '2025-10-30'
+  stars: 8
+  held_fork: data-path-9/models_zoo
+  verified: '2026-10-09'
+
+- name: lollms_bindings_zoo
+  category: fork-wing
+  human_one_liner: upstream last touched 2025-10-30, copy held so it can't vanish quietly
+  why_saved: upstream quiet since 2025-10-30; copy kept before the trail goes cold
+  status: quiet
+  repo: https://github.com/ParisNeo/lollms_bindings_zoo
+  last_push: '2025-10-30'
+  stars: 14
+  held_fork: data-path-9/lollms_bindings_zoo
+  verified: '2026-10-09'
+
+- name: lollms_mcps_zoo
+  category: fork-wing
+  human_one_liner: a zoo for lollms compatible MCPs
+  why_saved: upstream quiet since 2025-10-26; copy kept before the trail goes cold
+  status: quiet
+  repo: https://github.com/ParisNeo/lollms_mcps_zoo
+  last_push: '2025-10-26'
+  stars: 0
+  held_fork: data-path-9/lollms_mcps_zoo
+  verified: '2026-10-09'
+
+- name: Arch-Store
+  category: fork-wing
+  human_one_liner: simple store for Arch Linux compatible with Flatpak, Pacman, and AUR (using Yay or
+    Paru)
+  why_saved: upstream quiet since 2025-10-16; copy kept before the trail goes cold
+  status: quiet
+  repo: https://github.com/Samuobe/Arch-Store
+  last_push: '2025-10-16'
+  stars: 79
+  held_fork: data-path-9/Arch-Store
+  verified: '2026-10-09'
+
+- name: us-legal-tools
+  category: fork-wing
+  human_one_liner: upstream last touched 2025-08-06, copy held so it can't vanish quietly
+  why_saved: upstream quiet since 2025-08-06; copy kept before the trail goes cold
+  status: quiet
+  repo: https://github.com/beshkenadze/us-legal-tools
+  last_push: '2025-08-06'
+  stars: 16
+  held_fork: data-path-9/us-legal-tools
+  verified: '2026-10-09'
+
+- name: A-Curated-List-of-ML-System-Design-Case-Studies
+  category: fork-wing
+  human_one_liner: 'this repository contains a curated collection of 300+ case studies from over 80 companies,
+    detailing practical applications and insights into machine learning (ML) system design. The contents
+    are organized to help you easily find relevant case studies based on industry or specific ML use cases. '
+  why_saved: upstream quiet since 2025-08-05; copy kept before the trail goes cold
+  status: quiet
+  repo: https://github.com/Engineer1999/A-Curated-List-of-ML-System-Design-Case-Studies
+  last_push: '2025-08-05'
+  stars: 11013
+  held_fork: data-path-9/A-Curated-List-of-ML-System-Design-Case-Studies
+  verified: '2026-10-09'
+
+- name: matrix
+  category: fork-wing
+  human_one_liner: matrix (web-based green code rain, made with love)
+  why_saved: upstream quiet since 2025-06-23; copy kept before the trail goes cold
+  status: quiet
+  repo: https://github.com/Rezmason/matrix
+  last_push: '2025-06-23'
+  stars: 3855
+  held_fork: data-path-9/matrix
+  verified: '2026-10-09'
+
+- name: lollms_services_zoo
+  category: fork-wing
+  human_one_liner: a module that will handle all lollms services from now on
+  why_saved: upstream quiet since 2025-06-06; copy kept before the trail goes cold
+  status: quiet
+  repo: https://github.com/ParisNeo/lollms_services_zoo
+  last_push: '2025-06-06'
+  stars: 3
+  held_fork: data-path-9/lollms_services_zoo
+  verified: '2026-10-09'
+
+- name: lollms_functions_zoo
+  category: fork-wing
+  human_one_liner: a zoo for function calling that can be used in lollms
+  why_saved: upstream quiet since 2025-06-02; copy kept before the trail goes cold
+  status: quiet
+  repo: https://github.com/ParisNeo/lollms_functions_zoo
+  last_push: '2025-06-02'
+  stars: 4
+  held_fork: data-path-9/lollms_functions_zoo
+  verified: '2026-10-09'
+
+- name: ROCm-For-RX580
+  category: fork-wing
+  human_one_liner: rOCm docker images with fixes/support for legecy architecture gfx803. eg.Radeon RX
+    590/RX 580/RX 570/RX 480
+  why_saved: upstream quiet since 2025-05-20; copy kept before the trail goes cold
+  status: quiet
+  repo: https://github.com/woodrex83/ROCm-For-RX580
+  last_push: '2025-05-20'
+  stars: 106
+  held_fork: data-path-9/ROCm-For-RX580
+  verified: '2026-10-09'
+
+- name: LoLLMsVectorDB
+  category: fork-wing
+  human_one_liner: a modular text-based database manager for retrieval-augmented generation (RAG), seamlessly
+    integrating with the LoLLMs ecosystem. Supports various vectorization methods and directory bindings
+    for efficient text data management.
+  why_saved: upstream quiet since 2025-04-25; copy kept before the trail goes cold
+  status: quiet
+  repo: https://github.com/ParisNeo/LoLLMsVectorDB
+  last_push: '2025-04-25'
+  stars: 12
+  held_fork: data-path-9/LoLLMsVectorDB
+  verified: '2026-10-09'
+
+- name: OpenVoice
+  category: fork-wing
+  human_one_liner: instant voice cloning by MIT and MyShell. Audio foundation model.
+  why_saved: upstream quiet since 2025-04-19; copy kept before the trail goes cold
+  status: quiet
+  repo: https://github.com/myshell-ai/OpenVoice
+  last_push: '2025-04-19'
+  stars: 37820
+  held_fork: data-path-9/OpenVoice
+  verified: '2026-10-09'
+
+- name: lollms_nodes_suite
+  category: fork-wing
+  human_one_liner: a suite of lollms Comfyui nodes
+  why_saved: upstream quiet since 2025-03-12; copy kept before the trail goes cold
+  status: quiet
+  repo: https://github.com/ParisNeo/lollms_nodes_suite
+  last_push: '2025-03-12'
+  stars: 11
+  held_fork: data-path-9/lollms_nodes_suite
+  verified: '2026-10-09'
+
+- name: LollmsROSGateway
+  category: fork-wing
+  human_one_liner: a gateway between Lollms and ROS. To allow your robots to be smarter and powered by
+    lollms
+  why_saved: upstream silent since 2024-08-07; this copy is now part of the record
+  status: orphaned
+  repo: https://github.com/ParisNeo/LollmsROSGateway
+  last_push: '2024-08-07'
+  stars: 3
+  held_fork: data-path-9/LollmsROSGateway
+  verified: '2026-10-09'
+
+- name: lollms_extensions_zoo
+  category: fork-wing
+  human_one_liner: extensions for lollms tool
+  why_saved: upstream silent since 2024-07-17; this copy is now part of the record
+  status: orphaned
+  repo: https://github.com/ParisNeo/lollms_extensions_zoo
+  last_push: '2024-07-17'
+  stars: 8
+  held_fork: data-path-9/lollms_extensions_zoo
+  verified: '2026-10-09'
+
+- name: stable-diffusion
+  category: fork-wing
+  human_one_liner: a latent text-to-image diffusion model
+  why_saved: upstream silent since 2024-06-18; this copy is now part of the record
+  status: orphaned
+  repo: https://github.com/CompVis/stable-diffusion
+  last_push: '2024-06-18'
+  stars: 73481
+  held_fork: data-path-9/stable-diffusion
+  verified: '2026-10-09'
+
+- name: lollms_proxy_server
+  category: fork-wing
+  human_one_liner: a proxy to serve multiple lollms instances with authentication
+  why_saved: upstream silent since 2024-03-12; this copy is now part of the record
+  status: orphaned
+  repo: https://github.com/ParisNeo/lollms_proxy_server
+  last_push: '2024-03-12'
+  stars: 4
+  held_fork: data-path-9/lollms_proxy_server
+  verified: '2026-10-09'
+
+- name: lollms-for-vscode
+  category: fork-wing
+  human_one_liner: upstream last touched 2024-02-09, copy held so it can't vanish quietly
+  why_saved: upstream silent since 2024-02-09; this copy is now part of the record
+  status: orphaned
+  repo: https://github.com/ParisNeo/lollms-for-vscode
+  last_push: '2024-02-09'
+  stars: 10
+  held_fork: data-path-9/lollms-for-vscode
+  verified: '2026-10-09'
+
+- name: lollms_server_proxy
+  category: fork-wing
+  human_one_liner: a proxy to use lollms as a multi user remote server for text/image/audio/video generation
+  why_saved: upstream silent since 2024-02-06; this copy is now part of the record
+  status: orphaned
+  repo: https://github.com/ParisNeo/lollms_server_proxy
+  last_push: '2024-02-06'
+  stars: 3
+  held_fork: data-path-9/lollms_server_proxy
+  verified: '2026-10-09'
+
+- name: lollms_image_gen_zoo
+  category: fork-wing
+  human_one_liner: a zoo for image generation models for the lollms project
+  why_saved: upstream silent since 2023-11-12; this copy is now part of the record
+  status: orphaned
+  repo: https://github.com/ParisNeo/lollms_image_gen_zoo
+  last_push: '2023-11-12'
+  stars: 3
+  held_fork: data-path-9/lollms_image_gen_zoo
+  verified: '2026-10-09'
+
+- name: chromium-latest-linux
+  category: fork-wing
+  human_one_liner: scripts to download and run the latest Linux build of Chromium.  A substitute for Chrome
+    Canary on Linux.
+  why_saved: upstream silent since 2023-08-22; this copy is now part of the record
+  status: orphaned
+  repo: https://github.com/scheib/chromium-latest-linux
+  last_push: '2023-08-22'
+  stars: 832
+  held_fork: data-path-9/chromium-latest-linux
+  verified: '2026-10-09'
+
+- name: amdvbflash
+  category: fork-wing
+  human_one_liner: upstream last touched 2020-12-29, copy held so it can't vanish quietly
+  why_saved: upstream silent since 2020-12-29; this copy is now part of the record
+  status: orphaned
+  repo: https://github.com/stylesuxx/amdvbflash
+  last_push: '2020-12-29'
+  stars: 105
+  held_fork: data-path-9/amdvbflash
   verified: '2026-10-09'
 
 - name: books3

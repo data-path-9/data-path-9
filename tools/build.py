@@ -40,7 +40,7 @@ with open(ROOT / "catalog.yaml") as f:
 
 # ---- guards: the catalog is load-bearing, fail loudly at build time ----
 assert isinstance(CATALOG, list), "catalog.yaml must be a list of records"
-assert len(CATALOG) == 67, f"expected 67 records, got {len(CATALOG)}"
+assert len(CATALOG) == 268, f"expected 268 records, got {len(CATALOG)}"
 for rec in CATALOG:
     name = rec.get("name", "??")
     for field in ("name", "category", "status", "human_one_liner", "why_saved"):
