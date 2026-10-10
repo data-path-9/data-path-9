@@ -432,3 +432,58 @@ footer { margin-top: clamp(5rem, 12vh, 9rem); position: relative; }
   .entry .meta { flex-direction: row; flex-wrap: wrap; align-items: baseline; justify-content: flex-start; gap: .4rem 1.2rem; text-align: left; min-width: 0; }
   .hero-foot { gap: 1rem; }
 }
+
+
+/* ---- the ledger of copies (fork wing) ---- */
+.copy-ledger {
+  border: 1px solid var(--shelf-edge);
+  background: var(--shelf);
+  border-radius: 4px;
+  margin: 1.8rem 0 1rem;
+}
+.copy-ledger summary {
+  cursor: pointer; list-style: none;
+  display: flex; align-items: baseline; gap: 1.1rem; flex-wrap: wrap;
+  padding: 1.1rem 1.4rem;
+  font-family: var(--mono); font-size: .74rem; letter-spacing: .1em;
+  text-transform: uppercase; color: var(--mist);
+}
+.copy-ledger summary::-webkit-details-marker { display: none; }
+/* author display on children can defeat the UA's closed-details hiding —
+   hide the body explicitly so closed means closed (boxes, paint, tab order) */
+.copy-ledger:not([open]) .copy-rows,
+.copy-ledger:not([open]) .ledger-note { display: none; }
+.copy-ledger summary:hover { color: var(--bone); }
+.copy-ledger summary .range { margin-left: auto; }
+.copy-ledger summary .chev { color: var(--lamp); transition: transform .25s var(--ease-out); }
+.copy-ledger[open] summary .chev { transform: rotate(90deg); }
+.copy-ledger .ledger-note {
+  padding: 0 1.4rem 1.1rem; max-width: var(--measure);
+  color: var(--steel); font-size: .86rem;
+}
+.copy-ledger .ledger-note a { color: var(--lamp); text-decoration: none; }
+.copy-ledger .ledger-note a:hover { text-decoration: underline; }
+.copy-ledger .ledger-note code { font-family: var(--mono); font-size: .8em; }
+.copy-rows { padding: 0 1.4rem 1.2rem; }
+.copy-row {
+  display: grid; grid-template-columns: .9rem minmax(0, 1fr) auto auto;
+  gap: .3rem 1.1rem; align-items: baseline;
+  padding: .52rem 0; border-bottom: 1px solid var(--shelf-edge);
+  font-family: var(--mono); font-size: .72rem;
+}
+.copy-row:last-child { border-bottom: 0; }
+.copy-row .s-dot { width: .42rem; height: .42rem; justify-self: center; }
+.copy-row .cname {
+  min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.copy-row .cname a { color: var(--bone); text-decoration: none; }
+.copy-row .cname a:hover { color: var(--lamp); }
+.copy-row .cdesc { color: var(--steel); }
+.copy-row .cstars { color: var(--steel); text-align: right; min-width: 4.2rem; }
+.copy-row .cheld { text-align: right; }
+.copy-row .cheld a { color: var(--lamp); text-decoration: none; }
+.copy-row .cheld a:hover { text-decoration: underline; }
+@media (max-width: 640px) {
+  .copy-row { grid-template-columns: .9rem minmax(0, 1fr) auto; }
+  .copy-row .cstars { display: none; }
+}

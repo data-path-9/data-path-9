@@ -201,20 +201,64 @@ def render_shelves():
         recs = [r for r in CATALOG if r["category"] == cat]
         if not recs or cat == "saved-from-the-fire":
             continue
+        # fork wing: pilot records carry real stories -> cards; the sweep
+        # (template "upstream ..." prose) collapses into the copy ledger below
+        stories, copies = recs, []
+        if cat == "fork-wing":
+            stories = [r for r in recs if not r["why_saved"].startswith("upstream ")]
+            copies = [r for r in recs if r["why_saved"].startswith("upstream ")]
         rows = []
-        for r in recs:
+        for r in stories:
             idx += 1
             rows.append(render_entry(r, idx))
         nid = f"shelf-{cat}"
+        ledger = render_copy_ledger(copies) if copies else ""
         out.append(f"""  <section class="shelf" id="{nid}" data-shelf="{cat}">
     <div class="section-inner">
       <div class="shelf-head reveal">
         <h2>{esc(CATEGORY_TITLES[cat])}</h2>
         <span class="range">{len(recs)} entries</span>
       </div>
-{"".join(rows)}    </div>
+{"".join(rows)}{ledger}    </div>
   </section>""")
     return "\n".join(out)
+
+
+def render_copy_ledger(recs):
+    """one-line ledger of held copies; the at-risk come first, the insurance
+    majority lives inside a collapsed <details> so the shelf stays a shelf"""
+    if not recs:
+        return ""
+    rank = {"orphaned": 0, "archived": 1, "quiet": 2, "moved": 3, "vanished": 4}
+    at_risk = sorted(
+        (r for r in recs if rank.get(r["status"], 9) < 9),
+        key=lambda r: (rank[r["status"]], r.get("last_push") or ""))
+    insured = [r for r in recs if rank.get(r["status"], 9) >= 9]
+    insured.sort(key=lambda r: r["name"].lower())
+
+    def row(r):
+        stars = fmt_stars(r["stars"]) if r.get("stars") else "\u2014"
+        return (f'      <div class="copy-row" data-status="{r["status"]}">\n'
+                f'        <span class="s-dot dot-{r["status"]}"></span>\n'
+                f'        <span class="cname"><a href="{esc(r["repo"])}" rel="noopener">{esc(r["name"])}</a>'
+                f' <span class="cdesc">{esc(r["human_one_liner"])}</span></span>\n'
+                f'        <span class="cstars">{stars}</span>\n'
+                f'        <span class="cheld"><a href="https://github.com/{esc(r["held_fork"])}"'
+                f' rel="noopener">copy held</a></span>\n'
+                f'      </div>\n')
+
+    at_risk_html = "".join(row(r) for r in at_risk)
+    insured_html = "".join(row(r) for r in insured)
+    return f"""  <details class="copy-ledger reveal">
+    <summary><span class="chev">\u25b8</span>the ledger of copies<span class="range">{len(recs)} copies \u00b7 {len(at_risk)} at risk \u00b7 {len(insured)} insurance</span></summary>
+    <p class="ledger-note">every upstream the sweep verified on 2026-10-09, held as a fork in this
+    account \u2014 receipts in <a href="https://github.com/data-path-9/data-path-9/blob/main/catalog.yaml"><code>catalog.yaml</code></a>.
+    insurance is bought while the house is standing, so most upstreams here are still breathing.
+    the {len(at_risk)} at-risk copies come first; the stories above carry their own copies on the card.</p>
+    <div class="copy-rows">
+{at_risk_html}{insured_html}    </div>
+  </details>
+"""
 
 
 def dpx_example():
