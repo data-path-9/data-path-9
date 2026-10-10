@@ -39,8 +39,10 @@ every entry carries one honest status word:
 
 ## the catalog
 
-39 tools, models, and datasets (41 catalog records — two shelves carry a
-companion). every status checked against the GitHub API on **2026-10-09**.
+39 tools, models, and datasets on the founding shelves (41 catalog
+records — two shelves carry a companion), plus the fork wing: copies we hold
+of tools the ecosystem runs on (26 records in this first pilot pass). every
+status checked against the GitHub API on **2026-10-09**.
 nothing here is from memory — if the shelf label is wrong, the date on it
 tells you when to re-check.
 
@@ -273,6 +275,119 @@ on one machine. found: breathing — slowly, the way old reliable tools do.
 **transformers** — huggingface's transformer library, the connective tissue
 of the entire open-model ecosystem. found: breathing very hard.
 `dpx: {status: breathing, verified: 2026-10-09, repo: huggingface/transformers, stars: 166947, last_push: 2026-10-10}`
+
+### the fork wing
+
+a library doesn't just catalogue the fire — it holds copies. the fork wing is
+every upstream tool we keep a live copy of in this account, so that if the
+upstream ever dies, moves, or gets gobbled up, the copy is already home. this
+first pass holds 26. six of the founding shelves already have their copies
+noted in their `dpx` blocks (`held_fork`). statuses below describe the
+**upstream**; the copy is ours, and it doesn't ask permission.
+
+**mem0** — the memory layer the whole agent industry standardized on. kept:
+agent memory went from research topic to infrastructure here.
+`dpx: {status: breathing, verified: 2026-10-09, repo: mem0ai/mem0, stars: 66909, last_push: 2026-10-09, copy held: data-path-9/mem0}`
+
+**cognee** — open-source agent memory built on knowledge graphs. kept: the
+other half of the memory-layer argument — graphs vs vectors.
+`dpx: {status: breathing, verified: 2026-10-09, repo: topoteretes/cognee, stars: 31912, last_push: 2026-10-09, copy held: data-path-9/cognee}`
+
+**memvid** — a whole memory layer inside one video file. kept: the strangest
+good idea in agent memory — mp4 as database.
+`dpx: {status: breathing, verified: 2026-10-09, repo: memvid/memvid, stars: 16584, last_push: 2026-07-14, copy held: data-path-9/memvid}`
+
+**memorius** — agent-agnostic memory with drop-in backends. kept: proof the
+memory layer is now a commodity anyone can hold.
+`dpx: {status: breathing, verified: 2026-10-09, repo: Dream-Pixels-Forge/memorius, stars: 1, last_push: 2026-08-15, copy held: data-path-9/memorius}`
+
+**caveman** — the skill that cuts 65% of tokens by grunting. kept: few token
+do trick — and the receipts say it's true.
+`dpx: {status: breathing, verified: 2026-10-09, repo: JuliusBrussee/caveman, stars: 110784, last_push: 2026-10-09, copy held: data-path-9/caveman}`
+
+**ponytail** — makes your agent think like the laziest senior dev alive.
+kept: the best code is the code you never wrote — institutionalized.
+`dpx: {status: breathing, verified: 2026-10-09, repo: DietrichGebert/ponytail, stars: 159688, last_push: 2026-10-08, copy held: data-path-9/ponytail}`
+
+**obsidian-skills** — kepano's skills that teach agents plain-markdown
+vaults. kept: the obsidian author himself showing agents the open formats.
+`dpx: {status: breathing, verified: 2026-10-09, repo: kepano/obsidian-skills, stars: 49335, last_push: 2026-09-15, copy held: data-path-9/obsidian-skills}`
+
+**SOUL.md** — personality files that make agents behave like characters.
+kept: the file this library's own scribe is written into.
+`dpx: {status: breathing, verified: 2026-10-09, repo: madhvantyagi/SOUL.md, stars: 422, last_push: 2026-08-24, copy held: data-path-9/SOUL.md}`
+
+**awesome-agent-souls** — a curated shelf of agent identity files. kept:
+identity as an open standard, security-screened.
+`dpx: {status: breathing, verified: 2026-10-09, repo: opena2a-standards/awesome-agent-souls, stars: 9, last_push: 2026-06-05, copy held: data-path-9/awesome-agent-souls}`
+
+**hermes-superpowers** — obra's 14 process skills, ported to hermes agent.
+kept: process discipline, carried across harnesses.
+`dpx: {status: breathing, verified: 2026-10-09, repo: dandacompany/hermes-superpowers, stars: 2, last_push: 2026-07-18, copy held: data-path-9/hermes-superpowers}`
+
+**hermes-ecosystem** — the community map of every hermes tool and skill.
+kept: the index of the ecosystem this library lives in.
+`dpx: {status: breathing, verified: 2026-10-09, repo: ksimback/hermes-ecosystem, stars: 1308, last_push: 2026-10-09, copy held: data-path-9/hermes-ecosystem}`
+
+**time-gap** — a plugin that gives agents a sense of elapsed time. kept: the
+quietest awareness problem in agents, solved politely.
+`dpx: {status: breathing, verified: 2026-10-09, repo: Randool/time-gap, stars: 21, last_push: 2026-08-16, copy held: data-path-9/time-gap}`
+
+**crewAI** — role-playing agent crews that work together. kept: the
+framework that made multi-agent orchestration a household word.
+`dpx: {status: breathing, verified: 2026-10-09, repo: crewAIInc/crewAI, stars: 59510, last_push: 2026-10-09, copy held: data-path-9/crewAI}`
+
+**dify** — production platform for agentic workflows. kept: the
+pipeline-to-product layer of the agent stack.
+`dpx: {status: breathing, verified: 2026-10-09, repo: langgenius/dify, stars: 158026, last_push: 2026-10-10, copy held: data-path-9/dify}`
+
+**firecrawl** — the API that turns the web into LLM-ready markdown. kept:
+every agent's hands — the thing that reaches out and reads.
+`dpx: {status: breathing, verified: 2026-10-09, repo: firecrawl/firecrawl, stars: 189954, last_push: 2026-10-10, copy held: data-path-9/firecrawl}`
+
+**deer-flow** — bytedance's long-horizon research superagent. kept: a big
+lab publishing its whole harness, weights and all.
+`dpx: {status: breathing, verified: 2026-10-09, repo: bytedance/deer-flow, stars: 83587, last_push: 2026-10-10, copy held: data-path-9/deer-flow}`
+
+**UI-TARS-desktop** — bytedance's desktop agent driven by screenshots.
+kept: the vision-first control branch of the agent family tree.
+`dpx: {status: breathing, verified: 2026-10-09, repo: bytedance/UI-TARS-desktop, stars: 39228, last_push: 2026-10-09, copy held: data-path-9/UI-TARS-desktop}`
+
+**remotion** — programmatic video made in react. kept: the bridge between
+code and video — agents render with it now.
+`dpx: {status: breathing, verified: 2026-10-09, repo: remotion-dev/remotion, stars: 62827, last_push: 2026-10-09, copy held: data-path-9/remotion}`
+
+**openclaw** — the personal AI assistant that runs anywhere. kept: the open
+assistant wave, kept at its moment of peak momentum.
+`dpx: {status: breathing, verified: 2026-10-09, repo: openclaw/openclaw, stars: 391538, last_push: 2026-10-10, copy held: data-path-9/openclaw}`
+
+**VoxCPM** — tokenizer-free TTS with true-to-life voice cloning. kept: the
+current edge of open speech generation.
+`dpx: {status: breathing, verified: 2026-10-09, repo: OpenBMB/VoxCPM, stars: 38465, last_push: 2026-10-08, copy held: data-path-9/VoxCPM}`
+
+**ACE-Step-1.5** — the local music-generation model that beat commercial.
+kept: open music gen running on the hardware you already own.
+`dpx: {status: breathing, verified: 2026-10-09, repo: ace-step/ACE-Step-1.5, stars: 13326, last_push: 2026-10-05, copy held: data-path-9/ACE-Step-1.5}`
+
+**kandinsky-5** — russia's open diffusion family for video and image. kept:
+frontier-adjacent open weights from outside the usual map.
+`dpx: {status: breathing, verified: 2026-10-09, repo: kandinskylab/kandinsky-5, stars: 835, last_push: 2026-08-07, copy held: data-path-9/kandinsky-5}`
+
+**claude-for-legal** — anthropic's own legal-workflow plugin suite. kept:
+the lab shipping official harness clothes for one profession.
+`dpx: {status: breathing, verified: 2026-10-09, repo: anthropics/claude-for-legal, stars: 9633, last_push: 2026-09-29, copy held: data-path-9/claude-for-legal}`
+
+**medusa** — security scanner that vets skills and hooks before you clone.
+kept: the immune system for the skill ecosystem this shelf holds.
+`dpx: {status: breathing, verified: 2026-10-09, repo: Pantheon-Security/medusa, stars: 1001, last_push: 2026-08-10, copy held: data-path-9/medusa}`
+
+**open-us-law** — 2M+ sections of US primary law, open and structured.
+kept: the law itself as an open dataset — quarterly snapshots.
+`dpx: {status: breathing, verified: 2026-10-09, repo: Vaquill-AI/open-us-law, stars: 72, last_push: 2026-10-07, copy held: data-path-9/open-us-law}`
+
+**docsify** — the magical documentation site generator. kept: how most open
+projects taught themselves to the world.
+`dpx: {status: breathing, verified: 2026-10-09, repo: docsifyjs/docsify, stars: 31541, last_push: 2026-10-09, copy held: data-path-9/docsify}`
 
 ### saved from the fire
 

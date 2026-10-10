@@ -20,7 +20,7 @@ OUT = ROOT / "docs" / "index.html"  # served by github pages from /docs
 STATUSES = ["breathing", "quiet", "orphaned", "archived", "moved", "vanished"]
 CATEGORY_ORDER = [
     "text-to-image", "local-inference", "fine-tuning", "chat-agents",
-    "speech", "datasets", "nlp-classics", "saved-from-the-fire",
+    "speech", "datasets", "nlp-classics", "fork-wing", "saved-from-the-fire",
 ]
 CATEGORY_TITLES = {
     "text-to-image": "text-to-image",
@@ -30,6 +30,7 @@ CATEGORY_TITLES = {
     "speech": "speech",
     "datasets": "datasets",
     "nlp-classics": "nlp classics",
+    "fork-wing": "the fork wing",
     "saved-from-the-fire": "saved from the fire",
 }
 BREATHING_WINDOW_DAYS = 180  # ~6 months, matches the status lexicon test
@@ -39,7 +40,7 @@ with open(ROOT / "catalog.yaml") as f:
 
 # ---- guards: the catalog is load-bearing, fail loudly at build time ----
 assert isinstance(CATALOG, list), "catalog.yaml must be a list of records"
-assert len(CATALOG) == 41, f"expected 41 records, got {len(CATALOG)}"
+assert len(CATALOG) == 67, f"expected 67 records, got {len(CATALOG)}"
 for rec in CATALOG:
     name = rec.get("name", "??")
     for field in ("name", "category", "status", "human_one_liner", "why_saved"):
@@ -109,6 +110,8 @@ def render_entry(rec, idx, in_memorial_shelf=False):
         bits.append(f'<span class="movednote">was {esc(gh_slug({"repo": rec["canonical_old"]}))}</span>')
     if rec.get("successor"):
         bits.append(f'<span class="successor">successor: {esc(gh_slug({"repo": rec["successor"]}))}</span>')
+    if rec.get("held_fork"):
+        bits.append(f'<span class="heldfork">copy held: {esc(gh_slug({"repo": "https://github.com/" + rec["held_fork"]}))}</span>')
     if dead_url:
         bits.append(f'<span class="dead">{esc(gh_slug({"repo": dead_url}))} — 404</span>')
     if rec.get("note") and status == "vanished":
@@ -177,7 +180,7 @@ def render_legend():
 
 
 def render_filters():
-    chips = ['<button class="chip" data-filter="all" aria-pressed="true">all <span class="count">41</span></button>']
+    chips = [f'<button class="chip" data-filter="all" aria-pressed="true">all <span class="count">{len(CATALOG)}</span></button>']
     for s in STATUSES:
         chips.append(
             f'<button class="chip" data-filter="{s}" aria-pressed="false">'
