@@ -7,6 +7,10 @@
 # fork wing — copies we hold of upstream tools: 26 from the 10-09 pilot and
 # the remaining 201 in the same-day full sweep, same verification date.
 # `held_fork` names the copy in this account; statuses describe the UPSTREAM.
+# sweep copies carry `copy_shelf` when their nature matches a founding shelf
+# (voice clone -> speech, photoshop-reimpl -> text-to-image, agent harness ->
+# chat-agents...). copies with no founding ancestor — the agent-era ecosystem
+# that is the fork wing — stay unassigned and group under the fork wing.
 
 
 - name: stable-diffusion
@@ -731,6 +735,7 @@
   last_push: '2026-10-10'
   stars: 48283
   held_fork: data-path-9/rea
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: filmcraft
@@ -742,6 +747,7 @@
   last_push: '2026-10-10'
   stars: 7200
   held_fork: data-path-9/filmcraft
+  copy_shelf: text-to-image
   verified: '2026-10-09'
 
 - name: vectorcraft
@@ -753,6 +759,7 @@
   last_push: '2026-10-10'
   stars: 5242
   held_fork: data-path-9/vectorcraft
+  copy_shelf: text-to-image
   verified: '2026-10-09'
 
 - name: photocraft
@@ -764,6 +771,7 @@
   last_push: '2026-10-10'
   stars: 35790
   held_fork: data-path-9/photocraft
+  copy_shelf: text-to-image
   verified: '2026-10-09'
 
 - name: effectcraft
@@ -775,6 +783,7 @@
   last_push: '2026-10-10'
   stars: 3945
   held_fork: data-path-9/effectcraft
+  copy_shelf: text-to-image
   verified: '2026-10-09'
 
 - name: pdfcraft
@@ -855,6 +864,7 @@
   last_push: '2026-10-10'
   stars: 980
   held_fork: data-path-9/soundcraft
+  copy_shelf: speech
   verified: '2026-10-09'
 
 - name: designcraft
@@ -866,6 +876,7 @@
   last_push: '2026-10-10'
   stars: 2167
   held_fork: data-path-9/designcraft
+  copy_shelf: text-to-image
   verified: '2026-10-09'
 
 - name: agent-lightning
@@ -877,6 +888,7 @@
   last_push: '2026-10-09'
   stars: 18630
   held_fork: data-path-9/agent-lightning
+  copy_shelf: fine-tuning
   verified: '2026-10-09'
 
 - name: artcraft
@@ -888,6 +900,7 @@
   last_push: '2026-10-09'
   stars: 11697
   held_fork: data-path-9/artcraft
+  copy_shelf: text-to-image
   verified: '2026-10-09'
 
 - name: claude-skill-registry
@@ -900,6 +913,7 @@
   last_push: '2026-10-09'
   stars: 665
   held_fork: data-path-9/claude-skill-registry
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: claude-skill-registry-core
@@ -912,6 +926,7 @@
   last_push: '2026-10-09'
   stars: 23
   held_fork: data-path-9/claude-skill-registry-core
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: claude-skill-registry-data
@@ -924,6 +939,7 @@
   last_push: '2026-10-09'
   stars: 25
   held_fork: data-path-9/claude-skill-registry-data
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: openshorts
@@ -937,6 +953,7 @@
   last_push: '2026-10-09'
   stars: 6365
   held_fork: data-path-9/openshorts
+  copy_shelf: text-to-image
   verified: '2026-10-09'
 
 - name: ruflo
@@ -950,6 +967,7 @@
   last_push: '2026-10-10'
   stars: 74210
   held_fork: data-path-9/ruflo
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: ai-shifu
@@ -961,6 +979,7 @@
   last_push: '2026-10-10'
   stars: 324
   held_fork: data-path-9/ai-shifu
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: ai-coach
@@ -972,6 +991,7 @@
   last_push: '2026-10-09'
   stars: 1
   held_fork: data-path-9/ai-coach
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: agent-beacon
@@ -983,6 +1003,7 @@
   last_push: '2026-10-09'
   stars: 1803
   held_fork: data-path-9/agent-beacon
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: ZCode
@@ -994,6 +1015,7 @@
   last_push: '2026-09-29'
   stars: 7605
   held_fork: data-path-9/ZCode
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: ai-file-sorter
@@ -1019,6 +1041,7 @@
   last_push: '2026-09-17'
   stars: 2021
   held_fork: data-path-9/headcount
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: omarchy
@@ -1041,6 +1064,7 @@
   last_push: '2026-09-15'
   stars: 3843
   held_fork: data-path-9/social-media-skills
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: colibri
@@ -1053,6 +1077,7 @@
   last_push: '2026-10-08'
   stars: 40829
   held_fork: data-path-9/colibri
+  copy_shelf: local-inference
   verified: '2026-10-09'
 
 - name: Scrapling
@@ -1066,6 +1091,7 @@
   last_push: '2026-10-08'
   stars: 86546
   held_fork: data-path-9/Scrapling
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: md-reader
@@ -1089,6 +1115,7 @@
   last_push: '2026-10-05'
   stars: 34331
   held_fork: data-path-9/book-to-skill
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: wigolo
@@ -1101,6 +1128,7 @@
   last_push: '2026-10-09'
   stars: 5455
   held_fork: data-path-9/wigolo
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: no-ai-slop
@@ -1112,6 +1140,7 @@
   last_push: '2026-09-02'
   stars: 12111
   held_fork: data-path-9/no-ai-slop
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: codegraph
@@ -1125,6 +1154,7 @@
   last_push: '2026-10-10'
   stars: 73612
   held_fork: data-path-9/codegraph
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: warp
@@ -1138,6 +1168,7 @@
   last_push: '2026-09-18'
   stars: 2483
   held_fork: data-path-9/warp
+  copy_shelf: local-inference
   verified: '2026-10-09'
 
 - name: mempalace
@@ -1149,6 +1180,7 @@
   last_push: '2026-10-09'
   stars: 59487
   held_fork: data-path-9/mempalace
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: hermes-the-firm
@@ -1160,6 +1192,7 @@
   last_push: '2026-09-24'
   stars: 6
   held_fork: data-path-9/hermes-the-firm
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: automaton
@@ -1183,6 +1216,7 @@
   last_push: '2026-10-01'
   stars: 19598
   held_fork: data-path-9/learn-harness-engineering
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: reddit-mcp-buddy
@@ -1195,6 +1229,7 @@
   last_push: '2026-08-17'
   stars: 846
   held_fork: data-path-9/reddit-mcp-buddy
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: souls-directory
@@ -1206,6 +1241,7 @@
   last_push: '2026-08-11'
   stars: 165
   held_fork: data-path-9/souls-directory
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: mission-control
@@ -1218,6 +1254,7 @@
   last_push: '2026-10-09'
   stars: 6333
   held_fork: data-path-9/mission-control
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: ggufy
@@ -1229,6 +1266,7 @@
   last_push: '2026-10-06'
   stars: 107
   held_fork: data-path-9/ggufy
+  copy_shelf: local-inference
   verified: '2026-10-09'
 
 - name: studio-recipes
@@ -1240,6 +1278,7 @@
   last_push: '2026-10-05'
   stars: 66
   held_fork: data-path-9/studio-recipes
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: MoneyPrinterTurbo
@@ -1252,6 +1291,7 @@
   last_push: '2026-10-09'
   stars: 129346
   held_fork: data-path-9/MoneyPrinterTurbo
+  copy_shelf: text-to-image
   verified: '2026-10-09'
 
 - name: agora
@@ -1264,6 +1304,7 @@
   last_push: '2026-10-06'
   stars: 18
   held_fork: data-path-9/agora
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: CppStudio
@@ -1275,6 +1316,7 @@
   last_push: '2026-07-29'
   stars: 12
   held_fork: data-path-9/CppStudio
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: buzz
@@ -1286,6 +1328,7 @@
   last_push: '2026-10-10'
   stars: 35772
   held_fork: data-path-9/buzz
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: AudioNotes
@@ -1297,6 +1340,7 @@
   last_push: '2026-08-19'
   stars: 2528
   held_fork: data-path-9/AudioNotes
+  copy_shelf: speech
   verified: '2026-10-09'
 
 - name: Hermes-Control-Deck
@@ -1311,6 +1355,7 @@
   last_push: '2026-10-02'
   stars: 134
   held_fork: data-path-9/Hermes-Control-Deck
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: MD-This-Page
@@ -1322,6 +1367,7 @@
   last_push: '2026-10-03'
   stars: 1606
   held_fork: data-path-9/MD-This-Page
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: 500-AI-Agents-Projects
@@ -1336,6 +1382,7 @@
   last_push: '2026-07-27'
   stars: 38419
   held_fork: data-path-9/500-AI-Agents-Projects
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: NIMStats
@@ -1348,6 +1395,7 @@
   last_push: '2026-10-10'
   stars: 54
   held_fork: data-path-9/NIMStats
+  copy_shelf: local-inference
   verified: '2026-10-09'
 
 - name: ai-engineering-from-scratch
@@ -1372,6 +1420,7 @@
   last_push: '2026-10-10'
   stars: 157
   held_fork: data-path-9/mnemo-cortex
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: BrowserOS
@@ -1384,6 +1433,7 @@
   last_push: '2026-10-09'
   stars: 13855
   held_fork: data-path-9/BrowserOS
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: marm-memory
@@ -1397,6 +1447,7 @@
   last_push: '2026-10-08'
   stars: 419
   held_fork: data-path-9/marm-memory
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: MindBank
@@ -1411,6 +1462,7 @@
   last_push: '2026-08-07'
   stars: 18
   held_fork: data-path-9/MindBank
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: awesome-hermes-agent
@@ -1423,6 +1475,7 @@
   last_push: '2026-09-29'
   stars: 57
   held_fork: data-path-9/awesome-hermes-agent
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: engraphis
@@ -1435,6 +1488,7 @@
   last_push: '2026-10-09'
   stars: 179
   held_fork: data-path-9/engraphis
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: claude-code-router
@@ -1447,6 +1501,7 @@
   last_push: '2026-10-09'
   stars: 37603
   held_fork: data-path-9/claude-code-router
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: free-coding-models
@@ -1459,6 +1514,7 @@
   last_push: '2026-10-05'
   stars: 2803
   held_fork: data-path-9/free-coding-models
+  copy_shelf: local-inference
   verified: '2026-10-09'
 
 - name: open-notebook
@@ -1470,6 +1526,7 @@
   last_push: '2026-10-05'
   stars: 40006
   held_fork: data-path-9/open-notebook
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: onyx
@@ -1481,6 +1538,7 @@
   last_push: '2026-10-10'
   stars: 32376
   held_fork: data-path-9/onyx
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: awesome-gpt-image-2
@@ -1494,6 +1552,7 @@
   last_push: '2026-10-09'
   stars: 10029
   held_fork: data-path-9/awesome-gpt-image-2
+  copy_shelf: text-to-image
   verified: '2026-10-09'
 
 - name: web-to-app
@@ -1531,6 +1590,7 @@
   last_push: '2026-07-19'
   stars: 0
   held_fork: data-path-9/estudiohc-agentic-os
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: API-mega-list
@@ -1556,6 +1616,7 @@
   last_push: '2026-07-16'
   stars: 9
   held_fork: data-path-9/FCCVS
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: lollms_skills_zoo
@@ -1567,6 +1628,7 @@
   last_push: '2026-09-23'
   stars: 2
   held_fork: data-path-9/lollms_skills_zoo
+  copy_shelf: local-inference
   verified: '2026-10-09'
 
 - name: lollms_apps_zoo
@@ -1578,6 +1640,7 @@
   last_push: '2026-07-10'
   stars: 10
   held_fork: data-path-9/lollms_apps_zoo
+  copy_shelf: local-inference
   verified: '2026-10-09'
 
 - name: CL4R1T4S
@@ -1590,6 +1653,7 @@
   last_push: '2026-09-22'
   stars: 51068
   held_fork: data-path-9/CL4R1T4S
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: TencentDB-Agent-Memory
@@ -1603,6 +1667,7 @@
   last_push: '2026-10-09'
   stars: 27863
   held_fork: data-path-9/TencentDB-Agent-Memory
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: cv-santiago
@@ -1626,6 +1691,7 @@
   last_push: '2024-08-21'
   stars: 96
   held_fork: data-path-9/free-llm-api-resources
+  copy_shelf: local-inference
   verified: '2026-10-09'
 
 - name: taste-skill
@@ -1638,6 +1704,7 @@
   last_push: '2026-10-09'
   stars: 94136
   held_fork: data-path-9/taste-skill
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: ReconForge
@@ -1660,6 +1727,7 @@
   last_push: '2026-10-03'
   stars: 110406
   held_fork: data-path-9/TradingAgents
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: lollms
@@ -1671,6 +1739,7 @@
   last_push: '2026-10-08'
   stars: 99
   held_fork: data-path-9/lollms
+  copy_shelf: local-inference
   verified: '2026-10-09'
 
 - name: Flowise
@@ -1682,6 +1751,7 @@
   last_push: '2026-08-13'
   stars: 55495
   held_fork: data-path-9/Flowise
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: 9router
@@ -1694,6 +1764,7 @@
   last_push: '2026-10-08'
   stars: 30529
   held_fork: data-path-9/9router
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: cc-wf-studio
@@ -1705,6 +1776,7 @@
   last_push: '2026-10-07'
   stars: 5394
   held_fork: data-path-9/cc-wf-studio
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: system_prompts_leaks
@@ -1718,6 +1790,7 @@
   last_push: '2026-10-10'
   stars: 69263
   held_fork: data-path-9/system_prompts_leaks
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: FCC
@@ -1731,6 +1804,7 @@
   last_push: '2026-10-09'
   stars: 57105
   held_fork: data-path-9/FCC
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: LibreChat
@@ -1745,6 +1819,7 @@
   last_push: '2026-10-09'
   stars: 45464
   held_fork: data-path-9/LibreChat
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: lollms-vs-coder
@@ -1758,6 +1833,7 @@
   last_push: '2026-10-08'
   stars: 6
   held_fork: data-path-9/lollms-vs-coder
+  copy_shelf: local-inference
   verified: '2026-10-09'
 
 - name: voice-ai
@@ -1771,6 +1847,7 @@
   last_push: '2026-10-06'
   stars: 745
   held_fork: data-path-9/voice-ai
+  copy_shelf: speech
   verified: '2026-10-09'
 
 - name: lollms_client
@@ -1782,6 +1859,7 @@
   last_push: '2026-10-08'
   stars: 13
   held_fork: data-path-9/lollms_client
+  copy_shelf: local-inference
   verified: '2026-10-09'
 
 - name: lobehub
@@ -1806,6 +1884,7 @@
   last_push: '2026-10-09'
   stars: 134256
   held_fork: data-path-9/ui-ux-pro-max-skill
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: SenseVoice
@@ -1818,6 +1897,7 @@
   last_push: '2026-09-30'
   stars: 9479
   held_fork: data-path-9/SenseVoice
+  copy_shelf: speech
   verified: '2026-10-09'
 
 - name: winboat
@@ -1842,6 +1922,7 @@
   last_push: '2026-10-03'
   stars: 65870
   held_fork: data-path-9/OpenMontage
+  copy_shelf: text-to-image
   verified: '2026-10-09'
 
 - name: claude-code-ultimate-guide
@@ -1854,6 +1935,7 @@
   last_push: '2026-10-07'
   stars: 6135
   held_fork: data-path-9/claude-code-ultimate-guide
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: agency-agents
@@ -1867,6 +1949,7 @@
   last_push: '2026-10-07'
   stars: 158540
   held_fork: data-path-9/agency-agents
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: CloakBrowser
@@ -1879,6 +1962,7 @@
   last_push: '2026-10-08'
   stars: 32001
   held_fork: data-path-9/CloakBrowser
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: dev-browser
@@ -1890,6 +1974,7 @@
   last_push: '2026-09-05'
   stars: 6658
   held_fork: data-path-9/dev-browser
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: openhuman
@@ -1902,6 +1987,7 @@
   last_push: '2026-10-10'
   stars: 41751
   held_fork: data-path-9/openhuman
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: langflow
@@ -1913,6 +1999,7 @@
   last_push: '2026-10-10'
   stars: 155444
   held_fork: data-path-9/langflow
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: rustwire
@@ -1958,6 +2045,7 @@
   last_push: '2026-10-09'
   stars: 35080
   held_fork: data-path-9/Vibe-Trading
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: ai-job-search
@@ -1970,6 +2058,7 @@
   last_push: '2026-10-08'
   stars: 45392
   held_fork: data-path-9/ai-job-search
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: gstack
@@ -1982,6 +2071,7 @@
   last_push: '2026-10-09'
   stars: 135744
   held_fork: data-path-9/gstack
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: knip
@@ -2008,6 +2098,7 @@
   last_push: '2026-10-10'
   stars: 73913
   held_fork: data-path-9/career-ops
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: OpenJarvis
@@ -2019,6 +2110,7 @@
   last_push: '2026-10-09'
   stars: 10882
   held_fork: data-path-9/OpenJarvis
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: loop-engineering
@@ -2032,6 +2124,7 @@
   last_push: '2026-10-09'
   stars: 11446
   held_fork: data-path-9/loop-engineering
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: OpenCut
@@ -2043,6 +2136,7 @@
   last_push: '2026-09-24'
   stars: 93357
   held_fork: data-path-9/OpenCut
+  copy_shelf: text-to-image
   verified: '2026-10-09'
 
 - name: Electra_AI_Center
@@ -2054,6 +2148,7 @@
   last_push: '2026-09-30'
   stars: 12
   held_fork: data-path-9/Electra_AI_Center
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: awesome-llm-apps
@@ -2065,6 +2160,7 @@
   last_push: '2026-09-30'
   stars: 140983
   held_fork: data-path-9/awesome-llm-apps
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: last30days-skill
@@ -2077,6 +2173,7 @@
   last_push: '2026-10-09'
   stars: 63850
   held_fork: data-path-9/last30days-skill
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: ArcReel
@@ -2089,6 +2186,7 @@
   last_push: '2026-10-09'
   stars: 5408
   held_fork: data-path-9/ArcReel
+  copy_shelf: text-to-image
   verified: '2026-10-09'
 
 - name: OpenWA
@@ -2100,6 +2198,7 @@
   last_push: '2026-10-09'
   stars: 15162
   held_fork: data-path-9/OpenWA
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: lovable-for-beginners
@@ -2124,6 +2223,7 @@
   last_push: '2026-10-10'
   stars: 276019
   held_fork: data-path-9/ECC
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: yoinks
@@ -2146,6 +2246,7 @@
   last_push: '2026-08-04'
   stars: 96
   held_fork: data-path-9/STATE-Bench
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: hermes-chat-vscode
@@ -2157,6 +2258,7 @@
   last_push: '2026-07-16'
   stars: 13
   held_fork: data-path-9/hermes-chat-vscode
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: SX
@@ -2179,6 +2281,7 @@
   last_push: '2026-07-12'
   stars: 3
   held_fork: data-path-9/Hermes-SME-UI
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: project-nomad
@@ -2191,6 +2294,7 @@
   last_push: '2026-10-08'
   stars: 39361
   held_fork: data-path-9/project-nomad
+  copy_shelf: datasets
   verified: '2026-10-09'
 
 - name: NetNexus
@@ -2237,6 +2341,7 @@
   last_push: '2026-10-09'
   stars: 7575
   held_fork: data-path-9/firecrawl-mcp-server
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: claude-code-message-timestamps
@@ -2249,6 +2354,7 @@
   last_push: '2026-07-08'
   stars: 71
   held_fork: data-path-9/claude-code-message-timestamps
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: projectmem
@@ -2262,6 +2368,7 @@
   last_push: '2026-10-03'
   stars: 857
   held_fork: data-path-9/projectmem
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: claude-seo
@@ -2276,6 +2383,7 @@
   last_push: '2026-10-04'
   stars: 18620
   held_fork: data-path-9/claude-seo
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: voicebox
@@ -2287,6 +2395,7 @@
   last_push: '2026-10-07'
   stars: 56760
   held_fork: data-path-9/voicebox
+  copy_shelf: speech
   verified: '2026-10-09'
 
 - name: citypulse
@@ -2309,6 +2418,7 @@
   last_push: '2026-10-05'
   stars: 36361
   held_fork: data-path-9/ai-website-cloner-template
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: openviking-browser-extension
@@ -2320,6 +2430,7 @@
   last_push: '2026-07-03'
   stars: 4
   held_fork: data-path-9/openviking-browser-extension
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: TOOL_Ext_Cursor_Hermes-Public
@@ -2331,6 +2442,7 @@
   last_push: '2026-06-30'
   stars: 0
   held_fork: data-path-9/TOOL_Ext_Cursor_Hermes-Public
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: Acontext
@@ -2342,6 +2454,7 @@
   last_push: '2026-07-14'
   stars: 3692
   held_fork: data-path-9/Acontext
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: awesome-certificates
@@ -2366,6 +2479,7 @@
   last_push: '2026-06-27'
   stars: 5025
   held_fork: data-path-9/ace-step-ui
+  copy_shelf: speech
   verified: '2026-10-09'
 
 - name: hermes-control-interface
@@ -2379,6 +2493,7 @@
   last_push: '2026-06-28'
   stars: 897
   held_fork: data-path-9/hermes-control-interface
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: Anthropic-Cybersecurity-Skills
@@ -2393,6 +2508,7 @@
   last_push: '2026-08-31'
   stars: 34088
   held_fork: data-path-9/Anthropic-Cybersecurity-Skills
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: collab-public
@@ -2404,6 +2520,7 @@
   last_push: '2026-08-08'
   stars: 3074
   held_fork: data-path-9/collab-public
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: stock-market-signal-automation
@@ -2416,6 +2533,7 @@
   last_push: '2026-10-10'
   stars: 234
   held_fork: data-path-9/stock-market-signal-automation
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: vibecode-pro-max-kit
@@ -2430,6 +2548,7 @@
   last_push: '2026-06-21'
   stars: 1147
   held_fork: data-path-9/vibecode-pro-max-kit
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: awesome-nvidia-nim
@@ -2442,6 +2561,7 @@
   last_push: '2026-07-22'
   stars: 10
   held_fork: data-path-9/awesome-nvidia-nim
+  copy_shelf: local-inference
   verified: '2026-10-09'
 
 - name: lollms-webui
@@ -2453,6 +2573,7 @@
   last_push: '2026-10-05'
   stars: 4789
   held_fork: data-path-9/lollms-webui
+  copy_shelf: local-inference
   verified: '2026-10-09'
 
 - name: OBLITERATUS
@@ -2464,6 +2585,7 @@
   last_push: '2026-10-09'
   stars: 8691
   held_fork: data-path-9/OBLITERATUS
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: AI-Research-SKILLs
@@ -2477,6 +2599,7 @@
   last_push: '2026-06-16'
   stars: 13394
   held_fork: data-path-9/AI-Research-SKILLs
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: token-saver
@@ -2489,6 +2612,7 @@
   last_push: '2026-06-10'
   stars: 1
   held_fork: data-path-9/token-saver
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: sessionat
@@ -2502,6 +2626,7 @@
   last_push: '2026-06-05'
   stars: 11
   held_fork: data-path-9/sessionat
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: system-design-notes
@@ -2538,6 +2663,7 @@
   last_push: '2026-09-10'
   stars: 15433
   held_fork: data-path-9/claude-obsidian
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: LongCat-Video
@@ -2549,6 +2675,7 @@
   last_push: '2026-05-27'
   stars: 9139
   held_fork: data-path-9/LongCat-Video
+  copy_shelf: text-to-image
   verified: '2026-10-09'
 
 - name: hermes-time_perception-extension
@@ -2561,6 +2688,7 @@
   last_push: '2026-05-27'
   stars: 5
   held_fork: data-path-9/hermes-time_perception-extension
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: lollms_personalities_zoo
@@ -2572,6 +2700,7 @@
   last_push: '2026-05-26'
   stars: 26
   held_fork: data-path-9/lollms_personalities_zoo
+  copy_shelf: local-inference
   verified: '2026-10-09'
 
 - name: linux-sysadmin-skills
@@ -2608,6 +2737,7 @@
   last_push: '2026-10-03'
   stars: 11799
   held_fork: data-path-9/claude-skills
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: hermes-agent-control-room
@@ -2620,6 +2750,7 @@
   last_push: '2026-05-16'
   stars: 724
   held_fork: data-path-9/hermes-agent-control-room
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: image-blaster
@@ -2631,6 +2762,7 @@
   last_push: '2026-05-15'
   stars: 10906
   held_fork: data-path-9/image-blaster
+  copy_shelf: text-to-image
   verified: '2026-10-09'
 
 - name: Deep-Research-skills
@@ -2643,6 +2775,7 @@
   last_push: '2026-08-23'
   stars: 2321
   held_fork: data-path-9/Deep-Research-skills
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: VisionClaw
@@ -2655,6 +2788,7 @@
   last_push: '2026-09-26'
   stars: 2576
   held_fork: data-path-9/VisionClaw
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: devmemory-ai
@@ -2666,6 +2800,7 @@
   last_push: '2026-05-04'
   stars: 1
   held_fork: data-path-9/devmemory-ai
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: AI-ML-Roadmap-from-scratch
@@ -2690,6 +2825,7 @@
   last_push: '2026-04-23'
   stars: 649
   held_fork: data-path-9/lollms_hub
+  copy_shelf: local-inference
   verified: '2026-10-09'
 
 - name: Kronos
@@ -2701,6 +2837,7 @@
   last_push: '2026-04-13'
   stars: 40377
   held_fork: data-path-9/Kronos
+  copy_shelf: fine-tuning
   verified: '2026-10-09'
 
 - name: CLIP
@@ -2713,6 +2850,7 @@
   last_push: '2026-03-25'
   stars: 34432
   held_fork: data-path-9/CLIP
+  copy_shelf: text-to-image
   verified: '2026-10-09'
 
 - name: hermes-facebook-skill
@@ -2726,6 +2864,7 @@
   last_push: '2026-03-23'
   stars: 4
   held_fork: data-path-9/hermes-facebook-skill
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: stop-slop
@@ -2737,6 +2876,7 @@
   last_push: '2026-03-17'
   stars: 17884
   held_fork: data-path-9/stop-slop
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: context-engineering-intro
@@ -2750,6 +2890,7 @@
   last_push: '2026-03-16'
   stars: 13882
   held_fork: data-path-9/context-engineering-intro
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: Star-Office-UI
@@ -2763,6 +2904,7 @@
   last_push: '2026-03-11'
   stars: 7502
   held_fork: data-path-9/Star-Office-UI
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: stable-diffusion-webui
@@ -2774,6 +2916,7 @@
   last_push: '2026-03-02'
   stars: 165034
   held_fork: data-path-9/stable-diffusion-webui
+  copy_shelf: text-to-image
   verified: '2026-10-09'
 
 - name: prompt-eng-interactive-tutorial
@@ -2785,6 +2928,7 @@
   last_push: '2026-08-28'
   stars: 38444
   held_fork: data-path-9/prompt-eng-interactive-tutorial
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: secure-askpass
@@ -2808,6 +2952,7 @@
   last_push: '2026-01-28'
   stars: 5449
   held_fork: data-path-9/ai-data-science-team
+  copy_shelf: chat-agents
   verified: '2026-10-09'
 
 - name: sora-json-prompt-crafter
@@ -2819,6 +2964,7 @@
   last_push: '2026-09-18'
   stars: 49
   held_fork: data-path-9/sora-json-prompt-crafter
+  copy_shelf: text-to-image
   verified: '2026-10-09'
 
 - name: LollmsEnv
@@ -2830,6 +2976,7 @@
   last_push: '2026-01-13'
   stars: 7
   held_fork: data-path-9/LollmsEnv
+  copy_shelf: local-inference
   verified: '2026-10-09'
 
 - name: models_zoo
@@ -2842,6 +2989,7 @@
   last_push: '2025-10-30'
   stars: 8
   held_fork: data-path-9/models_zoo
+  copy_shelf: local-inference
   verified: '2026-10-09'
 
 - name: lollms_bindings_zoo
@@ -2853,6 +3001,7 @@
   last_push: '2025-10-30'
   stars: 14
   held_fork: data-path-9/lollms_bindings_zoo
+  copy_shelf: local-inference
   verified: '2026-10-09'
 
 - name: lollms_mcps_zoo
@@ -2864,6 +3013,7 @@
   last_push: '2025-10-26'
   stars: 0
   held_fork: data-path-9/lollms_mcps_zoo
+  copy_shelf: local-inference
   verified: '2026-10-09'
 
 - name: Arch-Store
@@ -2922,6 +3072,7 @@
   last_push: '2025-06-06'
   stars: 3
   held_fork: data-path-9/lollms_services_zoo
+  copy_shelf: local-inference
   verified: '2026-10-09'
 
 - name: lollms_functions_zoo
@@ -2933,6 +3084,7 @@
   last_push: '2025-06-02'
   stars: 4
   held_fork: data-path-9/lollms_functions_zoo
+  copy_shelf: local-inference
   verified: '2026-10-09'
 
 - name: ROCm-For-RX580
@@ -2945,6 +3097,7 @@
   last_push: '2025-05-20'
   stars: 106
   held_fork: data-path-9/ROCm-For-RX580
+  copy_shelf: local-inference
   verified: '2026-10-09'
 
 - name: LoLLMsVectorDB
@@ -2958,6 +3111,7 @@
   last_push: '2025-04-25'
   stars: 12
   held_fork: data-path-9/LoLLMsVectorDB
+  copy_shelf: local-inference
   verified: '2026-10-09'
 
 - name: OpenVoice
@@ -2969,6 +3123,7 @@
   last_push: '2025-04-19'
   stars: 37820
   held_fork: data-path-9/OpenVoice
+  copy_shelf: speech
   verified: '2026-10-09'
 
 - name: lollms_nodes_suite
@@ -2980,6 +3135,7 @@
   last_push: '2025-03-12'
   stars: 11
   held_fork: data-path-9/lollms_nodes_suite
+  copy_shelf: local-inference
   verified: '2026-10-09'
 
 - name: LollmsROSGateway
@@ -2992,6 +3148,7 @@
   last_push: '2024-08-07'
   stars: 3
   held_fork: data-path-9/LollmsROSGateway
+  copy_shelf: local-inference
   verified: '2026-10-09'
 
 - name: lollms_extensions_zoo
@@ -3003,6 +3160,7 @@
   last_push: '2024-07-17'
   stars: 8
   held_fork: data-path-9/lollms_extensions_zoo
+  copy_shelf: local-inference
   verified: '2026-10-09'
 
 - name: stable-diffusion
@@ -3014,6 +3172,7 @@
   last_push: '2024-06-18'
   stars: 73481
   held_fork: data-path-9/stable-diffusion
+  copy_shelf: text-to-image
   verified: '2026-10-09'
 
 - name: lollms_proxy_server
@@ -3025,6 +3184,7 @@
   last_push: '2024-03-12'
   stars: 4
   held_fork: data-path-9/lollms_proxy_server
+  copy_shelf: local-inference
   verified: '2026-10-09'
 
 - name: lollms-for-vscode
@@ -3036,6 +3196,7 @@
   last_push: '2024-02-09'
   stars: 10
   held_fork: data-path-9/lollms-for-vscode
+  copy_shelf: local-inference
   verified: '2026-10-09'
 
 - name: lollms_server_proxy
@@ -3047,6 +3208,7 @@
   last_push: '2024-02-06'
   stars: 3
   held_fork: data-path-9/lollms_server_proxy
+  copy_shelf: local-inference
   verified: '2026-10-09'
 
 - name: lollms_image_gen_zoo
@@ -3058,6 +3220,7 @@
   last_push: '2023-11-12'
   stars: 3
   held_fork: data-path-9/lollms_image_gen_zoo
+  copy_shelf: local-inference
   verified: '2026-10-09'
 
 - name: chromium-latest-linux

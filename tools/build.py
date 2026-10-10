@@ -635,7 +635,8 @@ def build():
     n_groups = html_out.count('<details class="copy-cat"')
     n_rows = html_out.count('<div class="copy-row"')
     sweep_n = sum(1 for r in CATALOG if r["why_saved"].startswith("upstream "))
-    sweep_cats = len({r["category"] for r in CATALOG if r["why_saved"].startswith("upstream ")})
+    sweep_cats = len({(r.get("copy_shelf") or r["category"]) for r in CATALOG
+                      if r["why_saved"].startswith("upstream ")})
     assert n_folds == n_shelves, f"expected {n_shelves} shelf folds, got {n_folds}"
     assert n_rows == sweep_n, f"expected {sweep_n} ledger rows, got {n_rows}"
     assert n_groups == sweep_cats, f"expected {sweep_cats} ledger groups, got {n_groups}"
