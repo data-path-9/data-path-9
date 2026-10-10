@@ -46,6 +46,9 @@ for rec in CATALOG:
     for field in ("name", "category", "status", "human_one_liner", "why_saved"):
         assert rec.get(field), f"{name}: missing {field}"
     assert rec["status"] in STATUSES, f"{name}: status '{rec['status']}' outside the closed enum"
+    if rec.get("copy_shelf"):
+        assert rec["copy_shelf"] in CATEGORY_ORDER, \
+            f"{name}: copy_shelf '{rec['copy_shelf']}' is not a shelf"
 
 
 def esc(s):
@@ -213,13 +216,22 @@ def render_shelves():
             rows.append(render_entry(r, idx))
         nid = f"shelf-{cat}"
         ledger = render_copy_ledger(copies) if copies else ""
+        # the shelf collapses under its head: summary labels the fold,
+        # the range carries story/ledger counts so closed still informs
+        fold_bits = [f"{len(stories)} stories"]
+        if copies:
+            fold_bits.append(f"ledger of {len(copies)} copies")
+        body = "".join(rows) + ledger
         out.append(f"""  <section class="shelf" id="{nid}" data-shelf="{cat}">
     <div class="section-inner">
       <div class="shelf-head reveal">
         <h2>{esc(CATEGORY_TITLES[cat])}</h2>
         <span class="range">{len(recs)} entries</span>
       </div>
-{"".join(rows)}{ledger}    </div>
+      <details class="shelf-fold reveal">
+        <summary><span class="chev">\u25b8</span>walk this shelf<span class="range">{" \u00b7 ".join(fold_bits)}</span></summary>
+{body}      </details>
+    </div>
   </section>""")
     return "\n".join(out)
 
@@ -230,11 +242,16 @@ def render_copy_ledger(recs):
     if not recs:
         return ""
     rank = {"orphaned": 0, "archived": 1, "quiet": 2, "moved": 3, "vanished": 4}
-    at_risk = sorted(
-        (r for r in recs if rank.get(r["status"], 9) < 9),
-        key=lambda r: (rank[r["status"]], r.get("last_push") or ""))
-    insured = [r for r in recs if rank.get(r["status"], 9) >= 9]
-    insured.sort(key=lambda r: r["name"].lower())
+
+    def ordered(members):
+        """at-risk rows lead inside each group, insurance follows by name"""
+        risk = sorted(
+            (r for r in members if rank.get(r["status"], 9) < 9),
+            key=lambda r: (rank[r["status"]], r.get("last_push") or ""))
+        safe = sorted(
+            (r for r in members if rank.get(r["status"], 9) >= 9),
+            key=lambda r: r["name"].lower())
+        return risk, safe
 
     def row(r):
         stars = fmt_stars(r["stars"]) if r.get("stars") else "\u2014"
@@ -247,16 +264,37 @@ def render_copy_ledger(recs):
                 f' rel="noopener">copy held</a></span>\n'
                 f'      </div>\n')
 
-    at_risk_html = "".join(row(r) for r in at_risk)
-    insured_html = "".join(row(r) for r in insured)
+    # one dropdown per shelf the copies belong to. copy_shelf, when a curator
+    # sets it, moves a copy between groups without touching its category
+    # (category still decides which shelf section it lives under)
+    def shelf_of(r):
+        return r.get("copy_shelf") or r["category"]
+
+    groups = []
+    for cat in CATEGORY_ORDER:
+        members = [r for r in recs if shelf_of(r) == cat]
+        if not members:
+            continue
+        at_risk, insured = ordered(members)
+        n_risk = len(at_risk)
+        count = f"{len(members)} copies"
+        if n_risk:
+            count += f" \u00b7 <span class=\"catrisk\">{n_risk} at risk</span>"
+        body = "".join(row(r) for r in at_risk + insured)
+        groups.append(f"""    <details class="copy-cat">
+      <summary><span class="chev">\u25b8</span>{esc(CATEGORY_TITLES[cat])}<span class="range">{count}</span></summary>
+      <div class="copy-rows">
+{body}      </div>
+    </details>""")
+    n_risk_all = sum(1 for r in recs if rank.get(r["status"], 9) < 9)
     return f"""  <details class="copy-ledger reveal">
-    <summary><span class="chev">\u25b8</span>the ledger of copies<span class="range">{len(recs)} copies \u00b7 {len(at_risk)} at risk \u00b7 {len(insured)} insurance</span></summary>
+    <summary><span class="chev">\u25b8</span>the ledger of copies<span class="range">{len(recs)} copies \u00b7 {n_risk_all} at risk \u00b7 grouped by shelf</span></summary>
     <p class="ledger-note">every upstream the sweep verified on 2026-10-09, held as a fork in this
-    account \u2014 receipts in <a href="https://github.com/data-path-9/data-path-9/blob/main/catalog.yaml"><code>catalog.yaml</code></a>.
+    account, grouped by the shelf it belongs to \u2014 receipts in <a href="https://github.com/data-path-9/data-path-9/blob/main/catalog.yaml"><code>catalog.yaml</code></a>.
     insurance is bought while the house is standing, so most upstreams here are still breathing.
-    the {len(at_risk)} at-risk copies come first; the stories above carry their own copies on the card.</p>
-    <div class="copy-rows">
-{at_risk_html}{insured_html}    </div>
+    at-risk copies lead inside each shelf; the stories on this shelf carry their own copies on the card.</p>
+    <div class="copy-groups">
+{"".join(groups)}    </div>
   </details>
 """
 
@@ -306,6 +344,7 @@ def build():
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+<script>document.documentElement.classList.add("js");</script>
 <a class="skip-link" href="#shelf-start">skip to the shelves</a>
 
 <header class="topbar" id="topbar">
@@ -532,7 +571,7 @@ def build():
 
   /* ---- status filter ---- */
   var chips = [].slice.call(document.querySelectorAll(".chip"));
-  var entries = [].slice.call(document.querySelectorAll(".entry"));
+  var entries = [].slice.call(document.querySelectorAll(".entry, .copy-row"));
   var shelves = [].slice.call(document.querySelectorAll(".shelf"));
   var nohits = document.getElementById("nohits");
   chips.forEach(function (chip) {{
@@ -546,9 +585,18 @@ def build():
         if (show) shown++;
       }});
       shelves.forEach(function (sh) {{
-        var any = sh.querySelectorAll(".entry:not(.hidebyfilter)").length > 0;
+        var any = sh.querySelectorAll(".entry:not(.hidebyfilter), .copy-row:not(.hidebyfilter)").length > 0;
         sh.classList.toggle("hidebyfilter", !any);
       }});
+      /* dropdowns: a status filter needs its matching folds open to be seen */
+      if (f !== "all") {{
+        document.querySelectorAll(
+          ".shelf:not(.hidebyfilter) .shelf-fold," +
+          ".shelf:not(.hidebyfilter) .copy-ledger," +
+          ".shelf:not(.hidebyfilter) .copy-cat").forEach(function (d) {{
+          d.setAttribute("open", "");
+        }});
+      }}
       nohits.style.display = shown ? "none" : "block";
     }});
   }});
@@ -583,7 +631,16 @@ def build():
 """
     OUT.write_text(html_out)
     n_shelves = html_out.count('<section class="shelf"')
-    print(f"wrote {OUT} ({len(html_out):,} chars) — {total} records, {n_shelves} shelves rendered")
+    n_folds = html_out.count('<details class="shelf-fold')
+    n_groups = html_out.count('<details class="copy-cat"')
+    n_rows = html_out.count('<div class="copy-row"')
+    sweep_n = sum(1 for r in CATALOG if r["why_saved"].startswith("upstream "))
+    sweep_cats = len({r["category"] for r in CATALOG if r["why_saved"].startswith("upstream ")})
+    assert n_folds == n_shelves, f"expected {n_shelves} shelf folds, got {n_folds}"
+    assert n_rows == sweep_n, f"expected {sweep_n} ledger rows, got {n_rows}"
+    assert n_groups == sweep_cats, f"expected {sweep_cats} ledger groups, got {n_groups}"
+    print(f"wrote {OUT} ({len(html_out):,} chars) — {total} records, {n_shelves} shelves, "
+         f"{n_groups} ledger groups, {n_rows} copy rows")
 
 
 if __name__ == "__main__":
