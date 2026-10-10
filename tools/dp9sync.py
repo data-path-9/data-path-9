@@ -41,6 +41,12 @@ from pathlib import Path
 import yaml
 
 ROOT = Path(__file__).resolve().parent.parent
+# copies of this script may live outside the repo (the curator keeps one in
+# ~); resolve to the real library wherever catalog.yaml actually is
+for _cand in (ROOT, Path.home() / "projects" / "data-path-9"):
+    if (_cand / "catalog.yaml").is_file() and (_cand / "tools" / "build.py").is_file():
+        ROOT = _cand
+        break
 CAT_PATH = ROOT / "catalog.yaml"
 README_PATH = ROOT / "README.md"
 BUILD = ROOT / "tools" / "build.py"
