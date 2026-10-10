@@ -22,7 +22,6 @@
   last_push: '2024-06-18'
   stars: 73480
   verified: '2026-10-09'
-  held_fork_push: '2024-06-18'
 
 - name: stable-diffusion-webui
   category: text-to-image
@@ -33,7 +32,6 @@
   last_push: '2026-03-02'
   stars: 165032
   verified: '2026-10-09'
-  held_fork_push: '2026-03-02'
 
 - name: Fooocus
   category: text-to-image
@@ -68,7 +66,6 @@
   last_push: '2026-03-25'
   stars: 34432
   verified: '2026-10-09'
-  held_fork_push: '2026-03-25'
 
 - name: llama.cpp
   category: local-inference
