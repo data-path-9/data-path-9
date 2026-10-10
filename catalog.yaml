@@ -3046,6 +3046,7 @@
   held_fork: data-path-9/CLIP
   copy_shelf: text-to-image
   verified: '2026-10-09'
+  held_fork_push: '2026-03-25'
 
 - name: hermes-facebook-skill
   category: fork-wing
@@ -3116,6 +3117,7 @@
   held_fork: data-path-9/stable-diffusion-webui
   copy_shelf: text-to-image
   verified: '2026-10-09'
+  held_fork_push: '2026-03-02'
 
 - name: prompt-eng-interactive-tutorial
   category: fork-wing
@@ -3392,6 +3394,7 @@
   held_fork: data-path-9/stable-diffusion
   copy_shelf: text-to-image
   verified: '2026-10-09'
+  held_fork_push: '2024-06-18'
 
 - name: lollms_proxy_server
   category: fork-wing
