@@ -63,7 +63,10 @@ def gh_slug(rec):
 
 
 def fmt_stars(n):
-    return f"{n / 1000:.1f}k".replace(".0k", "0k") if n >= 1000 else str(n)
+    if n < 1000:
+        return str(n)
+    s = f"{n / 1000:.1f}"
+    return (s[:-2] if s.endswith(".0") else s) + "k"
 
 
 def fmt_date(iso):
