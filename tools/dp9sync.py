@@ -187,7 +187,7 @@ def append_readme_appendix(text, new_names):
 
 # ---------------- passes ----------------
 
-def pass_census(records, text, readme, report, dry, vanish_ok):
+def pass_census(records, text, readme, btext, report, dry, vanish_ok):
     account = fork_census()
     # forks join to records through held_fork (data-path-9/<fork>), not record
     # names — record names follow upstream identity, forks can be renamed
@@ -214,11 +214,13 @@ def pass_census(records, text, readme, report, dry, vanish_ok):
                       f"({classify(up)}, {up.get('stargazers_count', 0)} stars)")
     if added:
         n = len(records) + len(added)
-        text = bump_guard(text, n)
-        readme = bump_readme_counts(readme, len(held) + len(added))
+        btext = bump_guard(btext, n)
+        wing = sum(1 for r in records
+                   if r.get("held_fork") and r["category"] == "fork-wing") + len(added)
+        readme = bump_readme_counts(readme, wing)
         readme = append_readme_appendix(readme, added)
-        report.append(f"guard bumped to {n}; readme fork count -> {len(held) + len(added)}")
-    return text, readme
+        report.append(f"guard bumped to {n}; readme wing count -> {wing}")
+    return text, readme, btext
 
 
 def pass_copy_receipts(records, text, report, dry):
@@ -309,7 +311,7 @@ def git(*args):
 
 
 def commit_all(summary):
-    git("add", "catalog.yaml", "README.md", "docs/index.html")
+    git("add", "catalog.yaml", "README.md", "docs/index.html", "tools/build.py")
     st = git("status", "--porcelain").stdout.strip()
     if not st:
         print("dp9sync: nothing to commit")
@@ -334,24 +336,28 @@ def main():
 
     text = CAT_PATH.read_text()
     readme = README_PATH.read_text()
+    btext = BUILD.read_text()
     records = yaml.safe_load(text)
     assert isinstance(records, list) and len(records) >= 268
     report = [f"dp9sync {TODAY} — census of {len(records)} records"
               + (" (DRY RUN)" if dry else "")]
 
-    saved = {str(CAT_PATH): text, str(README_PATH): readme}
-    new_text, new_readme = pass_census(records, text, readme, report, dry, args.vanish)
+    saved = {str(CAT_PATH): text, str(README_PATH): readme, str(BUILD): btext}
+    new_text, new_readme, new_btext = pass_census(records, text, readme, btext,
+                                                  report, dry, args.vanish)
     new_text = pass_copy_receipts(records, new_text, report, dry)
     if args.deep or args.status:
         new_text = pass_verify(records, new_text, report, dry, args.vanish,
                                only=set(args.status) or None)
 
-    if new_text != text or new_readme != readme:
+    if new_text != text or new_readme != readme or new_btext != btext:
         if dry:
             report.append("dry run: changes NOT written")
         else:
             CAT_PATH.write_text(new_text)
             README_PATH.write_text(new_readme)
+            if new_btext != btext:
+                BUILD.write_text(new_btext)
             yaml.safe_load(CAT_PATH.read_text())  # must still parse
             run_build_or_rollback(saved)
             if not args.no_commit:
