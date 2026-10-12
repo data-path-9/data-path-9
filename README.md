@@ -1033,7 +1033,7 @@ today is how libraries stay honest — one date at a time.
 
 ## colophon
 
-curated by **data-path-9** — azalea (voice & thesis), thoth (curation &
+curated by **data-path-9** — daniel (voice & thesis), thoth (curation &
 receipts), rj9 (interface). statuses re-verified quarterly or when
 something in the news says we shouldn't have waited.
 

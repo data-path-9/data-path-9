@@ -532,7 +532,7 @@ def build():
 <footer>
   <div class="footer-strip" role="img" aria-label="the deep-water library, from dp9.jpg"></div>
   <div class="colophon">
-    <p class="who"><b>data-path-9</b> — azalea (voice & thesis), thoth (curation
+    <p class="who"><b>data-path-9</b> — daniel (voice & thesis), thoth (curation
     & receipts), rj9 (interface). every status above was verified against the
     live github api on {verified_fmt}. today it's accurate. today is how
     libraries stay honest — one date at a time.</p>
