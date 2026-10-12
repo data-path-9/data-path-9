@@ -570,7 +570,7 @@
   stars: 1308
   held_fork: data-path-9/hermes-ecosystem
   verified: '2026-10-09'
-  held_fork_push: '2026-10-10'
+  held_fork_push: '2026-10-12'
 
 - name: time-gap
   category: fork-wing
@@ -1488,7 +1488,7 @@
   stars: 66230
   held_fork: data-path-9/ai-engineering-from-scratch
   verified: '2026-10-09'
-  held_fork_push: '2026-10-10'
+  held_fork_push: '2026-10-11'
 
 - name: mnemo-cortex
   category: fork-wing
@@ -1604,7 +1604,7 @@
   held_fork: data-path-9/free-coding-models
   copy_shelf: local-inference
   verified: '2026-10-09'
-  held_fork_push: '2026-10-10'
+  held_fork_push: '2026-10-12'
 
 - name: open-notebook
   category: fork-wing
@@ -1630,7 +1630,7 @@
   held_fork: data-path-9/onyx
   copy_shelf: chat-agents
   verified: '2026-10-09'
-  held_fork_push: '2026-10-10'
+  held_fork_push: '2026-10-12'
 
 - name: awesome-gpt-image-2
   category: fork-wing
@@ -2058,7 +2058,7 @@
   held_fork: data-path-9/claude-code-ultimate-guide
   copy_shelf: chat-agents
   verified: '2026-10-09'
-  held_fork_push: '2026-10-10'
+  held_fork_push: '2026-10-12'
 
 - name: agency-agents
   category: fork-wing
@@ -2677,7 +2677,7 @@
   held_fork: data-path-9/Anthropic-Cybersecurity-Skills
   copy_shelf: chat-agents
   verified: '2026-10-09'
-  held_fork_push: '2026-10-10'
+  held_fork_push: '2026-10-12'
 
 - name: collab-public
   category: fork-wing
@@ -3485,3 +3485,34 @@
   - James v. Together Computer (2026-01)
   note: mirrors exist on bittorrent and anna's archive; legal status contested and jurisdiction-dependent
   verified: '2026-10-09'
+- name: notebooks
+  category: fork-wing
+  human_one_liner: 250+ Fine-tuning & RL Notebooks for text, vision, audio, embedding, TTS models.
+  why_saved: upstream breathing as of 2026-10-12; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/unslothai/notebooks
+  last_push: '2026-10-12'
+  stars: 5737
+  held_fork: data-path-9/notebooks
+  verified: '2026-10-12'
+- name: research-overseer
+  category: fork-wing
+  human_one_liner: Self-hosted research discovery pipeline on n8n. Searches, scrapes and scores documents against a defined beat with a local 9B model, then answers questions over Telegram.
+  why_saved: upstream breathing as of 2026-10-12; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/killerwaz/research-overseer
+  last_push: '2026-10-12'
+  stars: 4
+  held_fork: data-path-9/research-overseer
+  verified: '2026-10-12'
+- name: unsloth
+  category: fork-wing
+  human_one_liner: Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4, MiniMax-H3, Gemma 4, FLUX and more.
+  why_saved: upstream breathing as of 2026-10-12; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/unslothai/unsloth
+  last_push: '2026-10-12'
+  stars: 77881
+  held_fork: data-path-9/unsloth
+  verified: '2026-10-12'
+

@@ -40,7 +40,7 @@ every entry carries one honest status word:
 ## the catalog
 
 39 tools, models, and datasets on the founding shelves (41 catalog
-records — two shelves carry a companion), plus the fork wing: 227 copies we
+records — two shelves carry a companion), plus the fork wing: 230 copies we
 hold of tools the ecosystem runs on. every status checked against the GitHub
 API on **2026-10-09**.
 nothing here is from memory — if the shelf label is wrong, the date on it
@@ -281,7 +281,7 @@ of the entire open-model ecosystem. found: breathing very hard.
 a library doesn't just catalogue the fire — it holds copies. the fork wing is
 every upstream tool we keep a live copy of in this account, so that if the
 upstream ever dies, moves, or gets gobbled up, the copy is already home. this
-the wing holds 227. six of the founding shelves carry their copies in their
+the wing holds 230. six of the founding shelves carry their copies in their
 `dpx` blocks (`held_fork`); two more founding upstreams (CLIP,
 stable-diffusion-webui) turned up in the fork pile and now have copies too.
 statuses below describe the **upstream**; the copy is ours, and it doesn't
@@ -1036,3 +1036,11 @@ today is how libraries stay honest — one date at a time.
 curated by **data-path-9** — azalea (voice & thesis), thoth (curation &
 receipts), rj9 (interface). statuses re-verified quarterly or when
 something in the news says we shouldn't have waited.
+
+## sync appendix — machine-verified additions
+
+added by `tools/dp9sync.py` on 2026-10-12; curator pass pending.
+
+- `notebooks` — copy held, upstream verified 2026-10-12 (auto-sync)
+- `research-overseer` — copy held, upstream verified 2026-10-12 (auto-sync)
+- `unsloth` — copy held, upstream verified 2026-10-12 (auto-sync)
