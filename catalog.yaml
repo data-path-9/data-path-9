@@ -570,7 +570,7 @@
   stars: 1308
   held_fork: data-path-9/hermes-ecosystem
   verified: '2026-10-09'
-  held_fork_push: '2026-10-12'
+  held_fork_push: '2026-10-17'
 
 - name: time-gap
   category: fork-wing
@@ -1630,7 +1630,7 @@
   held_fork: data-path-9/onyx
   copy_shelf: chat-agents
   verified: '2026-10-09'
-  held_fork_push: '2026-10-12'
+  held_fork_push: '2026-10-14'
 
 - name: awesome-gpt-image-2
   category: fork-wing
@@ -2058,7 +2058,7 @@
   held_fork: data-path-9/claude-code-ultimate-guide
   copy_shelf: chat-agents
   verified: '2026-10-09'
-  held_fork_push: '2026-10-12'
+  held_fork_push: '2026-10-17'
 
 - name: agency-agents
   category: fork-wing
@@ -3495,6 +3495,7 @@
   stars: 5737
   held_fork: data-path-9/notebooks
   verified: '2026-10-12'
+  held_fork_push: '2026-10-10'
 - name: research-overseer
   category: fork-wing
   human_one_liner: Self-hosted research discovery pipeline on n8n. Searches, scrapes and scores documents against a defined beat with a local 9B model, then answers questions over Telegram.
@@ -3505,6 +3506,7 @@
   stars: 4
   held_fork: data-path-9/research-overseer
   verified: '2026-10-12'
+  held_fork_push: '2026-10-11'
 - name: unsloth
   category: fork-wing
   human_one_liner: Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4, MiniMax-H3, Gemma 4, FLUX and more.
@@ -3515,4 +3517,125 @@
   stars: 77881
   held_fork: data-path-9/unsloth
   verified: '2026-10-12'
+  held_fork_push: '2026-10-10'
+- name: OpenViking
+  category: fork-wing
+  human_one_liner: Self-evolving Context Database for AI Agents. Unify Agent Memory, Knowledge RAG and Skills.
+  why_saved: upstream breathing as of 2026-10-17; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/volcengine/OpenViking
+  last_push: '2026-10-17'
+  stars: 40162
+  held_fork: data-path-9/OpenViking
+  verified: '2026-10-17'
+- name: agent-memory-server
+  category: fork-wing
+  human_one_liner: Fast and flexible memory for agents and AI applications using Redis
+  why_saved: upstream breathing as of 2026-10-17; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/redis/agent-memory-server
+  last_push: '2026-09-18'
+  stars: 323
+  held_fork: data-path-9/agent-memory-server
+  verified: '2026-10-17'
+- name: chroma
+  category: fork-wing
+  human_one_liner: Search infrastructure for AI
+  why_saved: upstream breathing as of 2026-10-17; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/chroma-core/chroma
+  last_push: '2026-10-17'
+  stars: 29518
+  held_fork: data-path-9/chroma
+  verified: '2026-10-17'
+- name: graphiti
+  category: fork-wing
+  human_one_liner: Build Real-Time Knowledge Graphs for AI Agents
+  why_saved: upstream breathing as of 2026-10-17; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/getzep/graphiti
+  last_push: '2026-10-15'
+  stars: 31873
+  held_fork: data-path-9/graphiti
+  verified: '2026-10-17'
+- name: hide-project
+  category: fork-wing
+  human_one_liner: The Geometry of Forgetting
+  why_saved: upstream quiet as of 2026-10-17; the copy is insurance, not rescue
+  status: quiet
+  repo: https://github.com/Dynamis-Labs/hide-project
+  last_push: '2026-03-27'
+  stars: 6
+  held_fork: data-path-9/hide-project
+  verified: '2026-10-17'
+- name: langmem
+  category: fork-wing
+  human_one_liner: copy of langchain-ai/langmem — upstream kept the story thin
+  why_saved: upstream breathing as of 2026-10-17; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/langchain-ai/langmem
+  last_push: '2026-10-02'
+  stars: 1708
+  held_fork: data-path-9/langmem
+  verified: '2026-10-17'
+- name: letta
+  category: fork-wing
+  human_one_liner: "Platform for stateful agents: AI with advanced memory that can learn and self-improve over time."
+  why_saved: upstream breathing as of 2026-10-17; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/letta-ai/letta
+  last_push: '2026-09-10'
+  stars: 25171
+  held_fork: data-path-9/letta
+  verified: '2026-10-17'
+- name: memorious-mcp
+  category: fork-wing
+  human_one_liner: Semantic Memory for MCP. 100% Local & Private. Store, recall, and forget with vector search via ChromaDB
+  why_saved: upstream quiet as of 2026-10-17; the copy is insurance, not rescue
+  status: quiet
+  repo: https://github.com/cedricvidal/memorious-mcp
+  last_push: '2025-10-01'
+  stars: 9
+  held_fork: data-path-9/memorious-mcp
+  verified: '2026-10-17'
+- name: no-escape
+  category: fork-wing
+  human_one_liner: copy of Dynamis-Labs/no-escape — upstream kept the story thin
+  why_saved: upstream breathing as of 2026-10-17; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/Dynamis-Labs/no-escape
+  last_push: '2026-05-16'
+  stars: 11
+  held_fork: data-path-9/no-escape
+  verified: '2026-10-17'
+- name: spectralquant
+  category: fork-wing
+  human_one_liner: "SpectralQuant: Calibrated Eigenbasis Rotation and Water-Filled Bit Allocation for KV-Cache Compression"
+  why_saved: upstream breathing as of 2026-10-17; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/Dynamis-Labs/spectralquant
+  last_push: '2026-05-15'
+  stars: 204
+  held_fork: data-path-9/spectralquant
+  verified: '2026-10-17'
+- name: spectralquant_package
+  category: fork-wing
+  human_one_liner: copy of Dynamis-Labs/spectralquant_package — upstream kept the story thin
+  why_saved: upstream breathing as of 2026-10-17; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/Dynamis-Labs/spectralquant_package
+  last_push: '2026-05-31'
+  stars: 6
+  held_fork: data-path-9/spectralquant_package
+  verified: '2026-10-17'
+- name: supermemory
+  category: fork-wing
+  human_one_liner: Memory and context engine + app that is extremely fast, scalable, and can be run fully locally. The Memory API for the AI era.
+  why_saved: upstream breathing as of 2026-10-17; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/supermemoryai/supermemory
+  last_push: '2026-10-17'
+  stars: 31259
+  held_fork: data-path-9/supermemory
+  verified: '2026-10-17'
 
