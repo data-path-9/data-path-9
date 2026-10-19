@@ -8,6 +8,7 @@ that any agent (or human) can read straight off disk.
 """
 import html
 import json
+import re
 from datetime import date
 from pathlib import Path
 from urllib.parse import urlparse
@@ -40,11 +41,17 @@ with open(ROOT / "catalog.yaml") as f:
 
 # ---- guards: the catalog is load-bearing, fail loudly at build time ----
 assert isinstance(CATALOG, list), "catalog.yaml must be a list of records"
-assert len(CATALOG) == 283, f"expected 268 records, got {len(CATALOG)}"
+assert len(CATALOG) == 283, f"expected 283 records, got {len(CATALOG)}"
 for rec in CATALOG:
     name = rec.get("name", "??")
-    for field in ("name", "category", "status", "human_one_liner", "why_saved"):
+    assert isinstance(name, str), f"{name}: name must be a quoted yaml string"
+    for field in ("name", "category", "status", "human_one_liner", "why_saved", "verified"):
         assert rec.get(field), f"{name}: missing {field}"
+    assert re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(rec["verified"])[:10]), \
+        f"{name}: verified '{rec['verified']}' is not an iso date"
+    if rec.get("last_push"):
+        assert re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(rec["last_push"])[:10]), \
+            f"{name}: last_push '{rec['last_push']}' is not an iso date"
     assert rec["status"] in STATUSES, f"{name}: status '{rec['status']}' outside the closed enum"
     if rec.get("copy_shelf"):
         assert rec["copy_shelf"] in CATEGORY_ORDER, \
@@ -82,7 +89,7 @@ def push_recent(rec):
     """within the breathing window of the record's own verification date?"""
     try:
         push = date(*[int(x) for x in str(rec["last_push"])[:10].split("-")])
-        v = date(*[int(x) for x in str(rec.get("verified", "2026-10-09"))[:10].split("-")])
+        v = date(*[int(x) for x in str(rec["verified"])[:10].split("-")])
         return (v - push).days <= BREATHING_WINDOW_DAYS
     except (ValueError, TypeError, KeyError):
         return False
@@ -92,7 +99,7 @@ def push_recent(rec):
 def render_entry(rec, idx, in_memorial_shelf=False):
     status = rec["status"]
     name = rec["name"]
-    stars = fmt_stars(rec["stars"]) if rec.get("stars") else None
+    stars = fmt_stars(rec["stars"]) if rec.get("stars") is not None else None
     pushed = fmt_date(rec["last_push"]) if rec.get("last_push") else None
     url = rec.get("repo")
     dead_url = rec.get("dead_url")
@@ -193,20 +200,26 @@ def render_filters():
             f'<span class="s-dot dot-{s}"></span>{s} <span class="count">{status_counts()[s]}</span></button>'
         )
     shelfnav = "".join(
-        f'<a href="#shelf-{c}">{CATEGORY_TITLES[c].split(" ")[0]}</a>' for c in CATEGORY_ORDER
+        f'<a href="#shelf-{c}">{CATEGORY_TITLES[c].split(" ")[0]}</a>' for c in rendered_shelf_cats()
     )
     return (f'<div class="flabel">show</div>' + "".join(chips)
             + f'<nav class="shelfnav" aria-label="jump to shelf">{shelfnav}</nav>')
+
+
+def rendered_shelf_cats():
+    """categories that get a real section: the memorial category is prose,
+    not a listing, and an empty category would leave the nav pointing nowhere"""
+    return [c for c in CATEGORY_ORDER
+            if c != "saved-from-the-fire"
+            and any(r["category"] == c for r in CATALOG)]
 
 
 def render_shelves():
     """tool shelves (everything except the memorial category)"""
     out = []
     idx = 0
-    for cat in CATEGORY_ORDER:
+    for cat in rendered_shelf_cats():
         recs = [r for r in CATALOG if r["category"] == cat]
-        if not recs or cat == "saved-from-the-fire":
-            continue
         # fork wing: pilot records carry real stories -> cards; the sweep
         # (template "upstream ..." prose) collapses into the copy ledger below
         stories, copies = recs, []
@@ -257,7 +270,7 @@ def render_copy_ledger(recs):
         return risk, safe
 
     def row(r):
-        stars = fmt_stars(r["stars"]) if r.get("stars") else "\u2014"
+        stars = fmt_stars(r["stars"]) if r.get("stars") is not None else "\u2014"
         return (f'      <div class="copy-row" data-status="{r["status"]}">\n'
                 f'        <span class="s-dot dot-{r["status"]}"></span>\n'
                 f'        <span class="cname"><a href="{esc(r["repo"])}" rel="noopener">{esc(r["name"])}</a>'
@@ -323,7 +336,7 @@ def build():
     total = len(CATALOG)
 
     # verify date: newest verified stamp across records (single curator pass)
-    verified = max(str(r.get("verified", "2026-10-09"))[:10] for r in CATALOG)
+    verified = max(str(r["verified"])[:10] for r in CATALOG)
     v = date(*[int(x) for x in verified.split("-")])
     verified_fmt = f"{v.strftime('%B')} {v.day}, {v.year}"
 
@@ -633,7 +646,6 @@ def build():
 </body>
 </html>
 """
-    OUT.write_text(html_out)
     n_shelves = html_out.count('<section class="shelf"')
     n_folds = html_out.count('<details class="shelf-fold')
     n_groups = html_out.count('<details class="copy-cat"')
@@ -644,6 +656,9 @@ def build():
     assert n_folds == n_shelves, f"expected {n_shelves} shelf folds, got {n_folds}"
     assert n_rows == sweep_n, f"expected {sweep_n} ledger rows, got {n_rows}"
     assert n_groups == sweep_cats, f"expected {sweep_cats} ledger groups, got {n_groups}"
+    # validate before writing: a failed build must never leave an index.html
+    # that no catalog on disk produced (dp9sync rolls back the inputs, not this)
+    OUT.write_text(html_out)
     print(f"wrote {OUT} ({len(html_out):,} chars) — {total} records, {n_shelves} shelves, "
          f"{n_groups} ledger groups, {n_rows} copy rows")
 

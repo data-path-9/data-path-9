@@ -81,7 +81,7 @@ def repo_data(slug):
     """live repos/<slug> payload, or None if the address is gone (404)."""
     r = subprocess.run(["gh", "api", f"repos/{slug}"], capture_output=True, text=True)
     if r.returncode != 0:
-        if "404" in r.stderr:
+        if "HTTP 404" in r.stderr:
             return None
         sys.exit(f"dp9sync: gh api repos/{slug} failed:\n{r.stderr}")
     return json.loads(r.stdout)
@@ -121,8 +121,10 @@ def record_bounds(lines, name, category=None):
     """a record's line span. names can collide (a founding shelf and its
     sweep copy may share one), so pass category to disambiguate —
     (name, category) is the unique key of this catalog."""
+    q = re.escape(str(name))
+    pat = re.compile(rf"- name: (?:{q}|'{q}'|\"{q}\")\s*$")  # bare or yq-quoted
     start = next(i for i, l in enumerate(lines)
-                 if re.match(rf"- name: {re.escape(name)}\s*$", l)
+                 if pat.match(l)
                  and (category is None or any(
                      re.match(rf"  category: {re.escape(category)}\s*$", x)
                      for x in lines[i + 1:i + 4])))
@@ -153,7 +155,7 @@ def sweep_record_text(name, up):
     story/ledger split keys on why_saved starting with 'upstream '."""
     desc = re.sub(r"\s+", " ", (up.get("description") or "").strip())
     one_liner = yq(desc if desc else f"copy of {up['full_name']} — upstream kept the story thin")
-    return (f"- name: {name}\n"
+    return (f"- name: {yq(name)}\n"
             "  category: fork-wing\n"
             f"  human_one_liner: {one_liner}\n"
             f"  why_saved: upstream {classify(up)} as of {TODAY}; the copy is insurance, not rescue\n"
@@ -277,7 +279,9 @@ def pass_verify(records, text, report, dry, vanish_ok, only=None):
             changes["stars"] = up.get("stargazers_count", 0)
         if up["pushed_at"][:10] != str(r.get("last_push", ""))[:10]:
             changes["last_push"] = up["pushed_at"][:10]
-        if str(r.get("verified", ""))[:10] != TODAY and changes:
+        # every record actually checked gets its verified stamp advanced,
+        # not just the ones whose fields moved
+        if str(r.get("verified", ""))[:10] != TODAY:
             changes["verified"] = TODAY
         if changes:
             if not dry:
@@ -311,12 +315,15 @@ def git(*args):
 
 
 def commit_all(summary):
-    git("add", "catalog.yaml", "README.md", "docs/index.html", "tools/build.py")
-    st = git("status", "--porcelain").stdout.strip()
-    if not st:
+    r = git("add", "catalog.yaml", "README.md", "docs/index.html", "tools/build.py")
+    if r.returncode != 0:
+        sys.exit(f"dp9sync: git add failed:\n{r.stderr}")
+    if not git("status", "--porcelain").stdout.strip():
         print("dp9sync: nothing to commit")
         return
-    git("commit", "-m", summary)
+    r = git("commit", "-m", summary)
+    if r.returncode != 0:
+        sys.exit(f"dp9sync: git commit failed:\n{r.stderr}")
     print(f"dp9sync: committed — {summary}")
 
 
