@@ -1,0 +1,4 @@
+# local agent/hook tool state — machine-local, never commit
+.codegraph/
+.mimosa/
+__pycache__/
