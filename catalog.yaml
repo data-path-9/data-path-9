@@ -534,7 +534,7 @@
   stars: 422
   held_fork: data-path-9/SOUL.md
   verified: '2026-10-09'
-  held_fork_push: '2026-10-10'
+  held_fork_push: '2026-10-17'
 
 - name: awesome-agent-souls
   category: fork-wing
@@ -570,7 +570,7 @@
   stars: 1308
   held_fork: data-path-9/hermes-ecosystem
   verified: '2026-10-09'
-  held_fork_push: '2026-10-17'
+  held_fork_push: '2026-10-24'
 
 - name: time-gap
   category: fork-wing
@@ -2058,7 +2058,7 @@
   held_fork: data-path-9/claude-code-ultimate-guide
   copy_shelf: chat-agents
   verified: '2026-10-09'
-  held_fork_push: '2026-10-17'
+  held_fork_push: '2026-10-24'
 
 - name: agency-agents
   category: fork-wing
@@ -2677,7 +2677,7 @@
   held_fork: data-path-9/Anthropic-Cybersecurity-Skills
   copy_shelf: chat-agents
   verified: '2026-10-09'
-  held_fork_push: '2026-10-12'
+  held_fork_push: '2026-10-19'
 
 - name: collab-public
   category: fork-wing
@@ -3528,6 +3528,7 @@
   stars: 40162
   held_fork: data-path-9/OpenViking
   verified: '2026-10-17'
+  held_fork_push: '2026-10-15'
 - name: agent-memory-server
   category: fork-wing
   human_one_liner: Fast and flexible memory for agents and AI applications using Redis
@@ -3538,6 +3539,7 @@
   stars: 323
   held_fork: data-path-9/agent-memory-server
   verified: '2026-10-17'
+  held_fork_push: '2026-09-18'
 - name: chroma
   category: fork-wing
   human_one_liner: Search infrastructure for AI
@@ -3548,6 +3550,7 @@
   stars: 29518
   held_fork: data-path-9/chroma
   verified: '2026-10-17'
+  held_fork_push: '2026-10-15'
 - name: graphiti
   category: fork-wing
   human_one_liner: Build Real-Time Knowledge Graphs for AI Agents
@@ -3558,6 +3561,7 @@
   stars: 31873
   held_fork: data-path-9/graphiti
   verified: '2026-10-17'
+  held_fork_push: '2026-10-15'
 - name: hide-project
   category: fork-wing
   human_one_liner: The Geometry of Forgetting
@@ -3568,6 +3572,7 @@
   stars: 6
   held_fork: data-path-9/hide-project
   verified: '2026-10-17'
+  held_fork_push: '2026-03-27'
 - name: langmem
   category: fork-wing
   human_one_liner: copy of langchain-ai/langmem — upstream kept the story thin
@@ -3578,6 +3583,7 @@
   stars: 1708
   held_fork: data-path-9/langmem
   verified: '2026-10-17'
+  held_fork_push: '2026-10-02'
 - name: letta
   category: fork-wing
   human_one_liner: "Platform for stateful agents: AI with advanced memory that can learn and self-improve over time."
@@ -3588,6 +3594,7 @@
   stars: 25171
   held_fork: data-path-9/letta
   verified: '2026-10-17'
+  held_fork_push: '2026-09-10'
 - name: memorious-mcp
   category: fork-wing
   human_one_liner: Semantic Memory for MCP. 100% Local & Private. Store, recall, and forget with vector search via ChromaDB
@@ -3598,6 +3605,7 @@
   stars: 9
   held_fork: data-path-9/memorious-mcp
   verified: '2026-10-17'
+  held_fork_push: '2025-10-01'
 - name: no-escape
   category: fork-wing
   human_one_liner: copy of Dynamis-Labs/no-escape — upstream kept the story thin
@@ -3608,6 +3616,7 @@
   stars: 11
   held_fork: data-path-9/no-escape
   verified: '2026-10-17'
+  held_fork_push: '2026-05-16'
 - name: spectralquant
   category: fork-wing
   human_one_liner: "SpectralQuant: Calibrated Eigenbasis Rotation and Water-Filled Bit Allocation for KV-Cache Compression"
@@ -3618,6 +3627,7 @@
   stars: 204
   held_fork: data-path-9/spectralquant
   verified: '2026-10-17'
+  held_fork_push: '2026-05-15'
 - name: spectralquant_package
   category: fork-wing
   human_one_liner: copy of Dynamis-Labs/spectralquant_package — upstream kept the story thin
@@ -3628,6 +3638,7 @@
   stars: 6
   held_fork: data-path-9/spectralquant_package
   verified: '2026-10-17'
+  held_fork_push: '2026-05-31'
 - name: supermemory
   category: fork-wing
   human_one_liner: Memory and context engine + app that is extremely fast, scalable, and can be run fully locally. The Memory API for the AI era.
@@ -3638,4 +3649,285 @@
   stars: 31259
   held_fork: data-path-9/supermemory
   verified: '2026-10-17'
+  held_fork_push: '2026-10-14'
+- name: CLI-Anything
+  category: fork-wing
+  human_one_liner: "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/"
+  why_saved: upstream breathing as of 2026-10-24; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/HKUDS/CLI-Anything
+  last_push: '2026-09-22'
+  stars: 56759
+  held_fork: data-path-9/CLI-Anything
+  verified: '2026-10-24'
+- name: EDGEbuilder
+  category: fork-wing
+  human_one_liner: "A world builder for Cyberpunk 2077 that runs inside the game on REDnode: browse, drop, position, bake."
+  why_saved: upstream breathing as of 2026-10-24; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/Edgemodders/EDGEbuilder
+  last_push: '2026-10-24'
+  stars: 1
+  held_fork: data-path-9/EDGEbuilder
+  verified: '2026-10-24'
+- name: EDGEchat
+  category: fork-wing
+  human_one_liner: "EDGEchat: chat with EDGE in Claude Code. A plugin that makes Claude a Cyberpunk 2077 modding assistant."
+  why_saved: upstream breathing as of 2026-10-24; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/Edgemodders/EDGEchat
+  last_push: '2026-10-24'
+  stars: 0
+  held_fork: data-path-9/EDGEchat
+  verified: '2026-10-24'
+- name: EDGEdeck
+  category: fork-wing
+  human_one_liner: copy of Edgemodders/EDGEdeck — upstream kept the story thin
+  why_saved: upstream breathing as of 2026-10-24; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/Edgemodders/EDGEdeck
+  last_push: '2026-10-23'
+  stars: 0
+  held_fork: data-path-9/EDGEdeck
+  verified: '2026-10-24'
+- name: EDGEfab
+  category: fork-wing
+  human_one_liner: "Asset maker for EDGE: new clothes and objects for Cyberpunk 2077, from a model to the game."
+  why_saved: upstream breathing as of 2026-10-24; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/Edgemodders/EDGEfab
+  last_push: '2026-10-19'
+  stars: 0
+  held_fork: data-path-9/EDGEfab
+  verified: '2026-10-24'
+- name: EDGEkit
+  category: fork-wing
+  human_one_liner: copy of Edgemodders/EDGEkit — upstream kept the story thin
+  why_saved: upstream breathing as of 2026-10-24; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/Edgemodders/EDGEkit
+  last_push: '2026-10-24'
+  stars: 0
+  held_fork: data-path-9/EDGEkit
+  verified: '2026-10-24'
+- name: EDGEmat
+  category: fork-wing
+  human_one_liner: Material editor for EDGE
+  why_saved: upstream breathing as of 2026-10-24; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/Edgemodders/EDGEmat
+  last_push: '2026-10-24'
+  stars: 0
+  held_fork: data-path-9/EDGEmat
+  verified: '2026-10-24'
+- name: EDGEquest
+  category: fork-wing
+  human_one_liner: EDGEquest
+  why_saved: upstream breathing as of 2026-10-24; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/Edgemodders/EDGEquest
+  last_push: '2026-10-24'
+  stars: 0
+  held_fork: data-path-9/EDGEquest
+  verified: '2026-10-24'
+- name: EDGEwave
+  category: fork-wing
+  human_one_liner: Sound extension for EDGE
+  why_saved: upstream breathing as of 2026-10-24; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/Edgemodders/EDGEwave
+  last_push: '2026-10-24'
+  stars: 0
+  held_fork: data-path-9/EDGEwave
+  verified: '2026-10-24'
+- name: LLMario
+  category: fork-wing
+  human_one_liner: copy of mannysinghx/LLMario — upstream kept the story thin
+  why_saved: upstream breathing as of 2026-10-24; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/mannysinghx/LLMario
+  last_push: '2026-10-11'
+  stars: 3
+  held_fork: data-path-9/LLMario
+  verified: '2026-10-24'
+- name: Promethevs
+  category: fork-wing
+  human_one_liner: "PROMETHEVS: run the full DeepSeek-V4.1-Flash-1017 (510 GB) on a gaming PC with 64 GB RAM and a 12 GB GPU. PROMETHEVS engine (compress-then-correct), OpenAI-compatible local server, report and logs."
+  why_saved: upstream breathing as of 2026-10-24; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/Magnvs7/Promethevs
+  last_push: '2026-10-23'
+  stars: 23
+  held_fork: data-path-9/Promethevs
+  verified: '2026-10-24'
+- name: REDagent
+  category: fork-wing
+  human_one_liner: copy of Edgemodders/REDagent — upstream kept the story thin
+  why_saved: upstream breathing as of 2026-10-24; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/Edgemodders/REDagent
+  last_push: '2026-10-23'
+  stars: 0
+  held_fork: data-path-9/REDagent
+  verified: '2026-10-24'
+- name: REDbridge
+  category: fork-wing
+  human_one_liner: copy of Edgemodders/REDbridge — upstream kept the story thin
+  why_saved: upstream breathing as of 2026-10-24; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/Edgemodders/REDbridge
+  last_push: '2026-10-23'
+  stars: 0
+  held_fork: data-path-9/REDbridge
+  verified: '2026-10-24'
+- name: REDcode
+  category: fork-wing
+  human_one_liner: copy of Edgemodders/REDcode — upstream kept the story thin
+  why_saved: upstream breathing as of 2026-10-24; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/Edgemodders/REDcode
+  last_push: '2026-10-23'
+  stars: 0
+  held_fork: data-path-9/REDcode
+  verified: '2026-10-24'
+- name: REDnode
+  category: fork-wing
+  human_one_liner: copy of Edgemodders/REDnode — upstream kept the story thin
+  why_saved: upstream breathing as of 2026-10-24; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/Edgemodders/REDnode
+  last_push: '2026-10-24'
+  stars: 0
+  held_fork: data-path-9/REDnode
+  verified: '2026-10-24'
+- name: SOUL.mds
+  category: fork-wing
+  human_one_liner: This repo contains different Soul.md files each file is different and allow your agents to behave in unique interesting personality.
+  why_saved: upstream breathing as of 2026-10-24; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/madhvantyagi/SOUL.md
+  last_push: '2026-08-24'
+  stars: 432
+  held_fork: data-path-9/SOUL.mds
+  verified: '2026-10-24'
+- name: Strata
+  category: fork-wing
+  human_one_liner: "Qwen3.8-Flash-Next on any consumer hardware: one-click install for Windows / Linux. Strata inference engine, OpenAI/Anthropic API on localhost, optional image input."
+  why_saved: upstream breathing as of 2026-10-24; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/Niko1221/Strata
+  last_push: '2026-10-24'
+  stars: 31648
+  held_fork: data-path-9/Strata
+  verified: '2026-10-24'
+- name: Synthetic_Heart
+  category: fork-wing
+  human_one_liner: "Synthetic Heart: a modular infrastructure for conscious digital entity with memory, will, and plugin-based actions."
+  why_saved: upstream breathing as of 2026-10-24; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/XargonWan/Synthetic_Heart
+  last_push: '2026-10-20'
+  stars: 98
+  held_fork: data-path-9/Synthetic_Heart
+  verified: '2026-10-24'
+- name: amplihack
+  category: fork-wing
+  human_one_liner: Framework for agentic coding supporting many popular agent coding tools.
+  why_saved: upstream archived as of 2026-10-24; the copy is insurance, not rescue
+  status: archived
+  repo: https://github.com/rysweet/amplihack
+  last_push: '2026-07-26'
+  stars: 76
+  held_fork: data-path-9/amplihack
+  verified: '2026-10-24'
+- name: amplihack-rs
+  category: fork-wing
+  human_one_liner: agentic coding engineering system that works with many agentic coding TUIs
+  why_saved: upstream breathing as of 2026-10-24; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/rysweet/amplihack-rs
+  last_push: '2026-10-24'
+  stars: 11
+  held_fork: data-path-9/amplihack-rs
+  verified: '2026-10-24'
+- name: claudikins-automatic-context-manager
+  category: fork-wing
+  human_one_liner: Claudikins Automatic Context Manager - seamless context handoff for Claude Code
+  why_saved: upstream quiet as of 2026-10-24; the copy is insurance, not rescue
+  status: quiet
+  repo: https://github.com/povvo/claudikins-automatic-context-manager
+  last_push: '2026-01-20'
+  stars: 15
+  held_fork: data-path-9/claudikins-automatic-context-manager
+  verified: '2026-10-24'
+- name: claudikins-tool-executor
+  category: fork-wing
+  human_one_liner: Slim tool definitions. Auto-compressed responses. Context efficiency on both end. Ships with 7 example servers, reduces context consumption by 98% (48k tokens down to 1.1k).
+  why_saved: upstream quiet as of 2026-10-24; the copy is insurance, not rescue
+  status: quiet
+  repo: https://github.com/povvo/claudikins-tool-executor
+  last_push: '2026-01-24'
+  stars: 67
+  held_fork: data-path-9/claudikins-tool-executor
+  verified: '2026-10-24'
+- name: hermes-studio
+  category: fork-wing
+  human_one_liner: "Hermes Studio (unofficial): chat with Hermes Agent in VS Code. Releases and bug reports."
+  why_saved: upstream breathing as of 2026-10-24; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/jefuriiij/hermes-studio
+  last_push: '2026-10-14'
+  stars: 5
+  held_fork: data-path-9/hermes-studio
+  verified: '2026-10-24'
+- name: mycelium-memory
+  category: fork-wing
+  human_one_liner: Persistent memory for Claude Code, Claude Desktop, and Codex — save once, recall across sessions, shared across all your AI CLIs.
+  why_saved: upstream breathing as of 2026-10-24; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/constant-itis/mycelium-memory
+  last_push: '2026-10-22'
+  stars: 17
+  held_fork: data-path-9/mycelium-memory
+  verified: '2026-10-24'
+- name: physical-hermes
+  category: fork-wing
+  human_one_liner: Physical Hermes - Give your Hermes Agent a body. This turns a cheap AliExpress AI robot toy into a voice device for Hermes Agent — running entirely on your own machine, using your own model, with no vendor cloud in the loop.
+  why_saved: upstream breathing as of 2026-10-24; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/RegeneratusLabs/physical-hermes
+  last_push: '2026-10-18'
+  stars: 86
+  held_fork: data-path-9/physical-hermes
+  verified: '2026-10-24'
+- name: soul.md
+  category: fork-wing
+  human_one_liner: The best way to build a personality for your agent. Let Claude Code / OpenClaw ingest your data & build your AI soul.
+  why_saved: upstream breathing as of 2026-10-24; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/aeonfun/soul.md
+  last_push: '2026-10-17'
+  stars: 699
+  held_fork: data-path-9/soul.md
+  verified: '2026-10-24'
+- name: video-scraping-apis
+  category: fork-wing
+  human_one_liner: A collection of APIs for scraping video metadata, engagement stats, and public video data across multiple platforms.
+  why_saved: upstream breathing as of 2026-10-24; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/cporter202/video-scraping-apis
+  last_push: '2026-10-20'
+  stars: 734
+  held_fork: data-path-9/video-scraping-apis
+  verified: '2026-10-24'
+- name: zerotokens
+  category: fork-wing
+  human_one_liner: copy of mannysinghx/zerotokens — upstream kept the story thin
+  why_saved: upstream breathing as of 2026-10-24; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/mannysinghx/zerotokens
+  last_push: '2026-05-22'
+  stars: 1
+  held_fork: data-path-9/zerotokens
+  verified: '2026-10-24'
 

@@ -41,7 +41,7 @@ with open(ROOT / "catalog.yaml") as f:
 
 # ---- guards: the catalog is load-bearing, fail loudly at build time ----
 assert isinstance(CATALOG, list), "catalog.yaml must be a list of records"
-assert len(CATALOG) == 283, f"expected 283 records, got {len(CATALOG)}"
+assert len(CATALOG) == 311, f"expected 283 records, got {len(CATALOG)}"
 for rec in CATALOG:
     name = rec.get("name", "??")
     assert isinstance(name, str), f"{name}: name must be a quoted yaml string"

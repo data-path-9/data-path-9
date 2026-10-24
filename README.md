@@ -40,7 +40,7 @@ every entry carries one honest status word:
 ## the catalog
 
 39 tools, models, and datasets on the founding shelves (41 catalog
-records — two shelves carry a companion), plus the fork wing: 242 copies we
+records — two shelves carry a companion), plus the fork wing: 270 copies we
 hold of tools the ecosystem runs on. every status checked against the GitHub
 API on **2026-10-09**.
 nothing here is from memory — if the shelf label is wrong, the date on it
@@ -281,7 +281,7 @@ of the entire open-model ecosystem. found: breathing very hard.
 a library doesn't just catalogue the fire — it holds copies. the fork wing is
 every upstream tool we keep a live copy of in this account, so that if the
 upstream ever dies, moves, or gets gobbled up, the copy is already home. this
-the wing holds 242. six of the founding shelves carry their copies in their
+the wing holds 270. six of the founding shelves carry their copies in their
 `dpx` blocks (`held_fork`); two more founding upstreams (CLIP,
 stable-diffusion-webui) turned up in the fork pile and now have copies too.
 statuses below describe the **upstream**; the copy is ours, and it doesn't
@@ -1061,3 +1061,36 @@ added by `tools/dp9sync.py` on 2026-10-17; curator pass pending.
 - `spectralquant` — copy held, upstream verified 2026-10-17 (auto-sync)
 - `spectralquant_package` — copy held, upstream verified 2026-10-17 (auto-sync)
 - `supermemory` — copy held, upstream verified 2026-10-17 (auto-sync)
+
+## sync appendix — machine-verified additions
+
+added by `tools/dp9sync.py` on 2026-10-24; curator pass pending.
+
+- `CLI-Anything` — copy held, upstream verified 2026-10-24 (auto-sync)
+- `EDGEbuilder` — copy held, upstream verified 2026-10-24 (auto-sync)
+- `EDGEchat` — copy held, upstream verified 2026-10-24 (auto-sync)
+- `EDGEdeck` — copy held, upstream verified 2026-10-24 (auto-sync)
+- `EDGEfab` — copy held, upstream verified 2026-10-24 (auto-sync)
+- `EDGEkit` — copy held, upstream verified 2026-10-24 (auto-sync)
+- `EDGEmat` — copy held, upstream verified 2026-10-24 (auto-sync)
+- `EDGEquest` — copy held, upstream verified 2026-10-24 (auto-sync)
+- `EDGEwave` — copy held, upstream verified 2026-10-24 (auto-sync)
+- `LLMario` — copy held, upstream verified 2026-10-24 (auto-sync)
+- `Promethevs` — copy held, upstream verified 2026-10-24 (auto-sync)
+- `REDagent` — copy held, upstream verified 2026-10-24 (auto-sync)
+- `REDbridge` — copy held, upstream verified 2026-10-24 (auto-sync)
+- `REDcode` — copy held, upstream verified 2026-10-24 (auto-sync)
+- `REDnode` — copy held, upstream verified 2026-10-24 (auto-sync)
+- `SOUL.mds` — copy held, upstream verified 2026-10-24 (auto-sync)
+- `Strata` — copy held, upstream verified 2026-10-24 (auto-sync)
+- `Synthetic_Heart` — copy held, upstream verified 2026-10-24 (auto-sync)
+- `amplihack` — copy held, upstream verified 2026-10-24 (auto-sync)
+- `amplihack-rs` — copy held, upstream verified 2026-10-24 (auto-sync)
+- `claudikins-automatic-context-manager` — copy held, upstream verified 2026-10-24 (auto-sync)
+- `claudikins-tool-executor` — copy held, upstream verified 2026-10-24 (auto-sync)
+- `hermes-studio` — copy held, upstream verified 2026-10-24 (auto-sync)
+- `mycelium-memory` — copy held, upstream verified 2026-10-24 (auto-sync)
+- `physical-hermes` — copy held, upstream verified 2026-10-24 (auto-sync)
+- `soul.md` — copy held, upstream verified 2026-10-24 (auto-sync)
+- `video-scraping-apis` — copy held, upstream verified 2026-10-24 (auto-sync)
+- `zerotokens` — copy held, upstream verified 2026-10-24 (auto-sync)
