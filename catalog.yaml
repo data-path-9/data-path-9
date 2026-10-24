@@ -531,10 +531,10 @@
   status: breathing
   repo: https://github.com/madhvantyagi/SOUL.md
   last_push: '2026-08-24'
-  stars: 422
-  held_fork: data-path-9/SOUL.md
-  verified: '2026-10-09'
-  held_fork_push: '2026-10-17'
+  stars: 432
+  held_fork: data-path-9/SOUL.mds
+  verified: '2026-10-24'
+  held_fork_push: '2026-10-10'
 
 - name: awesome-agent-souls
   category: fork-wing
@@ -3816,17 +3816,6 @@
   held_fork: data-path-9/REDnode
   verified: '2026-10-24'
   held_fork_push: '2026-10-17'
-- name: SOUL.mds
-  category: fork-wing
-  human_one_liner: This repo contains different Soul.md files each file is different and allow your agents to behave in unique interesting personality.
-  why_saved: upstream breathing as of 2026-10-24; the copy is insurance, not rescue
-  status: breathing
-  repo: https://github.com/madhvantyagi/SOUL.md
-  last_push: '2026-08-24'
-  stars: 432
-  held_fork: data-path-9/SOUL.mds
-  verified: '2026-10-24'
-  held_fork_push: '2026-10-10'
 - name: Strata
   category: fork-wing
   human_one_liner: "Qwen3.8-Flash-Next on any consumer hardware: one-click install for Windows / Linux. Strata inference engine, OpenAI/Anthropic API on localhost, optional image input."
