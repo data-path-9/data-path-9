@@ -193,7 +193,11 @@ def pass_census(records, text, readme, btext, report, dry, vanish_ok):
     account = fork_census()
     # forks join to records through held_fork (data-path-9/<fork>), not record
     # names — record names follow upstream identity, forks can be renamed
-    held = {r["held_fork"].split("/", 1)[1] for r in records if r.get("held_fork")}
+    # vanished records: fork gone by design (upstream died, copy detached or
+    # deleted) — never flag them as removed; a re-created same-name fork is
+    # new business and gets a fresh record
+    held = {r["held_fork"].split("/", 1)[1] for r in records
+            if r.get("held_fork") and r["status"] != "vanished"}
     new_names = sorted(set(account) - held)
     removed = sorted(held - set(account))
     if removed:
