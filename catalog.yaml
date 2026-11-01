@@ -570,7 +570,7 @@
   stars: 1308
   held_fork: data-path-9/hermes-ecosystem
   verified: '2026-10-09'
-  held_fork_push: '2026-10-24'
+  held_fork_push: '2026-10-31'
 
 - name: time-gap
   category: fork-wing
@@ -2059,7 +2059,7 @@
   held_fork: data-path-9/claude-code-ultimate-guide
   copy_shelf: chat-agents
   verified: '2026-10-09'
-  held_fork_push: '2026-10-24'
+  held_fork_push: '2026-10-31'
 
 - name: agency-agents
   category: fork-wing
@@ -2678,7 +2678,7 @@
   held_fork: data-path-9/Anthropic-Cybersecurity-Skills
   copy_shelf: chat-agents
   verified: '2026-10-09'
-  held_fork_push: '2026-10-19'
+  held_fork_push: '2026-10-26'
 
 - name: collab-public
   category: fork-wing
@@ -3948,4 +3948,74 @@
   held_fork: data-path-9/zerotokens
   verified: '2026-10-24'
   held_fork_push: '2026-05-22'
+- name: Aerus-Super-Disk-Management
+  category: fork-wing
+  human_one_liner: A Super Disk Management Program from me to you! Enjoy!
+  why_saved: upstream breathing as of 2026-10-31; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/xAerux/Aerus-Super-Disk-Management
+  last_push: '2026-10-26'
+  stars: 8
+  held_fork: data-path-9/Aerus-Super-Disk-Management
+  verified: '2026-10-31'
+- name: DEsk
+  category: fork-wing
+  human_one_liner: copy of fyzugx/DEsk — upstream kept the story thin
+  why_saved: upstream breathing as of 2026-10-31; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/fyzugx/DEsk
+  last_push: '2026-10-28'
+  stars: 1445
+  held_fork: data-path-9/DEsk
+  verified: '2026-10-31'
+- name: Open-Generative-AI
+  category: fork-wing
+  human_one_liner: Unrestricted Open-source alternative to AI video platforms — Free AI image & video generation studio with 600+ models (Flux, Midjourney, Kling, Sora, Veo). No content filters. Self-hosted, MIT licensed.
+  why_saved: upstream breathing as of 2026-10-31; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/Anil-matcha/Open-Generative-AI
+  last_push: '2026-10-29'
+  stars: 31951
+  held_fork: data-path-9/Open-Generative-AI
+  verified: '2026-10-31'
+- name: aerus-ezai
+  category: fork-wing
+  human_one_liner: "EZ AI \u2014 Local AI made easy: Windows command center for local AI apps, model library, and coding agents."
+  why_saved: upstream breathing as of 2026-10-31; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/xAerux/aerus-ezai
+  last_push: '2026-10-25'
+  stars: 9
+  held_fork: data-path-9/aerus-ezai
+  verified: '2026-10-31'
+- name: aerus-usage-hud
+  category: fork-wing
+  human_one_liner: An AI Usage HUD for both Codex and Claud and Local Ollama in one place.
+  why_saved: upstream breathing as of 2026-10-31; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/xAerux/aerus-usage-hud
+  last_push: '2026-10-26'
+  stars: 11
+  held_fork: data-path-9/aerus-usage-hud
+  verified: '2026-10-31'
+- name: hermes-proactive
+  category: fork-wing
+  human_one_liner: A set of instructions and scheduled tasks to make Hermes more proactive, helpful, and better at getting things done without being asked.
+  why_saved: upstream breathing as of 2026-10-31; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/riozilla/hermes-proactive
+  last_push: '2026-10-18'
+  stars: 109
+  held_fork: data-path-9/hermes-proactive
+  verified: '2026-10-31'
+- name: skill-recorder
+  category: fork-wing
+  human_one_liner: Desktop app that records your on-screen work session and uses the GitHub Copilot SDK to reconstruct it as an intent + ordered steps, then builds a reusable Skill or Automation for Microsoft Autopilots like Scout, Microsoft Copilot Cowork, or Copilot Studio.
+  why_saved: upstream breathing as of 2026-10-31; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/microsoft/skill-recorder
+  last_push: '2026-10-31'
+  stars: 5600
+  held_fork: data-path-9/skill-recorder
+  verified: '2026-10-31'
 

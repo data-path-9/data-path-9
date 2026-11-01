@@ -40,7 +40,7 @@ every entry carries one honest status word:
 ## the catalog
 
 39 tools, models, and datasets on the founding shelves (41 catalog
-records — two shelves carry a companion), plus the fork wing: 270 copies we
+records — two shelves carry a companion), plus the fork wing: 276 copies we
 hold of tools the ecosystem runs on. every status checked against the GitHub
 API on **2026-10-09**.
 nothing here is from memory — if the shelf label is wrong, the date on it
@@ -281,7 +281,7 @@ of the entire open-model ecosystem. found: breathing very hard.
 a library doesn't just catalogue the fire — it holds copies. the fork wing is
 every upstream tool we keep a live copy of in this account, so that if the
 upstream ever dies, moves, or gets gobbled up, the copy is already home. this
-the wing holds 270. six of the founding shelves carry their copies in their
+the wing holds 276. six of the founding shelves carry their copies in their
 `dpx` blocks (`held_fork`); two more founding upstreams (CLIP,
 stable-diffusion-webui) turned up in the fork pile and now have copies too.
 statuses below describe the **upstream**; the copy is ours, and it doesn't
@@ -1094,3 +1094,15 @@ added by `tools/dp9sync.py` on 2026-10-24; curator pass pending.
 - `soul.md` — copy held, upstream verified 2026-10-24 (auto-sync)
 - `video-scraping-apis` — copy held, upstream verified 2026-10-24 (auto-sync)
 - `zerotokens` — copy held, upstream verified 2026-10-24 (auto-sync)
+
+## sync appendix — machine-verified additions
+
+added by `tools/dp9sync.py` on 2026-10-31; curator pass pending.
+
+- `Aerus-Super-Disk-Management` — copy held, upstream verified 2026-10-31 (auto-sync)
+- `DEsk` — copy held, upstream verified 2026-10-31 (auto-sync)
+- `Open-Generative-AI` — copy held, upstream verified 2026-10-31 (auto-sync)
+- `aerus-ezai` — copy held, upstream verified 2026-10-31 (auto-sync)
+- `aerus-usage-hud` — copy held, upstream verified 2026-10-31 (auto-sync)
+- `hermes-proactive` — copy held, upstream verified 2026-10-31 (auto-sync)
+- `skill-recorder` — copy held, upstream verified 2026-10-31 (auto-sync)
