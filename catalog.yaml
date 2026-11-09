@@ -570,7 +570,7 @@
   stars: 1308
   held_fork: data-path-9/hermes-ecosystem
   verified: '2026-10-09'
-  held_fork_push: '2026-10-31'
+  held_fork_push: '2026-11-09'
 
 - name: time-gap
   category: fork-wing
@@ -2059,7 +2059,7 @@
   held_fork: data-path-9/claude-code-ultimate-guide
   copy_shelf: chat-agents
   verified: '2026-10-09'
-  held_fork_push: '2026-10-31'
+  held_fork_push: '2026-11-08'
 
 - name: agency-agents
   category: fork-wing
@@ -2678,7 +2678,7 @@
   held_fork: data-path-9/Anthropic-Cybersecurity-Skills
   copy_shelf: chat-agents
   verified: '2026-10-09'
-  held_fork_push: '2026-10-26'
+  held_fork_push: '2026-11-09'
 
 - name: collab-public
   category: fork-wing
@@ -3958,6 +3958,7 @@
   stars: 8
   held_fork: data-path-9/Aerus-Super-Disk-Management
   verified: '2026-10-31'
+  held_fork_push: '2026-10-24'
 - name: DEsk
   category: fork-wing
   human_one_liner: copy of fyzugx/DEsk — upstream kept the story thin
@@ -3968,6 +3969,7 @@
   stars: 1445
   held_fork: data-path-9/DEsk
   verified: '2026-10-31'
+  held_fork_push: '2026-10-21'
 - name: Open-Generative-AI
   category: fork-wing
   human_one_liner: Unrestricted Open-source alternative to AI video platforms — Free AI image & video generation studio with 600+ models (Flux, Midjourney, Kling, Sora, Veo). No content filters. Self-hosted, MIT licensed.
@@ -3978,6 +3980,7 @@
   stars: 31951
   held_fork: data-path-9/Open-Generative-AI
   verified: '2026-10-31'
+  held_fork_push: '2026-10-24'
 - name: aerus-ezai
   category: fork-wing
   human_one_liner: "EZ AI \u2014 Local AI made easy: Windows command center for local AI apps, model library, and coding agents."
@@ -3988,6 +3991,7 @@
   stars: 9
   held_fork: data-path-9/aerus-ezai
   verified: '2026-10-31'
+  held_fork_push: '2026-10-24'
 - name: aerus-usage-hud
   category: fork-wing
   human_one_liner: An AI Usage HUD for both Codex and Claud and Local Ollama in one place.
@@ -3998,6 +4002,7 @@
   stars: 11
   held_fork: data-path-9/aerus-usage-hud
   verified: '2026-10-31'
+  held_fork_push: '2026-10-24'
 - name: hermes-proactive
   category: fork-wing
   human_one_liner: A set of instructions and scheduled tasks to make Hermes more proactive, helpful, and better at getting things done without being asked.
@@ -4008,6 +4013,7 @@
   stars: 109
   held_fork: data-path-9/hermes-proactive
   verified: '2026-10-31'
+  held_fork_push: '2026-10-18'
 - name: skill-recorder
   category: fork-wing
   human_one_liner: Desktop app that records your on-screen work session and uses the GitHub Copilot SDK to reconstruct it as an intent + ordered steps, then builds a reusable Skill or Automation for Microsoft Autopilots like Scout, Microsoft Copilot Cowork, or Copilot Studio.
@@ -4018,4 +4024,75 @@
   stars: 5600
   held_fork: data-path-9/skill-recorder
   verified: '2026-10-31'
+  held_fork_push: '2026-10-24'
+- name: SWE-bench
+  category: fork-wing
+  human_one_liner: "SWE-bench: Can Language Models Resolve Real-world Github Issues?"
+  why_saved: upstream breathing as of 2026-11-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/SWE-bench/SWE-bench
+  last_push: '2026-09-18'
+  stars: 6165
+  held_fork: data-path-9/SWE-bench
+  verified: '2026-11-09'
+- name: VibeVoice
+  category: fork-wing
+  human_one_liner: Open-Source Frontier Voice AI
+  why_saved: upstream breathing as of 2026-11-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/microsoft/VibeVoice
+  last_push: '2026-10-08'
+  stars: 56887
+  held_fork: data-path-9/VibeVoice
+  verified: '2026-11-09'
+- name: agent-self-evolution
+  category: fork-wing
+  human_one_liner: ⚒ Evolutionary self-improvement for Agents — optimize skills, prompts, and code using DSPy + GEPA
+  why_saved: upstream breathing as of 2026-11-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/jramos/agent-self-evolution
+  last_push: '2026-09-01'
+  stars: 16
+  held_fork: data-path-9/agent-self-evolution
+  verified: '2026-11-09'
+- name: ai-game
+  category: fork-wing
+  human_one_liner: Autonomous Agentic Game Studio Harness & Observability Platform
+  why_saved: upstream breathing as of 2026-11-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/rhenretta/ai-game
+  last_push: '2026-11-04'
+  stars: 11
+  held_fork: data-path-9/ai-game
+  verified: '2026-11-09'
+- name: godot-ai
+  category: fork-wing
+  human_one_liner: Production-grade MCP server and AI tools for the Godot engine. A Snap to install. Totally free and fun.
+  why_saved: upstream breathing as of 2026-11-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/hi-godot/godot-ai
+  last_push: '2026-11-09'
+  stars: 3469
+  held_fork: data-path-9/godot-ai
+  verified: '2026-11-09'
+- name: horus
+  category: fork-wing
+  human_one_liner: Run Claude Code, Codex, and OpenCode on Android in a real Alpine Linux workspace. No root or Termux required.
+  why_saved: upstream breathing as of 2026-11-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/scarif-labs/horus
+  last_push: '2026-11-07'
+  stars: 120
+  held_fork: data-path-9/horus
+  verified: '2026-11-09'
+- name: perplexica-search-engine-ai
+  category: fork-wing
+  human_one_liner: Perplexica is an AI-powered search engine. It is an Open source alternative to Perplexity AI
+  why_saved: upstream breathing as of 2026-11-09; the copy is insurance, not rescue
+  status: breathing
+  repo: https://github.com/BunsDev/perplexica-search-engine-ai
+  last_push: '2026-09-27'
+  stars: 517
+  held_fork: data-path-9/perplexica-search-engine-ai
+  verified: '2026-11-09'
 
